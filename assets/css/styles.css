@@ -1,0 +1,118 @@
+/**
+ * Body - Global
+ */
+body {
+  background-color: #EEEEEE;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: #444;
+  line-height: 1.6;
+  font-size: 18px;
+}
+h1, h2, h3, h4 { line-height: 1.2; }
+/**
+ * Header | Navbar
+ */
+/*
+.navbar {
+  display: block;
+  width: 100%;
+  height: 6.5rem;
+  z-index: 99;
+  border-bottom: 1px solid #222;
+
+}
+.navbar-list {
+  list-style-type: none;
+  margin-bottom: 0;
+}
+.navbar-title {
+  position: relative;
+  float: left;
+  margin-bottom: 0;
+  margin-left: 35px;
+}
+.nav-title {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: .2rem;
+  text-decoration: none;
+  line-height: 6.5rem;
+  color: #222;
+}
+.navbar-item {
+  position: relative;
+  float: right;
+  margin-bottom: 0;
+}
+.navbar-link {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: .2rem;
+
+  margin-right: 35px;
+  text-decoration: none;
+  line-height: 6.5rem;
+  color: #222;
+}
+*/
+/*
+.has-docked.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+}*/
+/**
+ * Footer
+ */
+ html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.site {
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+}
+
+.site_content { flex: 1 0 auto; }
+footer { flex-shrink: 0;}
+
+
+#top-menu {
+    display: none;
+}
+
+@media (min-width: 768px) {
+  .hamburger { display: none; }
+}
+
+
+.menu {
+  display: block;
+  background-color: #1D1F20;
+  background-image: linear-gradient(145deg, #1D1F20, #404348);
+}
+
+.menu-list {
+  display: block;
+  margin: 25px 0;
+  list-style: none;
+}
+
+.menu-title {
+  font-weight: 800;
+
+  padding: 0 0 2rem 0;
+  margin: 0;
+}
+
+.menu a {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: .1rem;
+  padding: 0 0 0 1rem;
+}

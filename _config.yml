@@ -1,0 +1,32 @@
+# Site settings
+title: Raja Trucking
+author: Raja Trucking
+email: rajatrucking@sbcglobal.net
+description: > # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+timezone: America/Dallas
+
+# URLs
+baseurl: "/rajatrucking"
+url: "https://job-talk.github.io"
+permalink: pretty
+
+# Structure configuration
+source: ./
+destination: ./_site
+
+# Build settings
+markdown: kramdown
+# theme: minima
+gems:
+  - jekyll-feed
+  - jekyll-sitemap
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - .gitignore
+  - LICENSE
+  - README.md

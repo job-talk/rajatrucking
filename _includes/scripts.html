@@ -1,0 +1,26 @@
+<script src="https://cdn.jsdelivr.net/jquery/3.1.1/jquery.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<!--<script src="{{ site.baseurl }}assets/js/nav.js"></script>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js"></script>
+<script>
+  var slideout = new Slideout({
+    'panel'     : document.getElementById('panel'),
+    'menu'      : document.getElementById('menu'),
+    'padding'   : 256,
+    'tolerance' : 70,
+    'side'      : 'right'
+  });
+
+
+  // Toggle button
+  document.querySelector('.toggle-button').addEventListener('click', function() {
+    slideout.toggle();
+  });
+</script>
+
+<script>
+  var $hamburger = $(".hamburger");
+  $hamburger.on("click", function(e) {
+    $hamburger.toggleClass("is-active");
+    // Do something else, like open/close menu
+  });
+</script>
