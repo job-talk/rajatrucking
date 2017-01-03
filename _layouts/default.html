@@ -6,34 +6,32 @@
 
 <body>
 
-  {% include nav.html %}
-  <div class="flex_contain_min_height">
-    <div class="flex_contain">
-      <main class="site_content" id="panel">
+  <div class="page">
 
-        <button class="toggle-button hamburger hamburger--slider u-pull-right" type="button">
-          <span class="hamburger-box">
-            <span class="hamburger-inner"></span>
-          </span>
-        </button>
+    <header>{% include nav.html %}</header>
 
-        <div class="container">
-          <div class="row">
-            <div class="two columns"></div>
-            <div class="eight columns">
-              {{ content }}
-            </div>
-            <div class="two columns"></div>
+    <main class="content" id="panel">
+
+      <button class="toggle-button hamburger hamburger--slider u-pull-right" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+
+      <div class="container">
+        <div class="row">
+          <div class="two columns"></div>
+          <div class="eight columns">
+            {{ content }}
           </div>
+          <div class="two columns"></div>
         </div>
-      </main>
+      </div>
+    </main>
 
-      <footer>{% include footer.html %}</footer>
+    <footer>{% include footer.html %}</footer>
 
-    </div>
   </div>
-
-
 
   {% include scripts.html %}
 
