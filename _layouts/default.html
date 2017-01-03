@@ -4,31 +4,33 @@
 
 {% include head.html %}
 
-<body class="site">
+<body>
 
   {% include nav.html %}
+  <div class="flex_contain_min_height">
+    <div class="flex_contain">
+      <main class="site_content" id="panel">
 
-  <div canvas="container" id="panel">
-    <main class="site_content">
+        <button class="toggle-button hamburger hamburger--slider u-pull-right" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
 
-      <button class="toggle-button hamburger hamburger--slider u-pull-right" type="button">
-        <span class="hamburger-box">
-          <span class="hamburger-inner"></span>
-        </span>
-      </button>
-
-      <div class="container">
-        <div class="row">
-          <div class="two columns"></div>
-          <div class="eight columns">
-            {{ content }}
+        <div class="container">
+          <div class="row">
+            <div class="two columns"></div>
+            <div class="eight columns">
+              {{ content }}
+            </div>
+            <div class="two columns"></div>
           </div>
-          <div class="two columns"></div>
         </div>
-      </div>
-    </main>
+      </main>
 
-    <footer>{% include footer.html %}</footer>
+      <footer>{% include footer.html %}</footer>
+
+    </div>
   </div>
 
 

@@ -15,19 +15,15 @@ body {
   display: none;
 }
 
-.slideout-menu-left {
-  left: 0;
-}
+.slideout-menu-left { left: 0; }
 
-.slideout-menu-right {
-  right: 0;
-}
+.slideout-menu-right { right: 0; }
 
 .slideout-panel {
   position: relative;
   z-index: 1;
   will-change: transform;
-  background-color: #FFF; /* A background-color is required */
+  background-color: #EEEEEE; /* A background-color is required */
   min-height: 100vh;
 }
 
