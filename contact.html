@@ -1,34 +1,98 @@
 ---
 layout: default
 title: Contact | Raja Trucking
+active: contact
 ---
 
         <h3>Request More Information</h3>
 
-        <p>
-          Please use this form to contact us to get more information about our company, products, or services.
-        </p>
+        <br />
 
-        <form>
           <div class="row">
             <div class="six columns">
-              <label for="your_email">Your email</label>
-              <input class="u-full-width" placeholder="test@mailbox.com" id="your_email" type="email">
+              <script>
+                var pho = '+1' + ' ' + '817' + ' ' + '237' + ' ' + '42' + '1' + '3';
+                var pho_mat = '+1' + '817' + '237' + '42' + '1' + '3';
+                document.write('<div itemscope itemtype="http://schema.org/LocalBusiness">' + 'Phone #:' + ' ' + '<span itemprop="telephone">' + '<a href="' + 'tel:' + pho_mat +'">' + pho + '</a>' + '</span>' + '</div>');
+              </script>
+            </div>
+          </div>
+          <div class="row">
+            <div class="six columns">
+              <script>
+                var fax = '+1' + ' ' + '817' + ' ' + '237' + ' ' + '74' + '1' + '4';
+                var fax_mat = '+1' + '817' + '237' + '74' + '1' + '4';
+                document.write('<div itemscope itemtype="http://schema.org/LocalBusiness">' + 'Fax #:' + ' ' + '<span itemprop="faxNumber">' + '<a href="' + 'fax:' + fax_mat +'">' + fax + '</a>' + '</span>' + '</div>');
+              </script>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="six columns">
+              <script>
+                var eml = 'raja' + 'trucking' + 'llc' + '@' + 'sbc' + 'global' + '.net';
+                document.write('<div itemscope itemtype="http://schema.org/LocalBusiness">' + '<span itemprop="email">' + '<a href="mai' + 'lto:' + eml +'">' + eml + '</a>' + '</span>' + '</div>');
+              </script>
+            </div>
+          </div>
+          <div class="row">
+            <div class="four columns">
+              <script>
+                var adr = '2555' + ' ' + 'Bluemound' + ' ' + 'Rd.' + ' ' + 'West' + '<br />' + ' ' + 'Haslet,' + ' ' + 'TX' + ' ' + '76052';
+                document.write('<div itemscope itemtype="http://schema.org/LocalBusiness">' + '<span itemprop="streetAddress">' + adr + '</span>' + '</div>');
+              </script>
+            </div>
+            <div class="four columns">
+              <div class=" u-img-responsive">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2084.9200203451496!2d-97.41362770279063!3d32.949430966653615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864dde758d7d09f5%3A0xa6e42bb1fa7705f9!2s2555+Blue+Mound+Rd+W%2C+Haslet%2C+TX+76052!5e0!3m2!1sen!2sus!4v1483545693523" frameborder="1" style="border:1px solid #222;" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+
+
+
+        <br />
+        <hr />
+        <div class="row">
+          <p>
+            Please use this form to contact us to get more information about our company, products, or services.
+          </p>
+        </div>
+
+        <form id="contactform" action="https://formspree.io/" method="POST">
+          <div class="row">
+            <div class="six columns">
+              <label for="name">Your name</label>
+              <input class="u-full-width" id="name" type="text" name="name" placeholder="Your name" >
             </div>
             <div class="six columns">
-              <label for="recipient_input">Reason for contacting</label>
-              <select class="u-full-width" id="recipient_input">
-                <option value="Option 1">Questions</option>
-                <option value="Option 2">Admiration</option>
-                <option value="Option 3">Can I get your number?</option>
+              <label for="_replyto">Your email</label>
+              <input class="u-full-width" id="_replyto" type="email" name="_replyto" placeholder="test@mailbox.com">
+            </div>
+          </div>
+          <div class="row">
+            <div class="six columns">
+              <label for="subject">Reason for contacting</label>
+              <select class="u-full-width" id="subject" name="subject">
+                <option value="Questions">Questions</option>
+                <option value="Quotes">Quotes</option>
+                <option value="Etc.">Etc.</option>
               </select>
             </div>
           </div>
           <label for="message">Message</label>
-          <textarea class="u-full-width" placeholder="Hey guys..." id="messages"></textarea>
-          <label class="send_copy">
-            <input type="checkbox">
+          <textarea class="u-full-width" id="messages" name="message" placeholder="Hey guys..."></textarea>
+          <label class="cc">
+            <input type="checkbox" id="ccemail" name="_cc" value="_replyto">
             <span class="label-body">Send a copy to yourself</span>
           </label>
-          <input class="button-primary" value="Submit" type="submit">
+          <input class="button-primary" type="submit" value="Send">
+          <input type="hidden" name="_subject" value="Website contact form" />
+          <input type="text" name="_gotcha" style="display:none" />
+          <input type="hidden" name="_next" value="{{ site.baseurl }}/thanks" />
         </form>
+
+        <script>
+            var contactform =  document.getElementById('contactform');
+            contactform.setAttribute('action', '//formspree.io/' + 'email' + '@' + 'email' + '.' + 'com');
+        </script>

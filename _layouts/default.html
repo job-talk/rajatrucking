@@ -4,7 +4,7 @@
 
 {% include head.html %}
 
-<body>
+<body class="{{ page.nav-class }}">
 
   <div class="page">
 
@@ -12,16 +12,30 @@
 
     <main class="content" id="panel">
 
-      <button class="toggle-button hamburger hamburger--slider u-pull-right" type="button">
-        <span class="hamburger-box">
-          <span class="hamburger-inner"></span>
-        </span>
-      </button>
+      <div class="mob-nav-head">
+        <div class="container">
+          <ul class="mob-nav-head-list">
+            <li class="mob-nav-head-item">
+              <!--<button class="nav-toggle toggle-button" aria-controls="toggle-button" aira-expanded="false" aria-label="Toggle navigation"></button>-->
+              <div class="toggle-float">
+                <div class="ham-menu toggle-button">
+                  <span class="menu-global menu-top"></span>
+                  <span class="menu-global menu-middle"></span>
+                  <span class="menu-global menu-bottom"></span>
+                </div>
+              </div>
+            </li>
+            <li class="mob-nav-head-item">
+              <a class="mob-nav-title">Raja Trucking</a>
+            </li>
+          </ul>
+        </div>
+      </div>
 
       <div class="container">
         <div class="row">
           <div class="two columns"></div>
-          <div class="eight columns">
+          <div class="eight columns content">
             {{ content }}
           </div>
           <div class="two columns"></div>

@@ -1,11 +1,9 @@
 # Site settings
 title: Raja Trucking
-author: Raja Trucking
+author: Raja Trucking, LLC.
 email: rajatrucking@sbcglobal.net
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+description:
+  Raja Trucking, LLC. is an uprising freight transportation company that provide services for freight brokers and various companies to locations throughout the 48 states. We have been in business in the Fort Worth, TX area since May 2006. Raja Trucking, LLC. is operating with about 30 drivers providing power only, intermodal, and over the road (OTR) services.
 timezone: America/Dallas
 
 # URLs
