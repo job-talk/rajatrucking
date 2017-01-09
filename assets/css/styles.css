@@ -18,7 +18,7 @@
 @media screen and (min-width: 782px) { /* desktop */
   .nav-toggle { display: none !important; /* hide mobile nav on desktop */ }
   .mob-nav-head { display: none !important; }
-  .content_wrapper { padding: 1em 0; /* add spacing between page top/bot and contents */ }
+  .content_wrapper { padding: 2em 0; /* add spacing between page top/bot and contents */ }
 }
 
 @media screen and (max-width: 960px) {
@@ -64,6 +64,7 @@ main { display: inline-block !important; }
 /* base font-size: 1.3rem; base line-height: 1.6; */
 body {
   font-size: 16px;
+  /*text-indent: 1.5em;*/
 }
 .services_list ul li {
   margin: 0 1em;
@@ -72,42 +73,53 @@ body {
 @media (min-width: 400px) {
   .bod_text {
     font-size: 4vw;
-    text-indent: 1.5em;
+    font-size: 16px;
+    letter-spacing: .1em;
+    text-indent: 1em;
   }
-  h3, h4 { font-size: 6vw; }
-  .services_list ul li { font-size: 3.8vw; }
+  h3, h4 { font-size: 6vw; font-size: 24px; letter-spacing: -0.1em; }
+  .services_list ul li { font-size: 3.5vw; font-sie: 14px;}
 }
 /* larger than phablet */
 @media (min-width: 550px) {
   .bod_text {
-    font-size: 3vw;
+    font-size: 3.27vw;
+    font-size: 18px;
+    letter-spacing: .08em;
   }
-  h3, h4 { font-size: 5.5vw; }
-  .services_list ul li { font-size: 2.8vw; }
+  h3, h4 { font-size: 4.91vw; font-size: 27px; letter-spacing: -0.0em;}
+  .services_list ul li { font-size: 2.91vw; font-size: 16px; }
 }
 /* larger than tablet */
 @media (min-width: 750px) {
   .bod_text {
-    font-size: 2.2vw;
+    font-size: 2.67vw;
+    font-size: 20px;
+    letter-spacing: .06em;
   }
-  h3, h4 { font-size: 5vw; }
-  .services_list ul li { font-size: 2vw; }
+  h3, h4 { font-size: 4vw; font-size: 30px; letter-spacing: -0.05em; }
+  .services_list ul li { font-size: 2.4vw; font-size: 18px; }
 }
 /* larger than desktop */
 @media (min-width: 1000px) {
   .bod_text {
-    font-size: 2.5vw;
+    font-size: 2.2vw;
+    font-size: 22px;
+    letter-spacing: .04em;
   }
-  h3, h4 { font-size: 4.5vw; }
-  .services_list ul li { font-size: 2.3vw; }
+  h3, h4 { font-size: 3.3vw; font-size: 33px; letter-spacing: -0.010em; }
+  .services_list ul li { font-size: 2vw; font-size: 20px;}
 }
 /* larger than desktop hd */
 @media (min-width: 1200px){
   .bod_text {
     font-size: 2vw;
+    font-size: 24px;
+    letter-spacing: .02em;
+
   }
-  h3, h4 { font-size: 3.5vw; }
-  .services_list ul li { font-size: 1.8vw; }
+  h3, h4 { font-size: 3vw; font-size: 36px; letter-spacing: -0.015em;}
+  .services_list ul li { font-size: 1.83vw; font-size: 22px; }
 }
 
 /*

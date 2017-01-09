@@ -23,7 +23,8 @@ body {
   position: relative;
   z-index: 1;
   will-change: transform;
-  background-color: #EEEEEE; /* A background-color is required */
+  /*background-color: #EEEEEE; */
+  background-color: #FFFFFF;
   /*min-height: 100vh;*/
 }
 
