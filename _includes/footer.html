@@ -1,32 +1,32 @@
 
-  <div class="container">
+      <div class="container">
 
-    <ul class="foot-nav">
-      <li class="foot-copyr foot-nav-item"><a href="#">&copy; {{ site.time | date: '%Y' }} &nbsp;{{site.author | upcase }}</a></li>
-      <br class="rwd-break" />
+        <ul class="foot-nav">
+          <li class="foot-copyr foot-nav-item"><a href="#">&copy; {{ site.time | date: '%Y' }} &nbsp;{{site.author | upcase }}</a></li>
+          <br class="rwd-break" />
 
-      <div class="foot-float-right">
-        {% if page.active == "home" %}
-          <li class="foot-nav-item foot-nav-right active"><a href="{{ site.baseurl }}/home">Home</a></li>
-        {% else %}
-          <li class="foot-nav-item foot-nav-right"><a href="{{ site.baseurl }}/home">Home</a></li>
-        {% endif %}
-        {% if page.active == "about" %}
-          <li class="foot-nav-item foot-nav-right active"><a href="{{ site.baseurl }}/about">About</a></li>
-        {% else %}
-          <li class="foot-nav-item foot-nav-right"><a href="{{ site.baseurl }}/about">About</a></li>
-        {% endif %}
-        {% if page.active == "services" %}
-          <li class="foot-nav-item foot-nav-right active"><a href="{{ site.baseurl }}/services">Services</a></li>
-        {% else %}
-          <li class="foot-nav-item foot-nav-right"><a href="{{ site.baseurl }}/services">Services</a></li>
-        {% endif %}
-        {% if page.active == "contact" %}
-          <li class="foot-nav-item foot-nav-right active"><a href="{{ site.baseurl }}/contact">Contact</a></li>
-        {% else %}
-          <li class="foot-nav-item foot-nav-right"><a href="{{ site.baseurl }}/contact">Contact</a></li>
-        {% endif %}
+          <div class="foot-float-right">
+            {% if page.active == "home" %}
+              <li class="foot-nav-item foot-nav-right active"><a href="{{ site.baseurl }}/home">Home</a></li>
+            {% else %}
+              <li class="foot-nav-item foot-nav-right"><a href="{{ site.baseurl }}/home">Home</a></li>
+            {% endif %}
+            {% if page.active == "about" %}
+              <li class="foot-nav-item foot-nav-right active"><a href="{{ site.baseurl }}/about">About</a></li>
+            {% else %}
+              <li class="foot-nav-item foot-nav-right"><a href="{{ site.baseurl }}/about">About</a></li>
+            {% endif %}
+            {% if page.active == "services" %}
+              <li class="foot-nav-item foot-nav-right active"><a href="{{ site.baseurl }}/services">Services</a></li>
+            {% else %}
+              <li class="foot-nav-item foot-nav-right"><a href="{{ site.baseurl }}/services">Services</a></li>
+            {% endif %}
+            {% if page.active == "contact" %}
+              <li class="foot-nav-item foot-nav-right active"><a href="{{ site.baseurl }}/contact">Contact</a></li>
+            {% else %}
+              <li class="foot-nav-item foot-nav-right"><a href="{{ site.baseurl }}/contact">Contact</a></li>
+            {% endif %}
+          </div>
+        </ul>
+
       </div>
-    </ul>
-
-  </div>

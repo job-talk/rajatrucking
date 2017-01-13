@@ -8,26 +8,14 @@
 
   <div class="page">
 
-    <header class="nav-down">{% include nav.html %}</header>
+    <header>
+      {% include nav.html %}
+    </header>
 
     <main class="content" id="panel">
 
-      <div class="mob-nav-head">
-        <div class="container">
-          <ul class="mob-nav-head-list">
-            <li class="mob-nav-head-item">
-              <div class="toggle-float">
-                <div class="hamburger hamburger-cancel toggle-button">
-                  <span class="icon"></span>
-                </div>
-              </div>
-            </li>
-            <li class="mob-nav-head-item">
-              <a class="mob-nav-title">Raja Trucking</a>
-            </li>
-          </ul>
-        </div>
-      </div>
+      {% include mobile_nav_head.html %}
+      
         <div class="container">
           <div class="row">
             <div class="one columns"></div>
@@ -39,7 +27,9 @@
         </div>
     </main>
 
-    <footer>{% include footer.html %}</footer>
+    <footer>
+      {% include footer.html %}
+    </footer>
 
   </div>
 
