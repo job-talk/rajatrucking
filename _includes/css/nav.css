@@ -1,9 +1,5 @@
-.active a {
-  color: rgb(77, 167, 224) !important;
-}
-.active {
-  color: rgb(77, 167, 224); 
-}
+.active a { color: rgb(77, 167, 224) !important; }
+.active { color: rgb(77, 167, 224); }
 /***************************************
 *********       DESKTOP    *************
 ***************************************/
@@ -28,7 +24,7 @@
   margin-left: 1rem;
 
   text-transform: uppercase;
-  font-size: 1.5rem;
+  font-size: 1.3em;
   font-weight: 800;
   letter-spacing: .2rem;
   text-decoration: none;
@@ -42,7 +38,7 @@
 }
 .nav-desk-link {
   text-transform: uppercase;
-  font-size: 1.3rem;
+  font-size: 1em;
   font-weight: 500;
   letter-spacing: .2rem;
   margin-right: 2.19em; /* 35px */

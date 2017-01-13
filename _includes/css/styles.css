@@ -19,9 +19,5 @@
   .mob-nav-head-list { display: none !important; }
 }
 
-@media screen and (max-width: 960px) { .nav-desk-link { font-size: 1.2rem; } }
-@media screen and (max-width: 860px) { .nav-desk-link { font-size: 1.1rem; } }
-@media screen and (max-width: 840px) { .nav-desk-link { font-size: .9rem; } }
-
 main { display: inline-block !important; }
 .content { text-align: left !important; }

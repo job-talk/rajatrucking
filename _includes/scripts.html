@@ -3,13 +3,13 @@
   <script src="{{ site.baseurl }}/assets/js/flowtype.js"></script>
 
   <script>
-    // Add a script element as child of the body
+    /* Add a script element as child of the body */
     function downloadJSAtOnload() {
       var element = document.createElement("script");
       element.src = "{{ site.baseurl }}/assets/js/flickity.pkgd.min.js";
       document.body.appendChild(element);
     }
-    // Check for browser support of event handling capability
+    /* Check for browser support of event handling capability */
     if (window.addEventListener)
       window.addEventListener("load", downloadJSAtOnload, false);
     else if (window.attachEvent)
@@ -28,7 +28,7 @@
       'side'      : 'left',
     });
 
-    // Toggle button
+    /* Toggle button */
     document.querySelector('.toggle-button').addEventListener('click', function() {
       slideout.toggle();
     });
@@ -77,7 +77,7 @@
     }),
     $('.services_list').flowtype({
      minFont   : 14,
-     fontRatio : 45
+     fontRatio : 48
     }),
     $('.h3').flowtype({
      minFont   : 18,
@@ -88,3 +88,14 @@
      fontRatio : 30
     });
   </script>
+
+  <!--<script>
+  var $buoop = {vs:{i:10,f:-4,o:-4,s:8,c:-4},unsecure:true,api:4};
+  function $buo_f(){
+   var e = document.createElement("script");
+   e.src = "//browser-update.org/update.min.js";
+   document.body.appendChild(e);
+  };
+  try {document.addEventListener("DOMContentLoaded", $buo_f,false)}
+  catch(e){window.attachEvent("onload", $buo_f)}
+  </script>-->
