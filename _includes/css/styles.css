@@ -21,3 +21,8 @@
 
 main { display: inline-block !important; }
 .content { text-align: left !important; }
+
+
+.ic-menu-right {
+  margin-left: 8em;
+}

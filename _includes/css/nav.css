@@ -217,7 +217,9 @@
   }
   .hamburger { font-size: 1.9em; }
 }
-
+@media screen and (max-width: 400px) {
+  .mob-nav-title { font-size: 1.6em; }
+}
 @media screen and (max-width: 350px) {
   .mob-nav-title { font-size: 1.5em; }
   .hamburger { font-size: 1.5em; }
