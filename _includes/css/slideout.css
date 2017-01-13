@@ -16,24 +16,16 @@ body {
 }
 
 .slideout-menu-left { left: 0; }
-
 .slideout-menu-right { right: 0; }
-
 .slideout-panel {
   position: relative;
   z-index: 1;
   will-change: transform;
-  /*background-color: #EEEEEE; */
   background-color: #FFFFFF;
   /*min-height: 100vh;*/
 }
 
 .slideout-open,
 .slideout-open body,
-.slideout-open .slideout-panel {
-  overflow: hidden;
-}
-
-.slideout-open .slideout-menu {
-  display: block;
-}
+.slideout-open .slideout-panel { overflow: hidden; }
+.slideout-open .slideout-menu { display: block; }
