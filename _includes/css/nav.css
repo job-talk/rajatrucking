@@ -12,6 +12,7 @@
   height: 5; /* 6.5rem */
   z-index: 99;
   border-bottom: 2px solid #222;
+  margin-bottom: 2em;
 }
 .nav-desk-list {
   list-style-type: none;
@@ -24,7 +25,7 @@
   margin-left: 1rem;
 
   text-transform: uppercase;
-  font-size: 1.3em;
+  font-size: 1.2em;
   font-weight: 800;
   letter-spacing: .2rem;
   text-decoration: none;
@@ -46,6 +47,7 @@
   line-height: 6.5rem;
   color: #222;
 }
+/*** end of Desktop | Navbar styles ***/
 
 /***************************************
 *********       MOBILE     *************
@@ -99,7 +101,7 @@
   z-index: 99;
 }
 
-
+/*** end of Mobile | Side Menu styles ***/
 
 /* mobile nav bar */
 .mob-nav-head-list {
