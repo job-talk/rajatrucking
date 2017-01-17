@@ -1,90 +1,17 @@
-<script src="https://cdn.jsdelivr.net/jquery/3.1.1/jquery.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js"></script>
-  <script src="{{ site.baseurl }}/assets/js/flowtype.js"></script>
+{% include scripts.html %}
 
-  <script>
-    /* Add a script element as child of the body */
-    function downloadJSAtOnload() {
-      var element = document.createElement("script");
-      element.src = "{{ site.baseurl }}/assets/js/flickity.pkgd.min.js";
-      document.body.appendChild(element);
-    }
-    /* Check for browser support of event handling capability */
-    if (window.addEventListener)
-      window.addEventListener("load", downloadJSAtOnload, false);
-    else if (window.attachEvent)
-      window.attachEvent("onload", downloadJSAtOnload);
-    else
-      window.onload = downloadJSAtOnload;
-  </script>
-
-
-  <script>
-    var slideout = new Slideout({
-      'panel'     : document.getElementById('panel'),
-      'menu'      : document.getElementById('menu'),
-      'padding'   : 256,
-      'tolerance' : 70,
-      'side'      : 'left',
-    });
-
-    /* Toggle button */
-    document.querySelector('.toggle-button').addEventListener('click', function() {
-      slideout.toggle();
-    });
-
-    function close(eve) {
-      eve.preventDefault();
-      slideout.close();
-    }
-
-    slideout
-      .on('beforeopen', function() {
-        this.panel.classList.add('panel-open');
-      })
-      .on('open', function() {
-        this.panel.addEventListener('click', close);
-      })
-      .on('beforeclose', function() {
-        this.panel.classList.remove('panel-open');
-        this.panel.removeEventListener('click', close);
-      });
-  </script>
-
-
-
-
-  <!--<script>
-    var el = document.querySelectorAll('.hamburger');
-    for(i=0; i<=el.length; i++) {
-      el[i].addEventListener('click', function() {
-        this.classList.toggle('active');
-      }, false);
-    }
-  </script>-->
-
-  <script>
-    $('body').flowtype({
-     minimum   : 350,
-     maximum   : 1200,
-     minFont   : 14,
-     maxFont   : 40,
-     fontRatio : 60
-    }),
-    $('.bod_text').flowtype({
-     minFont   : 15,
-     fontRatio : 45
-    }),
-    $('.services_list').flowtype({
-     minFont   : 13,
-     fontRatio : 48
-    }),
-    $('.h3').flowtype({
-     minFont   : 18,
-     fontRatio : 23
-    }),
-    $('.h4').flowtype({
-     minFont   : 17,
-     fontRatio : 30
-    });
-  </script>
+<script>
+  /* Add a script element as child of the body */
+  function downloadJSAtOnload() {
+    var element = document.createElement("script");
+    element.src = "{{ site.baseurl }}/assets/js/flickity.pkgd.min.js";
+    document.body.appendChild(element);
+  }
+  /* Check for browser support of event handling capability */
+  if (window.addEventListener)
+    window.addEventListener("load", downloadJSAtOnload, false);
+  else if (window.attachEvent)
+    window.attachEvent("onload", downloadJSAtOnload);
+  else
+    window.onload = downloadJSAtOnload;
+</script>

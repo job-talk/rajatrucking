@@ -27,9 +27,7 @@ h4 {
 	margin-top: 0; margin-bottom: 1.20em;
   letter-spacing: .125em;
 }
-.services_list {
-  font-size: 1.1250em; line-height: 1.33em; margin-top: 1.33em; margin-bottom: 1.33em;
-}
+.services_list { font-size: 1.1250em; line-height: 1.33em; margin-top: 1.33em; margin-bottom: 1.33em; }
 .services_list li { list-style: none; }
 
 .bod_text {
@@ -39,6 +37,4 @@ h4 {
   padding: .5em .5em;
   margin: 0 0 1.5000em 0;
 }
-.services_list ul li {
-  margin: 0 1em;
-}
+.services_list ul li { margin: 0 1em; }
