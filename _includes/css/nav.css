@@ -32,6 +32,12 @@
   line-height: 6.5rem;
   color: #222;
 }
+.nav-desk-title-sub {
+  font-size: .8em;
+  font-weight: 600;
+  margin-left: .5rem;
+  line-height: 6.7rem;
+}
 .nav-desk-item {
   position: relative;
   float: right;
@@ -67,11 +73,19 @@
   text-align: left;
 }
 .menu-title {
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-weight: 700;
   letter-spacing: 0.19em !important;
   padding: 0 0 2rem 0;
   margin: 0;
+}
+.menu-title a {
+
+}
+.menu-title-sub {
+  font-size: .7em !important;
+  font-weight: 500;
+  padding-left: .5em !important;
 }
 .menu-item {
 
@@ -121,7 +135,7 @@
   box-sizing: border-box;
 
   padding: 1em .5em;
-  margin-bottom: 1rem !important;
+  margin-bottom: 1em !important;
 }
 .mob-nav-head-list li {
   margin-bottom: 0;
@@ -134,9 +148,12 @@
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: .15em;
-
   margin: auto;
-
+}
+.mob-nav-title-sub {
+  font-size: 1em;
+  font-weight: 500;
+  padding-left: .1em;
 }
 .mob-nav-invisible {
   flex: 0 1 auto;
@@ -206,10 +223,12 @@
 
 @media screen and (max-width: 781px) {
   .mob-nav-title { font-size: 2.2em; }
+  .mob-nav-title-sub { font-size: 1.3em;}
   .hamburger { font-size: 2.2em; }
 }
 @media screen and (max-width: 750px) {
   .mob-nav-title { font-size: 2.1em; }
+  .mob-nav-title-sub { font-size: 1.2em;}
   .hamburger { font-size 2.1em; }
 }
 @media screen and (max-width: 550px) {
@@ -217,16 +236,52 @@
     font-size: 1.9em;
     letter-spacing: .13em;
   }
+  .mob-nav-title-sub { font-size: 1.1em;}
   .hamburger { font-size: 1.9em; }
 }
 @media screen and (max-width: 400px) {
   .mob-nav-title { font-size: 1.6em; }
+  .mob-nav-title-sub { font-size: 1em;}
 }
 @media screen and (max-width: 350px) {
   .mob-nav-title { font-size: 1.5em; }
+  .mob-nav-title-sub { font-size: .8em;}
   .hamburger { font-size: 1.5em; }
 }
 @media screen and (max-width: 275px) {
   .mob-nav-title { font-size: 1.3em; }
+  .mob-nav-title-sub { font-size: .6em;}
   .hamburger { font-size: 1.3em; }
+}
+
+.nav-desk-link {
+  position: relative;
+color: #000;
+text-decoration: none;
+}
+
+.nav-desk-link:hover {
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+.nav-desk-link:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #3296b5;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+.nav-desk-link:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
 }
