@@ -7,12 +7,6 @@ html {
 /*
  * Body Text
  */
-body {
-  font-size: 16px;
-  line-height: 1.5em; /* 24px */
-  margin: 0;
-  padding: 0;
-}
 h3, h4, .services_list, .bod_text {
   margin: 0;
   font-size: 1em;
@@ -37,17 +31,7 @@ h4 {
   font-size: 1.1250em; line-height: 1.33em; margin-top: 1.33em; margin-bottom: 1.33em;
 }
 .services_list li { list-style: none; }
-h3, h4 {
-  /*line-height: 1.3;*/
-  /*padding-top: 1em;
-  padding-bottom: .5em;*/
-}
-@media screen and (max-width: 559px) {
-  h3, h4 {
-    /*padding-top: .5em;*/
-  }
-  .mob-nav-head { margin-bottom: 0 !important;}
-}
+
 .bod_text {
   font-size: 1em;
   line-height: 1.50em;

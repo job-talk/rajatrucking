@@ -1,0 +1,41 @@
+---
+layout: compress
+---
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+{% include home_head.html %}
+
+<body class="{{ page.nav-class }}">
+
+  <div class="page">
+
+    <header>
+      {% include nav.html %}
+    </header>
+
+    <main class="content" id="panel">
+
+      {% include mobile_nav_head.html %}
+
+        <div class="container">
+          <div class="row">
+            <div class="one columns"></div>
+            <div class="ten columns content">
+              {{ content }}
+            </div>
+            <div class="one columns"></div>
+          </div>
+        </div>
+    </main>
+
+    <footer>
+      {% include footer.html %}
+    </footer>
+
+  </div>
+
+  {% include home_scripts.html %}
+
+</body>
+</html>

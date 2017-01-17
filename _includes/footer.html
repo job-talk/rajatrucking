@@ -1,10 +1,10 @@
 
-      <div class="container">
 
         <ul class="foot-nav">
-          <li class="foot-copyr foot-nav-item"><a href="#">&copy; {{ site.time | date: '%Y' }} &nbsp;{{site.author | upcase }}</a></li>
-          <br class="rwd-break" />
+          <li class="foot-copyr foot-nav-item"><a href="#">&copy; {{ site.time | date: '%Y' }} &nbsp;Raja Trucking</a><a class="foot-copyr-sub" href="#">LLC.</a></li>
 
+          <li class="foot-invisible"></li>
+          
           <div class="foot-float-right">
             {% if page.active == "home" %}
               <li class="foot-nav-item foot-nav-right active"><a href="{{ site.baseurl }}/home">Home</a></li>
@@ -28,5 +28,3 @@
             {% endif %}
           </div>
         </ul>
-
-      </div>
