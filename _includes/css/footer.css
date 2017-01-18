@@ -15,12 +15,24 @@ html, body { height: 100%; }
 .content { -ms-flex: 1; -webkit-flex: 1; flex: 1; }
 
 footer {
-  box-shadow: -6px 4px 2px 1px rgba(0, 0, 0, 0.8);
+
   background-color: #1D1F20;
   background-image: linear-gradient(145deg, #1D1F20);
   padding: .5rem 1rem;
   margin-top: 1em;
   width: 100%;
+  box-shadow:
+    0 -2px 2px 0 rgba(0,0,0,0.14),
+    0 -1px 5px 0 rgba(0,0,0,0.12),
+    0 -3px 1px -2px rgba(0,0,0,0.2);
+  -moz-box-shadow:
+    0 -2px 2px 0 rgba(0,0,0,0.14),
+    0 -1px 5px 0 rgba(0,0,0,0.12),
+    0 -3px 1px -2px rgba(0,0,0,0.2);
+  -webkit-box-shadow:
+    0 -2px 2px 0 rgba(0,0,0,0.14),
+    0 -1px 5px 0 rgba(0,0,0,0.12),
+    0 -3px 1px -2px rgba(0,0,0,0.2);
 }
 .foot-nav {
   list-style-type: none;
@@ -66,16 +78,6 @@ footer {
   visibility: hidden;
 }
 
-/*
-@media screen and (max-width: 709px) {
-  .foot-copyr { margin-right: 1em; }
-  .foot-nav-right { margin-right: .5em; }
-  .foot-nav-item a { font-size: .7rem; }
-}
-@media screen and (max-width: 500px) {
-  .foot-float-right { float: left; }
-}
-*/
 @media screen and (max-width: 250px) {
   .foot-nav-right {
     margin-right: .5em;
