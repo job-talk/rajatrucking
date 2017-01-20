@@ -6,53 +6,50 @@
 /**
  * Desktop | Navbar
  */
-.nav-desk {
-  display: block;
-  position: relative;
-  width: 100%;
-  height: 5em;
-  z-index: 99;
+.nav-desk-list {
   background-color: #FAFAFA !important;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  list-style: none;
+  width: 100%;
+  padding: 1em;
+  margin-bottom: 1em;
 }
-.nav-desk-list {
-  list-style-type: none;
-  margin-bottom: 0;
+.nav-desk-left {
+  align-self: flex-start;
+  margin: 0;
 }
 .nav-desk-title {
-  position: relative;
-  float: left;
-  margin-bottom: 0;
-  margin-left: 1rem;
-
   text-transform: uppercase;
-  font-size: 1.2em;
+  font-size: 1.4em;
   font-weight: 800;
   letter-spacing: .2rem;
   text-decoration: none;
-  line-height: 6.5rem;
   color: #111;
 }
 .nav-desk-title-sub {
-  font-size: .5em;
+  font-size: .7em;
   font-weight: 600;
-  margin-left: .5rem;
-  line-height: 6.7rem;
+  letter-spacing: normal;
+  margin-left: .5em;
+  /*transform: rotate(-90deg);*/
 }
-.nav-desk-item {
-  position: relative;
-  float: right;
-  margin-bottom: 0;
-}
+.nav-desk-invisible { flex: 1; visibility: hidden; margin-bottom: 0; }
+.nav-desk-item { align-self: flex-end; margin: 0; }
 .nav-desk-link {
   text-transform: uppercase;
   font-size: 1em;
   font-weight: 500;
   letter-spacing: .2rem;
-  margin-right: 2.19em; /* 35px */
+  margin-right: 2.19em;
+  margin-bottom: 0;
   text-decoration: none;
-  line-height: 6.5rem;
   color: #222;
+  margin-top: 0;
 }
 /*** end of Desktop | Navbar styles ***/
 
@@ -271,8 +268,6 @@
 
 .nav-desk-link {
   position: relative;
-  color: #000;
-  text-decoration: none;
 }
 
 .nav-desk-link:hover {

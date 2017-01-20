@@ -3,7 +3,7 @@
  * Media Queries
  */
 @media screen and (max-width: 781px) { /* mobile */
-  .nav-desk { display: none; /* hide desktop nav on mobile */ }
+.nav-desk-list { display: none; /* hide desktop nav on mobile */ }
   h1, h2, h3, h4 { letter-spacing: 0.01em !important; }
   p { margin: 0 0 0.75em; }
 }

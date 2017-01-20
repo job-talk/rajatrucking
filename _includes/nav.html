@@ -1,54 +1,55 @@
-      <nav class="nav-desk">
+
           <ul class="nav-desk-list">
-            <li class="nav-desk-title">
-              <a class="nav-desk-title" href="#">Raja Trucking</a><a class="nav-desk-title nav-desk-title-sub">LLC.</a>
-            </li>
-            {% if page.active == "contact" %}
-              <li class="nav-desk-item active">
-                <a class="nav-desk-link" href="{{ site.baseurl }}/contact">Contact Us</a>
-              </li>
-            {% else %}
-              <li class="nav-desk-item">
-                <a class="nav-desk-link" href="{{ site.baseurl }}/contact">Contact Us</a>
-              </li>
-            {% endif %}
-            {% if page.active == "services" %}
-              <li class="nav-desk-item active">
-                <a class="nav-desk-link" href="{{ site.baseurl }}/services">Services</a>
-              </li>
-            {% else %}
-              <li class="nav-desk-item">
-                <a class="nav-desk-link" href="{{ site.baseurl }}/services">Services</a>
-              </li>
-            {% endif %}
-            {% if page.active == "about" %}
-              <li class="nav-desk-item active">
-                <a class="nav-desk-link" href="{{ site.baseurl }}/about">About</a>
-              </li>
-            {% else %}
-              <li class="nav-desk-item">
-                <a class="nav-desk-link" href="{{ site.baseurl }}/about">About</a>
-              </li>
-            {% endif %}
-            {% if page.active == "home" %}
-              <li class="nav-desk-item active">
-                <a class="nav-desk-link" href="{{ site.baseurl }}/">Home</a>
-              </li>
-            {% else %}
-              <li class="nav-desk-item">
-                <a class="nav-desk-link" href="{{ site.baseurl }}/">Home</a>
-              </li>
-            {% endif %}
+            <a class="nav-desk-title" href="#">Raja Trucking</a>
+            <a class="nav-desk-title nav-desk-title-sub">LLC</a>
+
+            <li class="nav-desk-invisible"></li>
+              {% if page.active == "home" %}
+                <li class="nav-desk-item active">
+                  <a class="nav-desk-link" href="{{ site.baseurl }}/">Home</a>
+                </li>
+              {% else %}
+                <li class="nav-desk-item">
+                  <a class="nav-desk-link" href="{{ site.baseurl }}/">Home</a>
+                </li>
+              {% endif %}
+              {% if page.active == "about" %}
+                <li class="nav-desk-item active">
+                  <a class="nav-desk-link" href="{{ site.baseurl }}/about">About</a>
+                </li>
+              {% else %}
+                <li class="nav-desk-item">
+                  <a class="nav-desk-link" href="{{ site.baseurl }}/about">About</a>
+                </li>
+              {% endif %}
+              {% if page.active == "services" %}
+                <li class="nav-desk-item active">
+                  <a class="nav-desk-link" href="{{ site.baseurl }}/services">Services</a>
+                </li>
+              {% else %}
+                <li class="nav-desk-item">
+                  <a class="nav-desk-link" href="{{ site.baseurl }}/services">Services</a>
+                </li>
+              {% endif %}
+              {% if page.active == "contact" %}
+                <li class="nav-desk-item active">
+                  <a class="nav-desk-link" href="{{ site.baseurl }}/contact">Contact Us</a>
+                </li>
+              {% else %}
+                <li class="nav-desk-item">
+                  <a class="nav-desk-link" href="{{ site.baseurl }}/contact">Contact Us</a>
+                </li>
+              {% endif %}
           </ul>
-      </nav>
 
       <nav class="menu" id="menu">
         <div class="container">
           <ul class="menu-list">
 
-            <!--<li class="menu-title">
-              <a href="#">Raja Trucking</a><a class="menu-title-sub">LLC.</a>
-            </li>-->
+            <li class="menu-title">
+              <!--<a href="#">Raja Trucking</a><a class="menu-title-sub">LLC.</a>-->
+              <!--<img src="{{site.baseurl}}/assets/img/raja-favicon-color-whitebg.png" class="u-img-responsive" />-->
+            </li>
 
             {% if page.active == "home" %}
               <li class="active">

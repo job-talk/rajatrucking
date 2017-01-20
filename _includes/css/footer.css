@@ -67,7 +67,7 @@ footer {
 .foot-nav-right {
   margin-right: 1em;
   align-self: flex-end;
-    display: inline-block;
+  display: inline-block;
 }
 .foot-float-right {
   text-align: right;
