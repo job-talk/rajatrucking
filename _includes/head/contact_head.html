@@ -1,0 +1,38 @@
+<head>
+  
+  {% include head/common_head.html %}
+
+  <style type="text/css">
+    .map-respon {
+      position: relative;
+      padding-bottom: 56.25%;
+      padding-top: 30px;
+      height: 0;
+      overflow: hidden;
+    }
+    .map-respon iframe {
+      left: 0;
+      top: 0;
+      height: 100% !important;
+      width: 100% !important;
+      position: absolute;
+    }
+    .contact_wrapper {
+      display: flex;
+      display: -webkit-flex;
+      flex-flow: row wrap;
+    }
+    .contact_left_wrap {
+      flex: 1 1 auto;
+      -webkit-align-self: flex-start;
+      align-self: flex-start;
+    }
+    .contact_right_wrap {
+      flex: 3 0 350px;
+      -webkit-align-self: flex-end;
+      align-self: flex-end;
+    }
+    .ic-contact { margin-right: .5em; }
+  </style>
+
+</head>
