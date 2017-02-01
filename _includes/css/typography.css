@@ -1,8 +1,7 @@
 html {
   text-rendering: optimizeLegibility;
-          font-feature-settings: "liga", "kern";
   -webkit-font-feature-settings: "liga", "kern";
-  text-rendering: optimizeLegibility;
+  font-feature-settings: "liga", "kern";
 }
 /*
  * Body Text
@@ -14,21 +13,25 @@ h3, h4, .services_list, .bod_text {
   font-weight: 400;
 }
 h3 {
-	margin: 0;
 	font-size: 1.5em;
 	line-height: 1.0em;
   letter-spacing: .05em;
   margin-top: 0; margin-bottom: 1.0000em;
 }
 h4 {
-	margin: 0;
 	font-size: 1.250em;
 	line-height: 1.20em;
 	margin-top: 0; margin-bottom: 1.20em;
   letter-spacing: .125em;
 }
-.services_list { font-size: 1.1250em; line-height: 1.33em; margin-top: 1.33em; margin-bottom: 1.33em; }
+.services_list {
+  font-size: 1.1250em;
+  line-height: 1.33em;
+  margin-top: 1.33em;
+  margin-bottom: 1.33em; }
+
 .services_list li { list-style: none; }
+.services_list ul li { margin: 0 1em; }
 
 .bod_text {
   font-size: 1em;
@@ -37,7 +40,7 @@ h4 {
   padding: .5em .5em;
   margin: 0 0 1.5000em 0;
 }
-.services_list ul li { margin: 0 1em; }
+
 
 .llc {
   font-size: .7em;

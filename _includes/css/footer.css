@@ -12,10 +12,13 @@ html, body { height: 100%; }
   -webkit-flex-direction: column;
 	flex-direction: column;
 }
-.content { -ms-flex: 1; -webkit-flex: 1; flex: 1; }
+.content {
+  -ms-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+}
 
 footer {
-
   background-color: #1D1F20;
   background-image: linear-gradient(145deg, #1D1F20);
   padding: .5rem 1rem;
@@ -56,9 +59,10 @@ footer {
 
 .foot-nav-item { margin-bottom: 0; }
 .foot-nav-item a {
-  text-transform: uppercase;
-  text-decoration: none;
   color: #b3b2b2;
+
+  text-decoration: none;
+  text-transform: uppercase;
 
   font-weight: 400;
   font-size: .6em;
@@ -71,7 +75,6 @@ footer {
 }
 .foot-float-right {
   text-align: right;
-
 }
 .foot-invisible {
   flex: 1;

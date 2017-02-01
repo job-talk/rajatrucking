@@ -1,0 +1,43 @@
+
+/* Colours
+***********/
+
+// Global
+  $active: #4495d4;
+// Navbar Desktop
+  $nav-desk-bg: #FAFAFA;
+  $nav-desk-border:
+    0 2px 2px 0 rgba(0,0,0,0.14),
+    0 1px 5px 0 rgba(0,0,0,0.12),
+    0 3px 1px -2px rgba(0,0,0,0.2);
+
+  $nav-desk-title: #111;
+  $nav-desk-links: #222;
+  $nav-desk-link-before: $active;
+
+// Nav Mobile - Slideout Menu
+  $mob-nav-menu: #1D1F20;
+
+  $mob-menu-a: #FFF;
+  $mob-menu-i: $mob-menu-a;
+
+  $mob-panel_before-bg: rgba(0,0,0,0);
+  $mob-panel-open_before-bg: rgba(0,0,0,.5);
+
+// Nav Mobile - Navbar
+  $mob-nav-head-bg: $nav-desk-bg;
+  $mob-nav-head-shadow: $nav-desk-border;
+
+  $mob-nav-title: #444444;
+
+  $hamburger_after: #A5A5A5;
+  $toggle-float_hover: white;
+  $toggle-float_hover-bg: #555;
+
+  $hamburger-active-bg: #474747;
+
+  $hamburger-cancel-x: #000000;
+
+// Footer
+
+  $footer-bg: #1D1F20;

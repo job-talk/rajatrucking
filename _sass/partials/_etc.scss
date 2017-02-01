@@ -1,0 +1,42 @@
+
+
+// Mobile
+@media screen and (max-width: 781px) {
+  .nav-desk-list { display: none;
+  }
+  h3, h4 { letter-spacing: 0.01em;
+  }
+  p { margin: 0 0 0.75em;
+  }
+}
+// Desktop
+@media screen and (min-width: 782px) {
+  .nav-toggle { display: none;
+  }
+  .mob-nav-head-list { display: none;
+  }
+}
+
+main {
+  display: inline-block;
+}
+
+.content {
+  text-align: left;
+}
+
+.page_wrapper {
+  margin-top: 2em;
+
+  @media screen and (max-width: 550px) {
+    margin-top: 1.2em;
+  }
+
+  @media screen and (max-width: 450px) {
+    margin-top: 1em;
+  }
+
+  @media screen and (max-width: 350px) {
+    margin-top: .5em;
+  }
+}

@@ -1,0 +1,103 @@
+
+/* Sticky flexbox footer
+***********************/
+
+html, body {
+  height: 100%;
+}
+
+.page {
+  min-height: 100vh;
+  width: 100%;
+
+  @include flexbox-display-flex;
+  @include flexbox-direction-column;
+}
+
+.content {
+  -ms-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+}
+/* end of flex sticky footer */
+
+
+footer {
+  background-color: $footer-bg;
+  background-image: linear-gradient(145deg, $footer-bg);
+  @include foot-box-shadow;
+
+  width: 100%;
+
+  padding: .5rem 1rem;
+  margin-top: 1em;
+}
+
+.foot {
+  &-nav {
+    list-style-type: none;
+
+    @include flexbox-display-inline-flex;
+    flex-flow: row wrap;
+    align-items: center;
+
+    width: 100%;
+    margin-bottom: 0;
+
+    &-item {
+      margin-bottom: 0;
+
+      & a {
+        color: #B3B2B2;
+
+        text: {
+          decoration: none;
+          transform: uppercase;
+        }
+
+        font: {
+          size: .6em;
+          weight: 400;
+        }
+
+        letter-spacing: .1rem;
+      }
+    }
+
+    &-right {
+      display: inline-block;
+      align-self: flex-end;
+
+      margin-right: 1em;
+
+      @media screen and (max-width: 250px) {
+        margin-right: .5em;
+      }
+    }
+  }
+
+  &-copyr {
+    align-self: flex-start;
+
+    margin-right: 1.5em;
+
+    font-weight: 500;
+
+    &-sub {
+      margin-left: .5em;
+
+      font-size: .5em;
+    }
+  }
+
+
+
+  &-float-right {
+    text-align: right;
+  }
+
+  &-invisible {
+    flex: 1;
+    visibility: hidden;
+  }
+}

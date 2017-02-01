@@ -1,0 +1,244 @@
+
+
+
+/* Slideout menu
+****************/
+
+.menu {
+  background-color: $mob-nav-menu;
+  background-image: linear-gradient(145deg, $mob-nav-menu, #404348);
+
+  a {
+    color: $mob-menu-a;
+    line-height: 3;
+  }
+
+  i {
+    color: $mob-menu-i;
+  }
+
+  li.active i {
+    color: $active;
+  }
+}
+
+.menu-list {
+  margin: 25px 0;
+  list-style: none;
+
+  li {
+    @include flexbox-display-flex;
+
+    flex-flow: row nowrap;
+    align-items: center;
+
+    justify-content: space-between;
+    align-content: space-between;
+  }
+}
+
+.menu-invisible {
+  visibility: hidden;
+  flex-grow: 1;
+}
+
+.menu-link {
+  flex: 1 0 0;
+
+  margin-left: .8em;
+
+  text: {
+    align: left;
+    decoration: none;
+    transform: uppercase;
+  }
+
+  font-size: 2em;
+  letter-spacing: .1rem;
+  line-height: 1;
+}
+.panel:before {
+  content: '';
+  display: block;
+  background-color: $mob-panel_before-bg;
+  transition: background-color 0.5s ease-in-out;
+}
+.panel-open:before {
+  position: absolute;
+
+  top: 0;
+  bottom: 0;
+  width: 100%;
+
+  background-color: $mob-panel-open_before-bg;
+
+  z-index: 99;
+}
+
+/* Mob. Nav Bar
+**************/
+
+.mob-nav-head-list {
+  list-style: none;
+
+  width: 100%;
+
+  @include flexbox-display-inline-flex;
+  flex-flow: row nowrap;
+
+  align-items: center;
+  justify-content: space-between;
+
+  background-color: $mob-nav-head-bg;
+  @include box-shadow;
+  box-sizing: border-box;
+
+  padding: 1em .5em;
+  margin-bottom: 1em !important;
+
+  li {
+    margin-bottom: 0;
+  }
+}
+
+.mob-nav-title {
+  color: $mob-nav-title;
+
+  font: {
+    size: 2.1em;
+    weight: 800;
+  }
+
+  text: {
+    decoration: none;
+    transform: uppercase;
+  }
+
+  letter-spacing: .15em;
+
+  margin: auto;
+
+  &-sub{
+    font: {
+      size: 1em;
+      weight: 500;
+    }
+    padding-left: .1em;
+  }
+}
+
+.mob-nav-invisible {
+  flex: 0 1 auto;
+  visibility: hidden;
+}
+
+/* hamburger */
+
+.toggle-float {
+  float: left;
+  padding-left: 10px;
+}
+
+.hamburger {
+  // display: inline-block;
+  align-self: flex-start;
+
+  font-size: 2.1em;
+
+  margin: auto;
+  padding: 0;
+
+  width: 1em;
+  height: 1em;
+
+  cursor: pointer;
+  transition: transform .2s ease-in-out;
+  border: 0 none;
+  background: transparent;
+
+  &:before,
+  &:after {
+    content: "";
+  }
+
+  &:before,
+  & .icon,
+  &:after {
+    display: block;
+    width: 100%;
+    height: .2em;
+
+    margin: 0 0 .2em;
+    transition: transform .2s ease-in-out;
+    border-radius: .05em;
+    background: $hamburger_after;
+  }
+
+  &:hover:before,
+  &:hover .icon,
+  &:hover:after {
+    background: $toggle-float_hover;
+  }
+  //styles for the active `.hamburger` icon
+  &.active:before,
+  &.active .icon,
+  &.active:after {
+    background: $hamburger-active-bg;
+  }
+
+  // Button height fix for Firefox
+  &::-moz-focus-inner {
+    padding: 0;
+    border: 0 none;
+  }
+
+  // Focus fix for Chrome
+  &:focus {
+    outline: 0;
+  }
+
+  // CLOSE/CANCEL/CROSS
+  &.hambuger-cancel.active .icon {
+    transform: scale(0);
+    color: $hamburger-cancel-x;
+  }
+  &.hambuger-cancel.active:before {
+    transform: translateY(.4em) rotate(135deg);
+  }
+  &.hambuger-cancel.active:after {
+    transform: translateY(.4em) rotate(135deg);
+  }
+}
+
+
+@media screen and (max-width: 781px) {
+  .mob-nav-title { font-size: 2.2em; }
+  .mob-nav-title-sub { font-size: .9em; }
+  .hamburger { font-size: 1.9em; }
+}
+@media screen and (max-width: 750px) {
+  .mob-nav-title { font-size: 2.1em; }
+  .mob-nav-title-sub { font-size: .8em; }
+  .hamburger { font-size: 1.7em; }
+}
+@media screen and (max-width: 550px) {
+  .mob-nav-title { font-size: 1.9em; letter-spacing: .13em; }
+  .mob-nav-title-sub { font-size: .7em;}
+  .hamburger { font-size: 1.5em; }
+}
+@media screen and (max-width: 400px) {
+  .mob-nav-title { font-size: 1.6em; }
+  .mob-nav-title-sub { font-size: .6em; }
+  .hamburger { font-size: 1.3em; }
+}
+@media screen and (max-width: 350px) {
+  .mob-nav-title { font-size: 1.5em; }
+  .mob-nav-title-sub { font-size: .5em;}
+  .hamburger { font-size: 1.1em; }
+}
+@media screen and (max-width: 275px) {
+  .mob-nav-title { font-size: 1.3em; }
+  .mob-nav-title-sub { font-size: .4em;}
+  .hamburger { font-size: 1em; }
+  .toggle-float { padding-left: 5px;}
+}

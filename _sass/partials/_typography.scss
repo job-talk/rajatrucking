@@ -1,0 +1,73 @@
+
+html {
+  text-rendering: optimizeLegibility;
+  -webkit-font-feature-settings: "liga", "kern";
+  font-feature-settings: "liga", "kern";
+}
+
+/* Body Text
+**************/
+
+h3, h4, .services_list, .bod_text {
+  marign: 0;
+
+  font: {
+    size: 1em;
+    style: normal;
+    weight: 400;
+  }
+}
+
+h3 {
+  font-size: 1.5em;
+  line-height: 1.0em;
+  letter-spacing: .05em;
+
+  margin: {
+    bottom: 1.0000em;
+    top: 0;
+  }
+}
+
+h4 {
+  font-size: 1.250em;
+  line-height: 1.20em;
+  letter-spacing: .125em;
+
+  margin: {
+    bottom: 1.20em;
+    top: 0;
+  }
+}
+
+.services_list {
+  font-size: 1.1250em;
+  line-height: 1.33em;
+
+  margin: {
+    bottom: 1.33em;
+    top: 1.33em;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  ul li {
+    margin: 0 1em;
+  }
+}
+
+.bod_text {
+  font-size: 1em;
+  line-height: 1.50em;
+  letter-spacing: 0.075em;
+
+  padding: .5em;
+
+  margin: 0 0 1.5000em 0;
+}
+
+.llc {
+  font-size: .7em;
+}

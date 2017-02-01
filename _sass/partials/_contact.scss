@@ -1,0 +1,141 @@
+ul {
+  list-style: none;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+
+#content {
+  @include flexbox-display-flex;
+  flex-flow: row wrap;
+
+  margin-bottom: 1em;
+  border: 1px dotted orange;
+
+  & #left, & #right {
+    height: 100%;
+    border: 1px solid green;
+  }
+
+  & #left {
+    border: 1px solid red;
+
+    padding: 0 10px;
+
+    -webkit-flex: 2 0 0;
+            flex: 2 0 0;
+    -webkit-align-self: flex-start;
+            align-self: flex-start;
+
+    min-width: 66.66%;
+
+    @media screen and (max-width: 900px) {
+      min-width: 100%;
+      margin-bottom: 1em;
+    }
+
+    & #map {
+      margin: {
+        left: 0;
+        right: 0;
+      }
+
+      & p {
+        text-transform: uppercase;
+        padding: {
+          //top: 20px;
+          left: 20px;
+        }
+        margin-bottom: .5em;
+        font: {
+          size: 0.9em;
+          weight: 600;
+        }
+      }
+    }
+  }
+
+  & #right {
+    font-size: 0.75em;
+    padding: 0 10px;
+
+    -webkit-flex: 1 0 0;
+            flex: 1 0 0;
+    -webkit-align-self: flex-end;
+            align-self: flex-end;
+
+    & p {
+      margin-bottom: 10px;
+      text-transform: uppercase;
+
+      &.other {
+        font: {
+          size: 0.7;
+          weight: 100;
+        }
+        margin-bottom: 5px;
+        text-transform: lowercase;
+
+        &,
+        & a {
+          color: #444;
+        }
+        & a:hover {
+         color: #4495D4;
+        }
+      }
+    }
+
+    & a:hover {
+      color: #4495D4;
+    }
+
+    & form {
+      border-bottom: solid thin #8E9699;
+
+      & input:last-of-type,
+      & textarea:last-of-type {
+        margin-bottom: 0;
+      }
+
+      & input[type='submit'],
+      & textarea[type='submit'] {
+        text-transform: uppercase;
+        width: 50%;
+        margin: {
+          //top: 5px;
+          bottom: 1em;
+        }
+        padding: 0;
+      }
+
+      & input[type='email'],
+      & input[type='text'],
+      & input[type='textarea'] {
+        color: #444;
+      }
+
+      & input[type='textarea'],
+      & textarea[type='textarea'] {
+        min-height: 75px;
+        vertical-align: text-top;
+      }
+    }
+  }
+}
+
+.right_title {
+  font: {
+    size: 0.9em;
+    weight: 600;
+  }
+}
+
+.con_text,
+#content #right form textarea {
+  padding: 8px;
+  margin-bottom: 8px;
+  width: 100%;
+  color: #444;
+}
