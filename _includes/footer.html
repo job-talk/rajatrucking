@@ -4,12 +4,12 @@
           <li class="foot-copyr foot-nav-item"><a href="#">&copy; {{ site.time | date: '%Y' }} &nbsp;Raja Trucking</a><a class="foot-copyr-sub" href="#">LLC.</a></li>
 
           <li class="foot-invisible"></li>
-          
+
           <div class="foot-float-right">
             {% if page.active == "home" %}
-              <li class="foot-nav-item foot-nav-right active"><a href="{{ site.baseurl }}/home">Home</a></li>
+              <li class="foot-nav-item foot-nav-right active"><a href="{{ site.baseurl }}/">Home</a></li>
             {% else %}
-              <li class="foot-nav-item foot-nav-right"><a href="{{ site.baseurl }}/home">Home</a></li>
+              <li class="foot-nav-item foot-nav-right"><a href="{{ site.baseurl }}/">Home</a></li>
             {% endif %}
             {% if page.active == "about" %}
               <li class="foot-nav-item foot-nav-right active"><a href="{{ site.baseurl }}/about">About</a></li>

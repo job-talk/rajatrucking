@@ -33,13 +33,13 @@ layout: contact
 
       </form>
 
-      <p>other way</p>
+      <p id="get_contact">other way</p>
       <script>
         var eml = 'raja' + 'trucking' + 'llc' + '@' + 'sbc' + 'global' + '.net';
 
         document.write(' <div itemscope itemtype="http://schema.org/LocalBusiness"> '
          + '<p class="other">'
-         + '<i class="fa fa-envelope ic-contact" aria-hidden="true"></i>'
+         + '<i class="fa fa-envelope fa-fw ic-contact" aria-hidden="true"></i>'
          + '<span itemprop="email">'
          + '<a href="mai' + 'lto:' + eml +'">' + eml + '</a>'
          + '</span>' + '</p>' + '</div>');
@@ -52,8 +52,8 @@ layout: contact
 
         document.write(' <div itemscope itemtype="http://schema.org/LocalBusiness"> '
          + '<p class="other">'
-         + '<i class="fa fa-phone ic-contact" aria-hidden="true"></i>'
-         + '<i>Phone #:</i>' + ' ' + '<span itemprop="telephone">'
+         + '<i class="fa fa-phone fa-fw ic-contact" aria-hidden="true"></i>'
+         /* + '<i>Phone #:</i>'*/ + '<span itemprop="telephone">'
          + '<a href="' + 'tel:' + pho_mat + '">' + pho + '</a>'
          + '</span>' + '</p>' +'</div>');
       </script>
@@ -64,19 +64,21 @@ layout: contact
 
         document.write('<div itemscope itemtype="http://schema.org/LocalBusiness">'
          + '<p class="other">'
-         + '<i class="fa fa-fax ic-contact" aria-hidden="true"></i>'
-         + '<i>Fax #:</i>' + ' ' + '<span itemprop="faxNumber">'
+         + '<i class="fa fa-fax fa-fw ic-contact" aria-hidden="true"></i>'
+         /* + '<i>Fax #:</i>'*/ + '<span itemprop="faxNumber">'
          + '<a href="' + 'fax:' + fax_mat + '">' + fax + '</a>'
          + '</span>' + '</p>' + '</div>');
       </script>
 
       <script>
-        var adr = '2555' + ' ' + 'Bluemound' + ' ' + 'Rd.' + ' ' + 'West' + '<br />' + ' ' + 'Haslet,' + ' ' + 'TX' + ' ' + '76052';
+        var adr = '2555' + ' ' + 'Bluemound' + ' ' + 'Rd.' + ' ' + 'West' + '<br />' + ' ' + 'Haslet,' + ' ' + '<abbr title="Texas">TX</abbr>' + ' ' + '76052' + ' ' +'USA';
 
+        var goog_adr = 'https://' + 'www.' + 'google.com/maps/place/' + '2555+Blue+Mound' + '+Rd+W,' + '+Haslet,+TX+76052/';
         document.write('<div itemscope itemtype="http://schema.org/LocalBusiness">'
+        + '<p class="other">'
         + '<span itemprop="streetAddress">'
-        + '<i class="fa fa-map-marker ic-contact" aria-hidden="true"></i>'
-        + adr + '</span>' + '</div>');
+        + '<i class="fa fa-map-marker fa-fw ic-contact" aria-hidden="true"></i>'
+        + '<a href="' + goog_adr+ '">' + adr + '</a>' + '</span>' + '</p>' + '</div>');
       </script>
   </div>
 </div>

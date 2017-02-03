@@ -1,0 +1,95 @@
+.hero_carousel {
+  margin-bottom: 80px;
+
+  background: #FAFAFA url('http://i.imgur.com/R60qKwS.jpg');
+  background-size: cover;
+
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.hero-carousel__cell {
+  min-width: 100%;
+  min-height: 100%;
+  //height: 240px;
+  color: white;
+  background: #ED2;
+  background: #EFCE36;
+
+  @media screen and (min-width: 768px) {
+    //height: 440px;
+  }
+
+}
+.hero-carousel__cell__content {
+  padding: 20px 60px 0;
+  max-width: 1000px;
+  max-height: 100%;
+  margin: 0 auto;
+  position: relative;
+
+
+}
+
+.hero-carousel__cell--1 {
+  background: #ED2;
+  background: #EFCE36;
+}
+.hero-carousel__cell--2 {
+  //background: #88CC88;
+  background: #88CC88 url('/assets/img/trucks/blue_2.JPG') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.hero-carousel__cell--3 {
+  background: #EE9900;
+  background: #EE9900 url('/assets/img/trucks/blue_2.JPG') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.hero-carousel__cell--4 {
+ background: #EE55AA;
+ background: #EE55AA url('/assets/img/trucks/blue_2.JPG') no-repeat center center fixed;
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ background-size: cover;
+}
+
+.hero-carousel h1 {
+  font-size: 3.2rem;
+  line-height: 1.0;
+  margin: 0;
+  padding-top: 40px;
+}
+
+.hero-illustration {
+  display: block;
+  //width: 100%;
+  max-width: 100%;
+  height: auto;
+  //max-width: 200px;
+  margin: 0 auto;
+
+  @media screen and (min-width: 960px) {
+    //max-width: 400px;
+    //top: 20px;
+  }
+  @media screen and (min-width: 768px) {
+    //top: 80px;
+  }
+  @media screen and (min-width: 500px) {
+    //position: absolute;
+    //right: 60px;
+    //top: 20px;
+  }
+}
+
+.hero-img-1 {
+  background: #FAFAFA url('http://i.imgur.com/R60qKwS.jpg');
+  background-size: cover;
+}
