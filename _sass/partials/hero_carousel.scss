@@ -1,3 +1,4 @@
+
 .hero_carousel {
   margin-bottom: 40px;
 
@@ -30,7 +31,7 @@
 }
 .hero-carousel__cell--2 {
   //background: #88CC88;
-  background: url('/assets/img/trucks/blue_2.JPG') no-repeat center center fixed;
+  background: url($baseurl + '/assets/img/trucks/blue_2.JPG') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -40,7 +41,7 @@
 }
 .hero-carousel__cell--3 {
   background: #EE9900;
-  background: url('/assets/img/trucks/blue_2.JPG') no-repeat center center fixed;
+  background: url($baseurl + '/assets/img/trucks/blue_2.JPG') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -48,7 +49,7 @@
 }
 .hero-carousel__cell--4 {
  background: #EE55AA;
- background: url('/assets/img/trucks/blue_2.JPG') no-repeat center center fixed;
+ background: url($baseurl + '/assets/img/trucks/blue_2.JPG') no-repeat center center fixed;
  -webkit-background-size: cover;
  -moz-background-size: cover;
  -o-background-size: cover;
