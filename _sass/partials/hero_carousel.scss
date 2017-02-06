@@ -2,17 +2,28 @@
 .hero_carousel {
   margin-bottom: 40px;
 
-  background: #FAFAFA url('http://i.imgur.com/R60qKwS.jpg');
+  background: #1D1F20; //url('https://i.imgur.com/R60qKwS.jpg');
   background-size: cover;
 
   min-width: 100%;
-  min-height: 100%;
+  //min-height: 100%;
+  height: 450px;
+
+  @media screen and (max-width: 1200px) {
+    height: 450px;
+  }
+  @media screen and (max-width: 1000px) {
+    height: 400px;
+  }
+  @media screen and (max-width: 750px) {
+    min-height: 100%;
+  }
 }
 
 .hero-carousel__cell {
   min-width: 100%;
-  min-height: 100%;
-  height: 240px;
+  //min-height: 100%;
+  //height: 240px;
 
   color: white;
   background: #EFCE36;
@@ -23,11 +34,30 @@
   padding: 1.25em 3.75em 0;
   margin: 0 auto;
   position: relative;
+
+  line-height: 1.0;
+  margin: 0;
+  //padding-top: 40px;
+  padding: auto;
+  margin: auto;
+
+  & h1 {
+    font-size: 6em;
+    @media screen and (max-width: 750px) {
+      font-size: 5em;
+    }
+    @media screen and (max-width: 550px) {
+      font-size: 4em;
+    }
+    @media screen and (max-width: 450px) {
+      font-size: 3.5em;
+    }
+  }
 }
 
 .hero-carousel__cell--1 {
   background: #EFCE36;
-
+  height: 100%;
 }
 .hero-carousel__cell--2 {
   //background: #88CC88;
@@ -46,6 +76,8 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+
+  height: 100%;
 }
 .hero-carousel__cell--4 {
  background: #EE55AA;
@@ -54,50 +86,45 @@
  -moz-background-size: cover;
  -o-background-size: cover;
  background-size: cover;
+
+ height: 100%;
 }
 
-.hero-carousel h1 {
-  font-size: 2.8em;
-  line-height: 1.0;
-  margin: 0;
-  //padding-top: 40px;
-  padding: auto;
-  margin: auto;
-
-  @media screen and (max-width: 750px) {
-    font-size: 1.7em;
-  }
-  @media screen and (max-width: 550px) {
-    font-size: 1.3em;
-  }
-  @media screen and (max-width: 450px) {
-    font-size: 1em;
-  }
-}
 
 .hero-illustration {
   display: block;
-  //width: 100%;
   max-width: 100%;
   height: auto;
-  //max-width: 200px;
+  max-width: 200px;
   margin: 0 auto;
+  border: 1px solid red;
 
-  @media screen and (min-width: 960px) {
+  position: absolute;
+  right: 60px;
+
+  @media screen and (min-width: 1201px) {
+    max-width: 300px;
+    top: 130px;
+  }
+  @media screen and (max-width: 1200px) {
     //max-width: 400px;
-    //top: 20px;
+    top: 150px;
+    right: 0px;
+    left: 200px;
   }
-  @media screen and (min-width: 768px) {
-    //top: 80px;
-  }
-  @media screen and (min-width: 500px) {
-    //position: absolute;
-    //right: 60px;
-    //top: 20px;
-  }
-}
+  @media screen and (max-width: 1000px) {
 
-.hero-img-1 {
-  background: #FAFAFA url('http://i.imgur.com/R60qKwS.jpg');
-  background-size: cover;
+  }
+  @media screen and (max-width: 900px) {
+    top: 30px;
+  }
+  @media screen and (max-width: 750px) {
+
+  }
+  @media screen and (max-width: 500px) {
+    top: 20px;
+  }
+  @media screen and (max-width: 450px) {
+
+  }
 }

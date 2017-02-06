@@ -13,10 +13,10 @@
   margin-bottom: 1em;
 }
 
-.nav-desk-left {
+/*.nav-desk-left {
   align-self: flex-start;
   margin: 0;
-}
+}*/
 
 .nav-desk-title {
   text: {
@@ -35,7 +35,7 @@
 
 .nav-desk-title-sub {
   font: {
-    size: .7em;
+    size: .5em; //7em
     weight: 600;
   }
   letter-spacing: normal;

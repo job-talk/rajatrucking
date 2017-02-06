@@ -13,6 +13,7 @@
   a {
     color: $mob-menu-a;
     line-height: 3;
+
   }
 
   i {
@@ -36,6 +37,13 @@
 
     justify-content: space-between;
     align-content: space-between;
+
+    &.active {
+      //background: white;
+      a.menu-link {
+        color: $active;
+      }
+    }
   }
 }
 
