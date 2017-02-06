@@ -7,26 +7,27 @@ a {
 }
 
 #content {
+  font-size: 1em;
   @include flexbox-display-flex;
   flex-flow: row wrap;
 
   margin-bottom: 1em;
-  border: 1px dotted orange;
+  //border: 1px dotted orange;
 
   & #left, & #right {
-    height: 100%;
-    border: 1px solid green;
+    //height: 100%;
+    //border: 1px solid green;
   }
 
   & #left {
-    border: 1px solid red;
+    //border: 1px solid red;
 
     padding: 0 10px;
 
+    display: flex;
+    flex-flow: column nowrap;
     -webkit-flex: 2 0 0;
             flex: 2 0 0;
-    -webkit-align-self: flex-start;
-            align-self: flex-start;
 
     min-width: 66.66%;
 
@@ -40,71 +41,46 @@ a {
         left: 0;
         right: 0;
       }
-      align-content: center;
-
-      & p {
+      & #goog-map-contain {
+        //border: 3px solid pink;
+        //margin-top: auto;
+        margin-bottom: .3em;
+      }
+      & #map-title {
         text-transform: uppercase;
-        padding: {
-          //top: 20px;
-          //left: 20px;
+        margin: {
+          bottom: .5em;
+          top: 0;
         }
-        margin-bottom: .5em;
         font: {
           size: 1.3em;
-          weight: 600;
+          weight: 500;
         }
 
+        //border: 1px solid blue;
         @media screen and (max-width: 900px) {
+          letter-spacing: 0.05em;
           font: {
             size: 1.5em;
             weight: 600;
           }
         }
       }
+
     }
   }
 
   & #right {
-    font-size: 0.75em;
+    //font-size: 0.75em;
     padding: 0 10px;
 
     -webkit-flex: 1 0 0;
             flex: 1 0 0;
-    -webkit-align-self: flex-end;
-            align-self: flex-end;
+    //-webkit-align-self: flex-end;
+    //        align-self: flex-end;
 
     & p {
       margin-bottom: 10px;
-      //text-transform: uppercase;
-
-      &.other {
-        font: {
-          size: 1.1em;
-          weight: 300;
-        }
-        line-height: 1.8;
-        margin-bottom: 5px;
-        //text-transform: lowercase;
-
-        @media screen and (max-width: 900px) {
-          font: {
-            size: 1.3em;
-            weight: 200;
-          }
-        }
-
-        &,
-        & a {
-          color: #444;
-        }
-        & a:hover {
-         color: #4495D4;
-        }
-      }
-    }
-
-    & a:hover {
-      color: #4495D4;
     }
 
     & form {
@@ -120,12 +96,12 @@ a {
       & input[type='submit'],
       & textarea[type='submit'] {
         text-transform: uppercase;
-        //width: 50%;
+
         margin: {
           top: 1em;
           bottom: 2em;
         }
-        //padding: 0;
+
       }
 
       & input[type='email'],
@@ -141,16 +117,44 @@ a {
       }
     }
   }
+
+  & p.other {
+    font: {
+      size: .8em;
+      weight: 300;
+    }
+    line-height: 1.8;
+    margin-bottom: 5px;
+    //text-transform: lowercase;
+
+    @media screen and (max-width: 900px) {
+      font: {
+        size: 1.2em;
+        weight: 200;
+      }
+    }
+
+    &,
+    & a {
+      color: #444;
+    }
+    & a:hover {
+     color: #4495D4;
+    }
+  }
+
 }
 
-.right_title {
+#right-title {
+  letter-spacing: 0.02em;
   font: {
     size: 1.3em;
-    weight: 600;
+    weight: 500;
   }
   text-transform: uppercase;
 
   @media screen and (max-width: 900px) {
+    letter-spacing: 0.05em;
     font: {
       size: 1.5em;
       weight: 600;
@@ -158,24 +162,26 @@ a {
   }
 }
 
-.con_text,
+.con-text,
 #content #right form textarea {
   padding: 8px;
   margin-bottom: 8px;
   width: 100%;
-  color: #444;
+  //color: #444;
 }
 
-#get_contact {
-
+#contact-other {
+  letter-spacing: 0.01em;
   text-transform: uppercase !important;
   font: {
     size: 1.2em;
+    weight: 500;
   }
   @media screen and (max-width: 900px) {
+    letter-spacing: 0.03em;
     font: {
-      size: 1.4em;
-      weight: 500;
+      size: 1.35em;
+      weight: 600;
     }
   }
 }

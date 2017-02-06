@@ -1,5 +1,5 @@
 .hero_carousel {
-  margin-bottom: 80px;
+  margin-bottom: 40px;
 
   background: #FAFAFA url('http://i.imgur.com/R60qKwS.jpg');
   background-size: cover;
@@ -11,41 +11,36 @@
 .hero-carousel__cell {
   min-width: 100%;
   min-height: 100%;
-  //height: 240px;
+  height: 240px;
+
   color: white;
-  background: #ED2;
   background: #EFCE36;
-
-  @media screen and (min-width: 768px) {
-    //height: 440px;
-  }
-
 }
 .hero-carousel__cell__content {
-  padding: 20px 60px 0;
   max-width: 1000px;
-  max-height: 100%;
+
+  padding: 1.25em 3.75em 0;
   margin: 0 auto;
   position: relative;
-
-
 }
 
 .hero-carousel__cell--1 {
-  background: #ED2;
   background: #EFCE36;
+
 }
 .hero-carousel__cell--2 {
   //background: #88CC88;
-  background: #88CC88 url('/assets/img/trucks/blue_2.JPG') no-repeat center center fixed;
+  background: url('/assets/img/trucks/blue_2.JPG') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+
+  height: 100%;
 }
 .hero-carousel__cell--3 {
   background: #EE9900;
-  background: #EE9900 url('/assets/img/trucks/blue_2.JPG') no-repeat center center fixed;
+  background: url('/assets/img/trucks/blue_2.JPG') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -53,7 +48,7 @@
 }
 .hero-carousel__cell--4 {
  background: #EE55AA;
- background: #EE55AA url('/assets/img/trucks/blue_2.JPG') no-repeat center center fixed;
+ background: url('/assets/img/trucks/blue_2.JPG') no-repeat center center fixed;
  -webkit-background-size: cover;
  -moz-background-size: cover;
  -o-background-size: cover;
@@ -61,10 +56,22 @@
 }
 
 .hero-carousel h1 {
-  font-size: 3.2rem;
+  font-size: 2.8em;
   line-height: 1.0;
   margin: 0;
-  padding-top: 40px;
+  //padding-top: 40px;
+  padding: auto;
+  margin: auto;
+
+  @media screen and (max-width: 750px) {
+    font-size: 1.7em;
+  }
+  @media screen and (max-width: 550px) {
+    font-size: 1.3em;
+  }
+  @media screen and (max-width: 450px) {
+    font-size: 1em;
+  }
 }
 
 .hero-illustration {
