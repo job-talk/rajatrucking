@@ -21,7 +21,9 @@ a {
   //border: 1px dotted orange;
 
   & #left,
-  & #right { //border: 1px solid green; }
+  & #right {
+    //border: 1px solid green;
+  }
 
   & #left {
     padding: 0 10px;
@@ -117,7 +119,7 @@ a {
 
         min-height: 75px;
       }
-    }
+    } // end of #form
   } // end of #right
 
   & p.other {
@@ -191,4 +193,6 @@ a {
   }
 }
 
-#gotcha { display: none; }
+#gotcha {
+  display: none;
+}
