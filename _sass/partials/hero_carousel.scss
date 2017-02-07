@@ -2,12 +2,12 @@
 .hero_carousel {
   margin-bottom: 40px;
 
-  background: #1D1F20; //url('https://i.imgur.com/R60qKwS.jpg');
-  background-size: cover;
-
   min-width: 100%;
   //min-height: 100%;
   height: 450px;
+
+  background: #1D1F20; //url('https://i.imgur.com/R60qKwS.jpg');
+  background-size: cover;
 
   @media screen and (max-width: 1200px) {
     height: 450px;
@@ -29,20 +29,20 @@
   background: #EFCE36;
 }
 .hero-carousel__cell__content {
-  max-width: 1000px;
-
+  position: relative;
   padding: 1.25em 3.75em 0;
   margin: 0 auto;
-  position: relative;
+  //padding-top: 40px;
+  //padding: auto;
+  //margin: auto;
+
+  max-width: 1000px;
 
   line-height: 1.0;
-  margin: 0;
-  //padding-top: 40px;
-  padding: auto;
-  margin: auto;
 
   & h1 {
     font-size: 6em;
+
     @media screen and (max-width: 750px) {
       font-size: 5em;
     }
@@ -56,61 +56,65 @@
 }
 
 .hero-carousel__cell--1 {
-  background: #EFCE36;
   height: 100%;
+
+  background: #EFCE36;
 }
 .hero-carousel__cell--2 {
+  height: 100%;
+
   //background: #88CC88;
   background: url($baseurl + '/assets/img/trucks/blue_2.JPG') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-
-  height: 100%;
 }
 .hero-carousel__cell--3 {
+  height: 100%;
+
   background: #EE9900;
   background: url($baseurl + '/assets/img/trucks/blue_2.JPG') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-
-  height: 100%;
 }
 .hero-carousel__cell--4 {
- background: #EE55AA;
- background: url($baseurl + '/assets/img/trucks/blue_2.JPG') no-repeat center center fixed;
- -webkit-background-size: cover;
- -moz-background-size: cover;
- -o-background-size: cover;
- background-size: cover;
+  height: 100%;
 
- height: 100%;
+  background: #EE55AA;
+  background: url($baseurl + '/assets/img/trucks/blue_2.JPG') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
-
 .hero-illustration {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  max-width: 200px;
-  margin: 0 auto;
-  border: 1px solid red;
-
   position: absolute;
+  margin: 0 auto;
   right: 60px;
 
+  display: block;
+  max-width: 100%;
+  //max-width: 200px;
+  height: auto;
+
+  border: 1px solid red;
+
+
   @media screen and (min-width: 1201px) {
-    max-width: 300px;
     top: 130px;
+
+    max-width: 300px;
   }
   @media screen and (max-width: 1200px) {
-    //max-width: 400px;
     top: 150px;
     right: 0px;
     left: 200px;
+
+    //max-width: 400px;
   }
   @media screen and (max-width: 1000px) {
 

@@ -2,9 +2,9 @@
 layout: contact
 ---
 
-<div id='content'>
-    <div id='left'>
-      <div id='map'>
+<div id="content">
+    <div id="left">
+      <div id="map">
         <p id="map-title">Where To Find Us</p>
 
         <div id="goog-map-contain">
@@ -28,20 +28,20 @@ layout: contact
 
     </div>
 
-  <div id='right'>
+  <div id="right">
       <form id="contact-form" action="https://formspree.io/" method="POST">
 
         <p id="right-title">Get in Contact</p>
 
-        <input class="con-text" id="name" type="text" name="name" placeholder='Name'/>
-        <input class="con-text" id="_replyto" type='email' name="_replyto" placeholder='Email'>
-        <input class="con-text" id="subject" name="subject" type='text' placeholder='Subject' >
-        <textarea id="messages" name="message" placeholder='Message' rows='4'></textarea>
-        <input class="button-primary" value="Send" type='submit'>
+        <input class="con-text" id="name" name="name" type="text" placeholder="Name"/>
+        <input class="con-text" id="_replyto" name="_replyto" type="email" placeholder="Email" />
+        <input class="con-text" id="subject" name="subject" type="text" placeholder="Subject" />
+        <textarea id="messages" name="message" type="textarea" placeholder="Message" rows="4"></textarea>
+        <input class="button-primary" value="Send" type="submit">
 
-        <input type="hidden" name="_subject" value="Website contact form" />
-        <input type="text" name="_gotcha" style="display:none" />
-        <input type="hidden" name="_format" value="plain" />
+        <input name="_subject" type="hidden" value="Website contact form" />
+        <input id="gotcha" name="_gotcha" type="text" />
+        <input name="_format" type="hidden" value="plain" />
 
       </form>
 

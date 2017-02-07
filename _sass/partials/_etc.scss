@@ -2,28 +2,24 @@
 
 // Mobile
 @media screen and (max-width: 781px) {
-  .nav-desk-list { display: none;
-  }
-  h3, h4 { letter-spacing: 0.01em;
-  }
-  p { margin: 0 0 0.75em;
-  }
+  .nav-desk-list { display: none; }
+
+  h3,
+  h4 { letter-spacing: 0.01em; }
+
+  p { margin: 0 0 0.75em; }
 }
+
 // Desktop
 @media screen and (min-width: 782px) {
-  .nav-toggle { display: none;
-  }
-  .mob-nav-head-list { display: none;
-  }
+  .nav-toggle { display: none; }
+
+  .mob-nav-head-list { display: none; }
 }
 
-main {
-  display: inline-block;
-}
+main { display: inline-block; }
 
-.content {
-  text-align: left;
-}
+.content { text-align: left; }
 
 /*.page_wrapper {
   margin-top: 2em;

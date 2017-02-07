@@ -8,8 +8,11 @@ html {
 /* Body Text
 **************/
 
-h3, h4, .services_list, .bod_text {
-  marign: 0;
+h3,
+h4,
+.services_list,
+.bod_text {
+  margin: 0;
 
   font: {
     size: 1em;
@@ -19,55 +22,48 @@ h3, h4, .services_list, .bod_text {
 }
 
 h3 {
-  font-size: 1.5em;
-  line-height: 1.0em;
-  letter-spacing: .05em;
-
   margin: {
     bottom: 1.0000em;
     top: 0;
   }
+
+  font-size: 1.5em;
+  line-height: 1.0em;
+  letter-spacing: .05em;
 }
 
 h4 {
-  font-size: 1.250em;
-  line-height: 1.20em;
-  letter-spacing: .125em;
-
   margin: {
     bottom: 1.20em;
     top: 0;
   }
+
+  font-size: 1.250em;
+  line-height: 1.20em;
+  letter-spacing: .125em;
 }
 
 .services_list {
-  font-size: 1.1250em;
-  line-height: 1.33em;
-
   margin: {
     bottom: 1.33em;
     top: 1.33em;
   }
 
-  li {
-    list-style: none;
-  }
+  font-size: 1.1250em;
+  line-height: 1.33em;
 
-  ul li {
-    margin: 0 1em;
-  }
+  li { list-style: none; }
+
+  ul li { margin: 0 1em; }
 }
 
 .bod_text {
+  padding: .5em;
+  margin: 0 0 1.5000em 0;
+
   font-size: 1em;
   line-height: 1.50em;
   letter-spacing: 0.075em;
-
-  padding: .5em;
-
-  margin: 0 0 1.5000em 0;
 }
 
-.llc {
-  font-size: .7em;
-}
+.llc { font-size: .7em; }
