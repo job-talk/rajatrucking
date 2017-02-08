@@ -6,7 +6,7 @@
   //min-height: 100%;
   height: 450px;
 
-  background: #1D1F20; //url('https://i.imgur.com/R60qKwS.jpg');
+  background: #1d1f20; //url('https://i.imgur.com/R60qKwS.jpg');
   background-size: cover;
 
   @media screen and (max-width: 1200px) {
@@ -25,8 +25,8 @@
   //min-height: 100%;
   //height: 240px;
 
-  color: white;
-  background: #EFCE36;
+  color: #fff;
+  background: #efce36;
 }
 .hero-carousel__cell__content {
   position: relative;
@@ -42,6 +42,8 @@
 
   & h1 {
     font-size: 6em;
+    letter-spacing: -2px;
+    text-shadow: 4px 3px 0 #efce36, 9px 8px 0 rgba(0,0,0,0.15);
 
     @media screen and (max-width: 750px) {
       font-size: 5em;
@@ -58,12 +60,12 @@
 .hero-carousel__cell--1 {
   height: 100%;
 
-  background: #EFCE36;
+  background: #efce36;
 }
 .hero-carousel__cell--2 {
   height: 100%;
 
-  //background: #88CC88;
+  //background: #88cc88;
   background: url($baseurl + '/assets/img/trucks/blue_2.JPG') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -73,7 +75,7 @@
 .hero-carousel__cell--3 {
   height: 100%;
 
-  background: #EE9900;
+  background: #ee9900;
   background: url($baseurl + '/assets/img/trucks/blue_2.JPG') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -83,7 +85,7 @@
 .hero-carousel__cell--4 {
   height: 100%;
 
-  background: #EE55AA;
+  background: #ee55aa;
   background: url($baseurl + '/assets/img/trucks/blue_2.JPG') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;

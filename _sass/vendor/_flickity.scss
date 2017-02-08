@@ -57,7 +57,7 @@
   border: none;
   border-radius: 50%;
 
-  background: white;
+  background: #fff;
   background: hsla(0, 0%, 100%, 0.75);
 
   cursor: pointer;
@@ -66,9 +66,9 @@
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 
-  &:hover { background: white; }
+  &:hover { background: #fff; }
   &:focus {
-    box-shadow: 0 0 0 5px #09F;
+    box-shadow: 0 0 0 5px #09f;
     outline: none;
   }
   &:active { opacity: 0.6; }
@@ -133,7 +133,7 @@
 
     //background: #333;
     background: transparent;
-    border: 2px solid white;
+    border: 2px solid #fff;
     border-radius: 50%;
 
     //opacity: 0.25;
@@ -144,6 +144,6 @@
   & .dot.is-selected {
     //opacity: 1;
 
-    background: white;
+    background: #fff;
   }
 }

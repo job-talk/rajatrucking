@@ -3,7 +3,7 @@ ul { list-style: none; }
 a {
   text-decoration: none;
 
-  color: white;
+  color: #fff;
 }
 
 #content {
@@ -92,7 +92,7 @@ a {
     & form {
       margin-bottom: 1em;
 
-      border-bottom: solid thin #8E9699;
+      border-bottom: solid thin #8e9699;
 
       & input:last-of-type,
       & textarea:last-of-type {
