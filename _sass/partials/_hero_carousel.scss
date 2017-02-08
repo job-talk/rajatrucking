@@ -2,28 +2,23 @@
 .hero_carousel {
   margin-bottom: 40px;
 
-  min-width: 100%;
+  //min-width: 100%;
   //min-height: 100%;
   height: 450px;
 
   background: #1d1f20; //url('https://i.imgur.com/R60qKwS.jpg');
-  background-size: cover;
+  //background-size: cover;
 
-  @media screen and (max-width: 1200px) {
-    height: 450px;
-  }
-  @media screen and (max-width: 1000px) {
-    height: 400px;
-  }
-  @media screen and (max-width: 750px) {
-    min-height: 100%;
+
+  & .flickity-viewport {
+    position: absolute;
+    width: 100%;
   }
 }
 
 .hero-carousel__cell {
-  min-width: 100%;
-  //min-height: 100%;
-  //height: 240px;
+  height: 100%;
+  width: 100%;
 
   color: #fff;
   background: #efce36;
@@ -32,17 +27,13 @@
   position: relative;
   padding: 1.25em 3.75em 0;
   margin: 0 auto;
-  //padding-top: 40px;
-  //padding: auto;
-  //margin: auto;
 
-  max-width: 1000px;
-
-  line-height: 1.0;
 
   & h1 {
     font-size: 6em;
     letter-spacing: -2px;
+    line-height: 1;
+
     text-shadow: 4px 3px 0 #efce36, 9px 8px 0 rgba(0,0,0,0.15);
 
     @media screen and (max-width: 750px) {
@@ -50,9 +41,12 @@
     }
     @media screen and (max-width: 550px) {
       font-size: 4em;
+      letter-spacing: 1.5px;
+      text-shadow: 2px 2px 0 #efce36, 4px 3px 0 rgba(0,0,0,0.15);
     }
     @media screen and (max-width: 450px) {
-      font-size: 3.5em;
+      font-size: 3em;
+      letter-spacing: 2px;
     }
   }
 }
@@ -65,32 +59,33 @@
 .hero-carousel__cell--2 {
   height: 100%;
 
-  //background: #88cc88;
-  background: url($baseurl + '/assets/img/trucks/blue_2.JPG') no-repeat center center fixed;
+
+  background: #88cc88;
+  background: url($baseurl + '/assets/img/trucks/blue_2.JPG') no-repeat center center; //fixed;
   -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
 }
 .hero-carousel__cell--3 {
   height: 100%;
 
   background: #ee9900;
-  background: url($baseurl + '/assets/img/trucks/blue_2.JPG') no-repeat center center fixed;
+  background: url($baseurl + '/assets/img/trucks/blue_2.JPG') no-repeat center center; //fixed;
   -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
 }
 .hero-carousel__cell--4 {
   height: 100%;
 
   background: #ee55aa;
-  background: url($baseurl + '/assets/img/trucks/blue_2.JPG') no-repeat center center fixed;
+  background: url($baseurl + '/assets/img/trucks/blue_2.JPG') no-repeat center center; //fixed;
   -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
 }
 
 .hero-illustration {
@@ -100,37 +95,54 @@
 
   display: block;
   max-width: 100%;
-  //max-width: 200px;
+
   height: auto;
 
-  border: 1px solid red;
-
+  //border: 1px solid red;
+  //border-radius: 200px;
 
   @media screen and (min-width: 1201px) {
     top: 130px;
-
+    //left: 00px;
+    left: 750px;
+    right: 0;
     max-width: 300px;
   }
   @media screen and (max-width: 1200px) {
     top: 150px;
     right: 0px;
-    left: 200px;
+    left: 500px;
 
+    max-width: 275px;
     //max-width: 400px;
   }
   @media screen and (max-width: 1000px) {
+    left: 400px;
+    top: 130px;
 
+    max-width: 250px;
   }
   @media screen and (max-width: 900px) {
-    top: 30px;
+    top: 50px;
+    //left: 350px;
+    left: 500px;
+    right: 5px;
+
+    max-width: 200px;
   }
   @media screen and (max-width: 750px) {
+    top: 50px;
+    left: 400px;
 
+    max-width: 150px;
   }
   @media screen and (max-width: 500px) {
-    top: 20px;
+    top: 40px;
+
+    max-width: 100px;
   }
   @media screen and (max-width: 450px) {
-
+    top: 130px;
+    max-width: 100px;
   }
 }
