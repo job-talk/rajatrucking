@@ -10,22 +10,22 @@ layout: compress
 
   <div class="page">
 
-    {% include nav_mob.html %}
+    {% include nav/nav_mob.html %}
 
     <main class="content panel" id="panel">
 
       <header>
-        {% include nav_desk.html %}
+        {% include nav/nav_desk.html %}
       </header>
 
       <div class="page_wrapper mob-margin">
         <div class="container">
           <div class="row">
-            <div class="one columns"></div>
-            <div class="ten columns content">
+            <!--<div class="one columns"></div>-->
+            <div class="twelve columns content">
               {{ content }}
             </div>
-            <div class="one columns"></div>
+            <!--<div class="one columns"></div>-->
           </div>
         </div>
       </div>
@@ -37,7 +37,7 @@ layout: compress
 
   </div>
 
-  {% include scripts.html %}
+  {% include scripts/scripts.html %}
 
 </body>
 </html>
