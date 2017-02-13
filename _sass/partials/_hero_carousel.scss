@@ -3,16 +3,16 @@
  * Index - Hero Carousel
  *
  */
- 
+
 .hero_carousel {
   margin-bottom: 40px;
 
-  //min-width: 100%;
-  //min-height: 100%;
+  /*min-width: 100%;*/
+  /*min-height: 100%;*/
   height: 450px;
 
-  background: #1d1f20; //url('https://i.imgur.com/R60qKwS.jpg');
-  //background-size: cover;
+  background: #1d1f20; /*url('https://i.imgur.com/R60qKwS.jpg');*/
+  /*background-size: cover;*/
 
 
   & .flickity-viewport {
@@ -66,31 +66,22 @@
 
 
   background: #88cc88;
-  background: url($baseurl + '/assets/img/trucks/blue_2.JPG') no-repeat center center; //fixed;
-  -webkit-background-size: cover;
-     -moz-background-size: cover;
-       -o-background-size: cover;
-          background-size: cover;
+  background: url($baseurl + '/assets/img/trucks/blue_2.JPG') no-repeat center center; /*fixed;*/
+  background-size: cover;
 }
 .hero-carousel__cell--3 {
   height: 100%;
 
   background: #ee9900;
-  background: url($baseurl + '/assets/img/trucks/blue_2.JPG') no-repeat center center; //fixed;
-  -webkit-background-size: cover;
-     -moz-background-size: cover;
-       -o-background-size: cover;
-          background-size: cover;
+  background: url($baseurl + '/assets/img/trucks/blue_2.JPG') no-repeat center center; /*fixed;*/
+  background-size: cover;
 }
 .hero-carousel__cell--4 {
   height: 100%;
 
   background: #ee55aa;
-  background: url($baseurl + '/assets/img/trucks/blue_2.JPG') no-repeat center center; //fixed;
-  -webkit-background-size: cover;
-     -moz-background-size: cover;
-       -o-background-size: cover;
-          background-size: cover;
+  background: url($baseurl + '/assets/img/trucks/blue_2.JPG') no-repeat center center; /*fixed;*/
+  background-size: cover;
 }
 
 .hero-illustration {
@@ -103,12 +94,12 @@
 
   height: auto;
 
-  //border: 1px solid red;
-  //border-radius: 200px;
+  /*border: 1px solid red;*/
+  /*border-radius: 200px;*/
 
   @media screen and (min-width: 1201px) {
     top: 130px;
-    //left: 00px;
+    /*left: 00px;*/
     left: 750px;
     right: 0;
     max-width: 300px;
@@ -119,7 +110,7 @@
     left: 500px;
 
     max-width: 275px;
-    //max-width: 400px;
+    /*max-width: 400px;*/
   }
   @media screen and (max-width: 1000px) {
     left: 400px;
@@ -129,7 +120,7 @@
   }
   @media screen and (max-width: 900px) {
     top: 50px;
-    //left: 350px;
+    /*left: 350px;*/
     left: 500px;
     right: 5px;
 

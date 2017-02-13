@@ -35,19 +35,20 @@ nav {
 
       padding: 0;
 
-      transition: background-color .3s;
+      -webkit-transition: background-color .3s;
+              transition: background-color .3s;
 
       &.active {
-	      //background-color: rgba(0,0,0,0.1);
-        //color: $active;
+	      /*background-color: rgba(0,0,0,0.1);*/
+        /*color: $active;*/
       }
     }
 
     & a {
-      //display: block;
+      /*display: block;*/
 
 
-      //padding: 0 15px;
+      /*padding: 0 15px;*/
       margin-right: 1em;
 
       font: {
@@ -59,7 +60,8 @@ nav {
 
       color: #222;
 
-      transition: background-color .3s;
+      -webkit-transition: background-color .3s;
+              transition: background-color .3s;
       cursor: pointer;
 
       &.active {
@@ -100,7 +102,8 @@ nav {
     @media only screen and (max-width: 992px ) {
       left: 50%;
 
-      transform: translateX(-50%)
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%);
     }
 
     &.left {
@@ -109,7 +112,8 @@ nav {
 
         padding: 0;
 
-        transform: none;
+        -webkit-transform: none;
+                transform: none;
       }
     }
   }
@@ -140,7 +144,7 @@ nav {
   float: right !important;
 }
 
-// Mobile side-nav/slideout menu
+/* Mobile side-nav/slideout menu*/
 .side-nav {
   & li a {
     float: none;
@@ -162,7 +166,8 @@ nav {
   background-color: $mob-panel_before-bg;
 
   content: '';
-  transition: background-color 0.5s ease-in-out;
+  -webkit-transition: background-color 0.5s ease-in-out;
+          transition: background-color 0.5s ease-in-out;
 }
 .panel-open:before {
   position: absolute;

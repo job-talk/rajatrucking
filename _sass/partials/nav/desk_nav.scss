@@ -17,16 +17,17 @@
   list-style: none;
 }
 
-//.nav-desk-left {
-//  margin: 0;
+/*.nav-desk-left {*/
+/*  margin: 0;*/
 
-//  align-self: flex-start;
-//}
+/*  align-self: flex-start;*/
+/*}*/
 
 .nav-desk-title {
   text: {
     decoration: none;
-    transform: uppercase;
+    -webkit-transform: uppercase;
+            transform: uppercase;
   }
   font: {
     size: 1.4em;
@@ -41,12 +42,12 @@
   margin-left: .5em;
 
   font: {
-    size: .5em; //7em
+    size: .5em; /*7em*/
     weight: 600;
   }
   letter-spacing: normal;
 
-  // transform: rotate(-90deg);
+  /* transform: rotate(-90deg);*/
 }
 
 .nav-desk-invisible {
@@ -76,7 +77,8 @@
 
   text: {
     decoration: none;
-    transform: uppercase;
+    -webkit-transform: uppercase;
+            transform: uppercase;
   }
   font: {
     size: 1em;
