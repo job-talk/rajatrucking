@@ -1,31 +1,68 @@
         <ul id="menu" class="side-nav">
           <div class="container">
-            <li>
-              <a class="slide-title" href="{{ site.baseurl }}/">
-                <i class="fa fa-home fa-fw fa-1x" aria-hidden="true" aria-label="Home"></i>
-                Home
-              </a>
-            </li>
+            {% if page.active == "home" %}
+              <li>
+                <a class="active" href="{{ site.baseurl }}/">
+                  <i class="fa fa-home fa-fw fa-1x" aria-hidden="true" aria-label="Home"></i>
+                  Home
+                </a>
+              </li>
+            {% else %}
+              <li>
+                <a href="{{ site.baseurl }}/">
+                  <i class="fa fa-home fa-fw fa-1x" aria-hidden="true" aria-label="Home"></i>
+                  Home
+                </a>
+              </li>
+            {% endif %}
 
-            <li>
-              <a class="" href="{{ site.baseurl }}/about/">
-                <i class="fa fa-info-circle fa-fw fa-1x" aria-hidden="true"></i>
-                About
-              </a>
-            </li>
+            {% if page.active == "about" %}
+              <li>
+                <a class="active" href="{{ site.baseurl }}/about/">
+                  <i class="fa fa-info-circle fa-fw fa-1x" aria-hidden="true"></i>
+                  About
+                </a>
+              </li>
+            {% else %}
+              <li>
+                <a href="{{ site.baseurl }}/about/">
+                  <i class="fa fa-info-circle fa-fw fa-1x" aria-hidden="true"></i>
+                  About
+                </a>
+              </li>
+            {% endif %}
 
-            <li>
-              <a class="" href="{{ site.baseurl }}/services/">
-                <i class="fa fa-truck fa-fw fa-1x" aria-hidden="true"></i>
-                Services
-              </a>
-            </li>
+            {% if page.active == "services" %}
+              <li>
+                <a class="active" href="{{ site.baseurl }}/services/">
+                  <i class="fa fa-truck fa-fw fa-1x" aria-hidden="true"></i>
+                  Services
+                </a>
+              </li>
+            {% else %}
+              <li>
+                <a href="{{ site.baseurl }}/services/">
+                  <i class="fa fa-truck fa-fw fa-1x" aria-hidden="true"></i>
+                  Services
+                </a>
+              </li>
+            {% endif %}
 
-            <li>
-              <a class="" href="{{ site.baseurl }}/contact/">
-                <i class="fa fa-phone fa-fw fa-1x" aria-hidden="true"></i>
-                Contact
-              </a>
-            </li>
+            {% if page.active == "contact" %}
+              <li>
+                <a class="active" href="{{ site.baseurl }}/contact/">
+                  <i class="fa fa-phone fa-fw fa-1x" aria-hidden="true"></i>
+                  Contact
+                </a>
+              </li>
+            {% else %}
+              <li>
+                <a href="{{ site.baseurl }}/contact/">
+                  <i class="fa fa-phone fa-fw fa-1x" aria-hidden="true"></i>
+                  Contact
+                </a>
+              </li>
+            {% endif %}
+
           </div>
         </ul>

@@ -1,0 +1,52 @@
+<nav>
+  <div class="container nav-wrapper">
+    <a href="{{ site.baseurl }}/" class="brand-logo">Raja Trucking</a>
+      <a href="#" class="button-collapse toggle-button" aria-label="Mobile navigation menu toggle">
+        <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+      </a>
+
+    <ul class="right hide-on-med-and-down">
+      {% if page.active == "home" %}
+        <li>
+          <a class="a-highlight active" href="{{ site.baseurl }}/">Home</a>
+        </li>
+      {% else %}
+        <li>
+          <a class="a-highlight" href="{{ site.baseurl }}/">Home</a>
+        </li>
+      {% endif %}
+
+      {% if page.active == "about" %}
+        <li>
+          <a class="a-highlight active" href="{{ site.baseurl }}/about">About</a>
+        </li>
+      {% else %}
+        <li>
+          <a class="a-highlight" href="{{ site.baseurl }}/about">About</a>
+        </li>
+      {% endif %}
+
+      {% if page.active == "services" %}
+        <li>
+          <a class="a-highlight active" href="{{ site.baseurl }}/services">Services</a>
+        </li>
+      {% else %}
+        <li>
+          <a class="a-highlight" href="{{ site.baseurl }}/services">Services</a>
+        </li>
+      {% endif %}
+
+      {% if page.active == "contact" %}
+        <li>
+          <a class="a-highlight active" href="{{ site.baseurl }}/contact">Contact Us</a>
+        </li>
+      {% else %}
+        <li>
+          <a class="a-highlight" href="{{ site.baseurl }}/contact">Contact Us</a>
+        </li>
+      {% endif %}
+
+    </ul>
+
+  </div>
+</nav>

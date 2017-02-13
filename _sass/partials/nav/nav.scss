@@ -4,6 +4,8 @@ header, nav {
 .mob-margin {
   margin-top: 1em;
 }
+
+
 nav {
   width: 100%;
 	min-height: 56px;
@@ -24,9 +26,6 @@ nav {
     0 1px 5px 0 rgba(0,0,0,0.12),
     0 3px 1px -2px rgba(0,0,0,0.2);
 
-  & a {
-    color: #222;
-  }
 
   & ul {
     margin: 0;
@@ -39,7 +38,8 @@ nav {
       transition: background-color .3s;
 
       &.active {
-	      background-color: rgba(0,0,0,0.1);
+	      //background-color: rgba(0,0,0,0.1);
+        //color: $active;
       }
     }
 
@@ -57,8 +57,14 @@ nav {
       text-decoration: none;
       letter-spacing: .5px;
 
+      color: #222;
+
       transition: background-color .3s;
       cursor: pointer;
+
+      &.active {
+        color: $active !important;
+      }
     }
   }
 
@@ -143,6 +149,10 @@ nav {
     font-size: 2em;
 
     color: #222;
+
+    &.active {
+      color: $active;
+    }
   }
 }
 
