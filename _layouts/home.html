@@ -10,13 +10,14 @@ layout: compress
 
   <div class="page">
 
-    <header>
-      {% include nav.html %}
-    </header>
+    {% include nav_mob.html %}
 
     <main class="content panel" id="panel">
 
-      {% include mobile_nav_head.html %}
+      <header>
+        {% include nav_new.html %}
+      </header>
+
       <div class="page_wrapper">
 
         <div class="hero_carousel" data-flickity='{ "imagesLoaded": true, "selectedAttraction": 0.01, "friction": 0.15, "prevNextButtons": false, "setGallerySize": false, "resize": false, "wrapAround": true, "autoPlay": 3500 }' >

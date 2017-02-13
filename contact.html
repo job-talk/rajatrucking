@@ -1,5 +1,7 @@
 ---
 layout: contact
+title: Contact
+active: contact
 ---
 
 <div id="content">
@@ -8,7 +10,7 @@ layout: contact
         <p id="map-title">Where To Find Us</p>
 
         <div id="goog-map-contain">
-          <div class="map-respon">
+          <div id="map-respon">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2084.9200203451496!2d-97.41362770279063!3d32.949430966653615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864dde758d7d09f5%3A0xa6e42bb1fa7705f9!2s2555+Blue+Mound+Rd+W%2C+Haslet%2C+TX+76052!5e0!3m2!1sen!2sus!4v1483545693523" width="600" height="338" frameborder="1" allowfullscreen>
             </iframe>
           </div>
@@ -21,7 +23,7 @@ layout: contact
           document.write('<div itemscope itemtype="http://schema.org/LocalBusiness">'
           + '<p class="other">'
           + '<span itemprop="streetAddress">'
-          + '<i class="fa fa-map-marker fa-fw ic-contact" aria-hidden="true"></i>'
+          + '<i class="fa fa-map-marker fa-fw ic-contact" aria-hidden="true" aria-label="Buiness street address"></i>'
           + '<a href="' + goog_adr+ '">' + adr + '</a>' + '</span>' + '</p>' + '</div>');
         </script>
       </div>
@@ -46,12 +48,13 @@ layout: contact
       </form>
 
       <p id="contact-other">Other Way</p>
+
       <script>
         var eml = 'raja' + 'trucking' + 'llc' + '@' + 'sbc' + 'global' + '.net';
 
         document.write(' <div itemscope itemtype="http://schema.org/LocalBusiness"> '
          + '<p class="other">'
-         + '<i class="fa fa-envelope fa-fw ic-contact" aria-hidden="true"></i>'
+         + '<i class="fa fa-envelope fa-fw ic-contact" aria-hidden="true" aria-label="Business email"></i>'
          + '<span itemprop="email">'
          + '<a href="mai' + 'lto:' + eml +'">' + eml + '</a>'
          + '</span>' + '</p>' + '</div>');
@@ -64,7 +67,7 @@ layout: contact
 
         document.write(' <div itemscope itemtype="http://schema.org/LocalBusiness"> '
          + '<p class="other">'
-         + '<i class="fa fa-phone fa-fw ic-contact" aria-hidden="true"></i>'
+         + '<i class="fa fa-phone fa-fw ic-contact" aria-hidden="true" aria-label="Phone number"></i>'
          /* + '<i>Phone #:</i>'*/ + '<span itemprop="telephone">'
          + '<a href="' + 'tel:' + pho_mat + '">' + pho + '</a>'
          + '</span>' + '</p>' +'</div>');
@@ -77,7 +80,7 @@ layout: contact
 
         document.write('<div itemscope itemtype="http://schema.org/LocalBusiness">'
          + '<p class="other">'
-         + '<i class="fa fa-fax fa-fw ic-contact" aria-hidden="true"></i>'
+         + '<i class="fa fa-fax fa-fw ic-contact" aria-hidden="true" aria-label="Fax number"></i>'
          /* + '<i>Fax #:</i>'*/ + '<span itemprop="faxNumber">'
          + '<a href="' + 'fax:' + fax_mat + '">' + fax + '</a>'
          + '</span>' + '</p>' + '</div>');

@@ -52,7 +52,9 @@
 .nav-desk-invisible {
   margin-bottom: 0;
 
-  flex: 1;
+  -webkit-box-flex: 1;
+          -ms-flex: 1;
+              flex: 1;
 
   visibility: hidden;
 }
@@ -60,7 +62,7 @@
 .nav-desk-item {
   margin: 0;
 
-  align-self: flex-end;
+  @include flexbox-align-end;
 }
 
 .nav-desk-link {

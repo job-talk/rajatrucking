@@ -4,7 +4,7 @@
  *
  */
 
- 
+
 .mob-margin { margin-top: 1.5em; }
 
 /* Slideout menu
@@ -32,7 +32,7 @@
 
   li {
     @include flexbox-display-flex;
-    flex-flow: row nowrap;
+    @include flexbox-row-nowrap;
     align-items: center;
     justify-content: space-between;
     align-content: space-between;
@@ -45,7 +45,7 @@
 }
 
 .menu-invisible {
-  flex-grow: 1;
+  @include flexbox-invisible;
 
   visibility: hidden;
 }
@@ -91,7 +91,7 @@
   margin-bottom: 1em;
 
   @include flexbox-display-inline-flex;
-  flex-flow: row nowrap;
+  @include flexbox-row-nowrap;
   align-items: center;
   justify-content: space-between;
   width: 100%;
@@ -131,7 +131,9 @@
 }
 
 .mob-nav-invisible {
-  flex: 0 1 auto;
+  -webkit-box-flex: 0;
+          -ms-flex: 0 1 auto;
+              flex: 0 1 auto;
 
   visibility: hidden;
 }

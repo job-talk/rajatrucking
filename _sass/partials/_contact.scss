@@ -3,7 +3,7 @@
  * Contact Page
  *
  */
- 
+
 ul { list-style: none; }
 
 a {
@@ -18,7 +18,12 @@ a {
 
   // Box-model
   @include flexbox-display-flex;
-  flex-flow: row wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+
+  width: 100%;
 
   // Typographic
   font-size: 1em;
@@ -34,17 +39,20 @@ a {
   & #left {
     padding: 0 10px;
 
-    display: flex;
-    flex-flow: column nowrap;
-    -webkit-flex: 2 0 0;
-            flex: 2 0 0;
-    min-width: 66.66%;
+    //-webkit-box-flex: 2;
+    //        -ms-flex: 2 0 0px;
+    //            flex: 2 0 100px;
+    max-width: 60%;
+    flex: 2 0 60%;
+
 
     //border: 1px solid red;
 
     @media screen and (max-width: 900px) {
       min-width: 100%;
-      margin-bottom: 1em;
+      flex: 2 0 100%;
+
+      margin-bottom: 3em;
     }
 
     & #map {
@@ -55,7 +63,11 @@ a {
 
       & #goog-map-contain {
         //margin-top: auto;
-        margin-bottom: .3em;
+        margin-bottom: .5em;
+
+        @media screen and (max-width: 900px) {
+          margin-bottom: 1em;
+        }
 
         //border: 3px solid pink;
       }
@@ -89,9 +101,10 @@ a {
 
   & #right {
     padding: 0 10px;
+    -webkit-box-flex: 1;
+            -ms-flex: 1 0 0px;
+                flex: 1 0 0;
 
-    -webkit-flex: 1 0 0;
-            flex: 1 0 0;
 
     & p { margin-bottom: 10px; }
 

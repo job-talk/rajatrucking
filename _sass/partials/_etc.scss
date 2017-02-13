@@ -3,7 +3,7 @@
  * 'Other' rules
  *
  */
- 
+
 // Mobile
 @media screen and (max-width: 781px) {
   .nav-desk-list { display: none; }
@@ -25,19 +25,15 @@ main { display: inline-block; }
 
 .content { text-align: left; }
 
-/*.page_wrapper {
-  margin-top: 2em;
+hr.slender {
+  border: 0;
+  height: 1px;
+  margin-top: 1.4rem;
+  margin-bottom: 1.4rem;
 
-  @media screen and (max-width: 550px) {
-    margin-top: 1.2em;
-  }
-
-  @media screen and (max-width: 450px) {
-    margin-top: 1em;
-  }
-
-  @media screen and (max-width: 350px) {
-    margin-top: .5em;
-  }
+  background-image: -webkit-linear-gradient(left,transparent,rgba(0,0,0,0.75),transparent);
+  background-image:    -moz-linear-gradient(left,transparent,rgba(0,0,0,0.75),transparent);
+  background-image:     -ms-linear-gradient(left,transparent,rgba(0,0,0,0.75),transparent);
+  background-image:      -o-linear-gradient(left,transparent,rgba(0,0,0,0.75),transparent);
+  background-image:         linear-gradient(left,transparent,rgba(0,0,0,0.75),transparent);
 }
-*/

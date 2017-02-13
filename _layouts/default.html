@@ -10,14 +10,16 @@ layout: compress
 
   <div class="page">
 
-    <header>
-      {% include nav.html %}
-    </header>
+    {% include nav_mob.html %}
 
     <main class="content panel" id="panel">
 
-      {% include mobile_nav_head.html %}
+      <header>
+        {% include nav_new.html %}
+      </header>
+
       <div class="page_wrapper mob-margin">
+
         <div class="container">
           <div class="row">
             <div class="one columns"></div>
@@ -28,6 +30,7 @@ layout: compress
           </div>
         </div>
       </div>
+
     </main>
 
     <footer>

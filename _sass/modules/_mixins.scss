@@ -3,27 +3,50 @@
  * Mixins
  *
  */
- 
+
 @mixin flexbox-display-flex {
   display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
+  display:    -moz-box;
   display: -webkit-flex;
-  display: flex;
+  display:     -ms-flexbox;
+  display:         flex;
 }
 
 @mixin flexbox-display-inline-flex {
   display: -webkit-inline-box;
-  display: -moz-inline-box;
-  display: -ms-inline-flexbox;
+  display:    -moz-inline-box;
   display: -webkit-inline-flex;
-  display: inline-flex;
+  display:     -ms-inline-flexbox;
+  display:         inline-flex;
 }
 
 @mixin flexbox-direction-column {
-  -ms-flex-direction: column;
   -webkit-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@mixin flexbox-align-end {
+  -ms-flex-item-align: end;
+                align-self: flex-end;
+}
+
+@mixin flexbox-align-start {
+  -ms-flex-item-align: start;
+                align-self: flex-start;
+}
+
+@mixin flexbox-row-nowrap {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row nowrap;
+      flex-flow: row nowrap;
+}
+
+@mixin flexbox-invisible {
+  -webkit-box-flex: 1;
+          -ms-flex-positive: 1;
+              flex-grow: 1;
 }
 
 @mixin box-shadow {

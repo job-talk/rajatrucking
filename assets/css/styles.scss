@@ -9,8 +9,9 @@ $baseurl: "{{ site.baseurl }}";
 
 // Partials
 @import "partials/typography";
-@import "partials/nav/desk_nav";
-@import "partials/nav/mob_nav";
+//@import "partials/nav/desk_nav";
+//@import "partials/nav/mob_nav";
+@import "partials/nav/nav";
 @import "partials/footer";
 @import "partials/etc";
 @import "partials/hero_carousel";
