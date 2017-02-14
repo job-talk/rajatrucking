@@ -5,10 +5,6 @@ header, nav {
   margin-top: 2em;
 }
 
-
-
-
-
 nav {
   width: 100%;
 	min-height: 56px;
@@ -124,9 +120,8 @@ nav {
 
 nav .brand-logo img {
   height: 56px;
+  //max-width: 100%;
 
-	float: left;
-	margin-right: 15px;
 }
 
 .nav-wrapper {
