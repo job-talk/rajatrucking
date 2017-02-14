@@ -12,6 +12,7 @@ $baseurl: "{{ site.baseurl }}";
 //@import "partials/nav/desk_nav";
 //@import "partials/nav/mob_nav";
 @import "partials/nav/nav";
+@import "partials/nav/mob_side-menu";
 @import "partials/footer";
 @import "partials/etc";
 @import "partials/hero_carousel";

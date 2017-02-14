@@ -2,8 +2,11 @@ header, nav {
   display: block;
 }
 .mob-margin {
-  margin-top: 1em;
+  margin-top: 2em;
 }
+
+
+
 
 
 nav {
@@ -142,40 +145,4 @@ nav {
 
 .right {
   float: right !important;
-}
-
-/* Mobile side-nav/slideout menu*/
-.side-nav {
-  & li a {
-    float: none;
-
-    line-height: 48px;
-    font-size: 2em;
-
-    color: #222;
-
-    &.active {
-      color: $active;
-    }
-  }
-}
-
-.panel:before {
-  display: block;
-
-  background-color: $mob-panel_before-bg;
-
-  content: '';
-  -webkit-transition: background-color 0.5s ease-in-out;
-          transition: background-color 0.5s ease-in-out;
-}
-.panel-open:before {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  z-index: 99;
-
-  width: 100%;
-
-  background-color: $mob-panel-open_before-bg;
 }
