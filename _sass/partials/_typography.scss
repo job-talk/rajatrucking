@@ -3,7 +3,7 @@
  * Typography
  *
  */
- 
+
 html {
   text-rendering: optimizeLegibility;
   -webkit-font-feature-settings: "liga", "kern";
@@ -15,14 +15,21 @@ html {
 
 h3,
 h4,
-.services_list,
-.bod_text {
+#services-list,
+.bod-text {
   margin: 0;
 
   font: {
     size: 1em;
     style: normal;
     weight: 400;
+  }
+
+  @media screen and (max-width: 559px) {
+    margin: {
+      left: .3em !important;
+      right: .3em !important;
+    }
   }
 }
 
@@ -48,7 +55,7 @@ h4 {
   letter-spacing: .125em;
 }
 
-.services_list {
+#services-list {
   margin: {
     bottom: 1.33em;
     top: 1.33em;
@@ -62,8 +69,8 @@ h4 {
   ul li { margin: 0 1em; }
 }
 
-.bod_text {
-  padding: .5em;
+.bod-text {
+  //padding: .5em;
   margin: 0 0 1.5000em 0;
 
   font-size: 1em;
