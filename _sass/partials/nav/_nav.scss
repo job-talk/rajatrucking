@@ -7,7 +7,8 @@ header, nav {
 
 nav {
   width: 100%;
-	min-height: 56px;
+	//min-height: 56px;
+  min-height: 72px;
 
   padding: 0 1em;
   padding-top: .5em;
@@ -16,7 +17,8 @@ nav {
     padding-top: 0;
   }
 
-  line-height: 56px;
+  //line-height: 56px;
+  line-height: 72px;
 
   color: #222;
   background-color: #fafafa;
@@ -36,22 +38,16 @@ nav {
 
       -webkit-transition: background-color .3s;
               transition: background-color .3s;
-
-      &.active {
-	      /*background-color: rgba(0,0,0,0.1);*/
-        /*color: $active;*/
-      }
     }
 
     & a {
       /*display: block;*/
 
-
       /*padding: 0 15px;*/
       margin-right: 1em;
 
       font: {
-        size: 1em;
+        size: 1.3em;
         weight: 500;
       }
       text-decoration: none;
@@ -73,12 +69,16 @@ nav {
   	float: right;
   	position: relative;
   	z-index: 1;
-  	height: 56px;
+  	//height: 56px;
+    height: 72px;
   	margin: 0 18px;
 
     & i {
-      height: 56px;
-      line-height: 56px;
+      //height: 56px;
+      height: 72px;
+
+      //line-height: 56px;
+      line-height: 72px;
     }
   }
 
@@ -100,6 +100,7 @@ nav {
 
     @media only screen and (max-width: 992px ) {
       left: 50%;
+      left: calc(50% - 16px/2);
 
       -webkit-transform: translateX(-50%);
               transform: translateX(-50%);
@@ -119,11 +120,30 @@ nav {
 }
 
 nav .brand-logo img {
-  height: 56px;
+  //height: 56px;
+  height: 72px;
   //max-width: 100%;
 
 }
+//#brand-logo-wrapper {
+//  width: 100%;;
+//}
 
+// .brand-logo {
+//   height: 72px;
+//   width: 100%;
+
+//   background: url($baseurl + '/assets/img/raja_word_logo_black_20_white.svg');
+//   background-repeat: no-repeat;
+//   background-size: contain;
+
+//   &:hover {
+//     background: url($baseurl + '/assets/img/raja_word_logo_blue_black_80.svg');
+//     background-repeat: no-repeat;
+//     background-size: contain;
+
+//   }
+// }
 .nav-wrapper {
   position: relative;
   height: 100%;
