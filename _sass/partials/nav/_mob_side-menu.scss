@@ -1,4 +1,6 @@
-/* Mobile side-nav/slideout menu*/
+//
+// Mobile side-nav/slideout menu
+//
 .side-nav {
   & li {
     display: block;
@@ -27,6 +29,9 @@
   }
 }
 
+//
+// Side-menu body overlay when opened
+//
 .panel:before {
   display: block;
 
@@ -49,43 +54,52 @@
 
 
 .ic-menu {
-  &-left {
-    margin: .3em;
-  }
+  &-left { margin: .3em; }
 
-  &-right {
-    margin: .1em;
-  }
+  &-right { margin: .1em; }
+}
+
+#menu {
+  margin-bottom: 0 !important;
 }
 
 #mob-side-menu {
-  min-height: 100%;
-  width: 100%;
+  @include flexbox-display-flex;
+  @include flexbox-direction-column;
+  -webkit-box-pack: justify;
+     -ms-flex-pack: justify;
+  justify-content: space-between;
 
-  &-top {
+  height: 100%;
 
-  }
+
+  overflow-y: scroll;
+
+  &-top { flex: 1 0 auto; }
 
   &-bottom {
-    position: absolute;
-    bottom: 0;
+    flex: none;
+
+    margin-left: .3em;
 
     & ul {
-
       margin: 0;
 
       & li {
+      display: block;
       line-height: 2.3em;
 
-      border: none;
-
-      margin-top: 1em;
+      margin: {
+        top: 1em;
+        bottom: 0;
+      }
       padding: 0;
 
+      border: none;
         & a {
           display: inline;
-          font-size: 1.3em;
 
+          font-size: 1.3em;
         }
       }
 
