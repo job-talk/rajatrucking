@@ -12,6 +12,16 @@ html {
 
 /* Body Text
 **************/
+body {
+  font-size: 16px;
+
+}
+
+p {
+  font-size: 1em;
+  line-height: 1.50em;
+  margin: 0 0 1.50em 0;
+}
 
 h3,
 h4,
@@ -75,7 +85,8 @@ h4 {
 
   font-size: 1em;
   line-height: 1.50em;
-  letter-spacing: 0.075em;
+  //letter-spacing: 0.075em;
+  letter-spacing: 0.025em;
 }
 
 .llc { font-size: .7em; }

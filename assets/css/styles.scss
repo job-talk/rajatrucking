@@ -18,6 +18,8 @@ $baseurl: "{{ site.baseurl }}";
 @import "partials/hero_carousel";
 @import "partials/contact";
 @import "partials/flowtext";
+@import "partials/ripples";
+@import "partials/404";
 
 // ...
 
