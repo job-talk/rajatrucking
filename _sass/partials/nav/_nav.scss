@@ -1,7 +1,13 @@
 
 header, nav { display: block; }
 
-.mob-margin { margin-top: 2em; }
+.mob-margin {
+  margin-top: 2em;
+
+  @media screen and (max-width: 992px) {
+    margin-top: 1em;
+  }
+}
 
 nav {
   width: 100%;
