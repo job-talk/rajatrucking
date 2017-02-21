@@ -44,10 +44,10 @@ a:hover {
     -webkit-transform: scaleX(0);
             transform: scaleX(0);
 
-    /*-webkit-transition: all 0.2s ease-in-out 0s;*/
-    /*   -moz-transition: all 0.2s ease-in-out 0s;*/
-    /*     -o-transition: all 0.2s ease-in-out 0s;*/
-    /*        transition: all 0.2s ease-in-out 0s;*/
+    //-webkit-transition: all 0.2s ease-in-out 0s;
+    //   -moz-transition: all 0.2s ease-in-out 0s;
+    //     -o-transition: all 0.2s ease-in-out 0s;
+    //        transition: all 0.2s ease-in-out 0s;
     -webkit-transition: all 0.2s cubic-bezier(.175,.885,.32,1.075);
             transition: all 0.2s cubic-bezier(.175,.885,.32,1.075);
   }

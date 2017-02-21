@@ -12,7 +12,7 @@ textarea,
 select {
   padding: 0.4rem 0.6rem;
 
-  /* The 6px vertically centers text on FF, ignored by Webkit */
+  // The 6px vertically centers text on FF, ignored by Webkit
   background-color: #fff;
   border: 1px solid #d1d1d1;
   border-radius: 4px;
@@ -32,7 +32,7 @@ textarea:not([rows]) {
 }
 
 
-/* Removes awkward default styles on some inputs for iOS */
+// Removes awkward default styles on some inputs for iOS 
 
 input[type="email"],
 input[type="number"],

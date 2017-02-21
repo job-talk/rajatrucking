@@ -19,7 +19,6 @@ destination: ./_site
 markdown: kramdown
 
 gems:
-  - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
 
