@@ -35,11 +35,15 @@
 
 
   & h1 {
-    font-size: 6em;
+    font: {
+      size: 6em;
+      weight: normal;
+    }
     letter-spacing: -2px;
     line-height: 1;
 
     text-shadow: 4px 3px 0 #efce36, 9px 8px 0 rgba(0,0,0,0.15);
+
 
     @media screen and (max-width: 750px) {
       font-size: 5em;
@@ -64,7 +68,6 @@
 .hero-carousel__cell--2 {
   height: 100%;
 
-
   background: #88cc88;
   background: url($baseurl + '/assets/img/trucks/blue_2.JPG') no-repeat center center; /*fixed;*/
   background-size: cover;
@@ -73,14 +76,14 @@
   height: 100%;
 
   background: #ee9900;
-  background: url($baseurl + '/assets/img/trucks/blue_2.JPG') no-repeat center center; /*fixed;*/
+  background: url($baseurl + '/assets/img/trucks/white_2.JPG') no-repeat center center; /*fixed;*/
   background-size: cover;
 }
 .hero-carousel__cell--4 {
   height: 100%;
 
   background: #ee55aa;
-  background: url($baseurl + '/assets/img/trucks/blue_2.JPG') no-repeat center center; /*fixed;*/
+  background: url($baseurl + '/assets/img/trucks/red_1.JPG') no-repeat center center; /*fixed;*/
   background-size: cover;
 }
 
