@@ -15,10 +15,9 @@ nav {
   min-height: 72px;
 
   padding: 0 .5em;
-  //padding-top: .5em;
 
-  @media screen and (max-width: 992px) {
-    padding-top: 0;
+  @media screen and (max-width: 350px) {
+    padding: 0;
   }
 
   //line-height: 56px;
@@ -115,6 +114,13 @@ nav {
 
       -webkit-transform: translateX(-50%);
               transform: translateX(-50%);
+    }
+
+    @media only screen and (max-width: 350px) {
+      left: 0%;
+      -webkit-transform: translateX(0%);
+              transform: translateX(0%);
+
     }
 
     &.left {

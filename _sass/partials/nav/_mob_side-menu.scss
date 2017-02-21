@@ -1,6 +1,15 @@
+
 //
 // Mobile side-nav/slideout menu
 //
+
+// make hamburger toggle smaller on < 350px screen
+.fa-2x {
+  @media screen and (max-width: 350px) {
+    font-size: 1.5em;
+  }
+}
+
 .side-nav {
   & li {
     display: block;
