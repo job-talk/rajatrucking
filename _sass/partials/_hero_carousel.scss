@@ -40,7 +40,7 @@
   @media screen and (max-width: 500px) {
     padding: 1.15em 2.75em 0;
   }
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 400px) {
     padding: 1em 1.5em 0;
   }
 
@@ -58,10 +58,13 @@
     @media screen and (max-width: 750px) {
       font-size: 5em;
     }
-    @media screen and (max-width: 550px) {
+    @media screen and (max-width: 600px) {
       font-size: 3.8em;
       letter-spacing: 1.5px;
       text-shadow: 2px 2px 0 #efce36, 4px 3px 0 rgba(0,0,0,0.15);
+    }
+    @media screen and (max-width: 500px) {
+      font-size: 3.5em;
     }
     @media screen and (max-width: 450px) {
       font-size: 3em;
