@@ -7,8 +7,8 @@ description:
 timezone: America/Dallas
 
 # URLs
-baseurl: "/rajatrucking"
-url: "https://job-talk.github.io"
+baseurl:""
+url: "http://rajatrucking.net"
 permalink: pretty
 
 # Structure configuration
