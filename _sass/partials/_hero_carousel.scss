@@ -9,7 +9,11 @@
 
   /*min-width: 100%;*/
   /*min-height: 100%;*/
-  height: 450px;
+  height: 350px;
+
+  @media screen and (max-width: 500px) {
+    height: 325px;
+  }
 
   background: #1d1f20; /*url('https://i.imgur.com/R60qKwS.jpg');*/
   /*background-size: cover;*/
@@ -55,7 +59,7 @@
       font-size: 5em;
     }
     @media screen and (max-width: 550px) {
-      font-size: 4em;
+      font-size: 3.8em;
       letter-spacing: 1.5px;
       text-shadow: 2px 2px 0 #efce36, 4px 3px 0 rgba(0,0,0,0.15);
     }
