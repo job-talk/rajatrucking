@@ -14,6 +14,10 @@ html {
 
 /* Body Text
 **************/
+p {
+  font-size: 1.2rem;
+}
+
 h1, h2, h3, h4, h5, h6 {
   color: #333333;
   font-weight: 700;
@@ -64,18 +68,6 @@ h4 {
     border-color: lighten(#000, 80%);
     border-bottom-style: solid;
     margin-bottom: emRhythm(8);
-    height: 0;
-    @include rhythmBorderBottom(1px, 4);
-  }
-}
-
-#about-img {
-  &:after {
-    content: ' ';
-    display: block;
-    border-color: lighten(#000, 80%);
-    border-bottom-style: solid;
-    margin-bottom: emRhythm(4);
     height: 0;
     @include rhythmBorderBottom(1px, 4);
   }

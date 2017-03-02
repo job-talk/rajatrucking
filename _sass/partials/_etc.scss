@@ -34,3 +34,30 @@ hr.slender {
   background-image: -webkit-linear-gradient(left,transparent,rgba(0,0,0,0.75),transparent);
   background-image:         linear-gradient(left,transparent,rgba(0,0,0,0.75),transparent);
 }
+
+#about-img-wrapper {
+  height: 300px;
+
+  &:after {
+    content: ' ';
+    display: block;
+    border-color: lighten(#000, 80%);
+    border-bottom-style: solid;
+    margin-bottom: emRhythm(4);
+    height: 0;
+    @include rhythmBorderBottom(1px, 4);
+  }
+}
+
+#about-img {
+  height: 100%;
+
+  background: #ee9900;
+  background: url($baseurl + '/assets/img/trucks/white_2.JPG') no-repeat center center;
+  background-size: cover;
+
+}
+
+#about-bod-text-first {
+  margin-top: emRhythm(6);
+}
