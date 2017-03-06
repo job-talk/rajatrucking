@@ -31,7 +31,3 @@ exclude:
 sass:
   sass_dir: _sass
   style: compressed
-
-seo:
-  url:
-  google_site_verification:
