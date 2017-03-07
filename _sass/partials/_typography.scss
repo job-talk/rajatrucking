@@ -15,12 +15,13 @@ html {
 /* Body Text
 **************/
 p {
-  font-size: 1.2rem;
+  //font-size: 1.2rem;
+  font-size: 115%;
 }
 
 h1, h2, h3, h4, h5, h6 {
   color: #333333;
-  font-weight: 700;
+  font-weight: 600;
 
   margin-bottom: .2496em;
   //font-size: 1.414em;
@@ -31,7 +32,6 @@ h3,
 h4,
 #services-list,
 .bod-text {
-
   @media screen and (max-width: 559px) {
     margin: {
       left: .3em !important;
@@ -44,8 +44,11 @@ h4,
 
 h2 {
   margin-bottom: emRhythm(1, $ms-down1);
+  font-weight: 700 !important;
 }
-
+h3 {
+  margin-bottom: emRhythm(1, $ms-down1);
+}
 h4 {
   margin-bottom: emRhythm(2, $ms-down1);
 }
@@ -67,8 +70,14 @@ h4 {
     display: block;
     border-color: lighten(#000, 80%);
     border-bottom-style: solid;
-    margin-bottom: emRhythm(8);
+    margin-bottom: emRhythm(6);
     height: 0;
     @include rhythmBorderBottom(1px, 4);
+  }
+
+  font-size: 100%;
+
+  #services-list ul {
+    margin-bottom: 0;
   }
 }
