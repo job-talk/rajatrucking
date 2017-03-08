@@ -1,6 +1,5 @@
 # Site settings
 title: Raja Trucking, LLC.
-author: Raja Trucking, LLC.
 email: rajatrucking@sbcglobal.net
 description:
   Raja Trucking, LLC. is an uprising freight transportation company that provides services for freight brokers and various companies to locations throughout the 48 states.
@@ -31,3 +30,11 @@ exclude:
 sass:
   sass_dir: _sass
   style: compressed
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/img/trucks/blue_2.JPG
+      height: 1072
+      width: 2048
