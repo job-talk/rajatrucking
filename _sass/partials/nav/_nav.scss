@@ -69,29 +69,6 @@ nav {
     }
   }
 
-  & .button-collapse {
-  	float: right;
-  	position: relative;
-  	z-index: 1;
-  	//height: 56px;
-    height: 64px;
-  	margin: 0 18px;
-
-    & i {
-      //height: 56px;
-      height: 64px;
-
-      //line-height: 56px;
-      line-height: 64px;
-
-      color: #111;
-
-      &:hover {
-        color: #4495d4;
-      }
-    }
-  }
-
   & .brand-logo {
   	display: inline-block;
     position: absolute;

@@ -19,6 +19,14 @@
       slideout.close();
     }
 
+    slideout.on('beforeopen', function() {
+      document.querySelector('.hamburger').classList.add('hamburger-close');
+    });
+
+    slideout.on('beforeclose', function() {
+      document.querySelector('.hamburger').classList.remove('hamburger-close');
+    });
+
     slideout
       .on('beforeopen', function() {
         this.panel.classList.add('panel-open');
