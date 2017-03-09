@@ -7,17 +7,16 @@
 .hero_carousel {
   margin-bottom: 30px;
 
-  /*min-width: 100%;*/
-  /*min-height: 100%;*/
+  // min-width: 100%;
+  // min-height: 100%;
   height: 350px;
 
   @media screen and (max-width: 500px) {
     height: 325px;
   }
 
-  background: #1d1f20; /*url('https://i.imgur.com/R60qKwS.JPG');*/
-  /*background-size: cover;*/
-
+  background: #1d1f20; //url('https://i.imgur.com/R60qKwS.JPG');
+  // background-size: cover;
 
   & .flickity-viewport {
     position: absolute;
@@ -45,10 +44,8 @@
   }
 
   & h1 {
-
-
     font: {
-      //size: 6em;
+      // size: 6em;
       size: 3.2rem;
       weight: normal;
     }
@@ -63,19 +60,11 @@
       letter-spacing: 1.5px;
       text-shadow: 1px 3px 0 #85c1e9, 4px 4px 0 rgba(0,0,0,0.15)
     }
-    @media screen and (max-width: 450px) {
-      letter-spacing: 2px;
-    }
-    @media screen and (max-width: 375px) {
-      font-size: 2.6rem;
-    }
+    @media screen and (max-width: 450px) { letter-spacing: 2px; }
+    @media screen and (max-width: 375px) { font-size: 2.6rem; }
 
-    @media screen and (min-width: 960px) {
-      font-size: 7.8rem;
-    }
-    @media screen and (min-width: 768px) {
-      font-size: 5.8rem;
-    }
+    @media screen and (min-width: 960px) { font-size: 7.8rem; }
+    @media screen and (min-width: 768px) { font-size: 5.8rem; }
 
   }
 }
@@ -83,27 +72,27 @@
 .hero-carousel__cell--1 {
   height: 100%;
 
-  background: #85c1e9;//#efce36;
+  background: #85c1e9; // #efce36
 }
 .hero-carousel__cell--2 {
   height: 100%;
 
   background: #88cc88;
-  background: url($baseurl + '/assets/img/trucks/blue_2.JPG') no-repeat center center; /*fixed;*/
+  background: url($baseurl + '/assets/img/trucks/blue_2.JPG') no-repeat center center;
   background-size: cover;
 }
 .hero-carousel__cell--3 {
   height: 100%;
 
   background: #ee9900;
-  background: url($baseurl + '/assets/img/trucks/white_1.JPG') no-repeat center center; /*fixed;*/
+  background: url($baseurl + '/assets/img/trucks/white_1.JPG') no-repeat center center;
   background-size: cover;
 }
 .hero-carousel__cell--4 {
   height: 100%;
 
   background: #ee55aa;
-  background: url($baseurl + '/assets/img/trucks/red_1.JPG') no-repeat center center; /*fixed;*/
+  background: url($baseurl + '/assets/img/trucks/red_1.JPG') no-repeat center center;
   background-size: cover;
 }
 
@@ -117,12 +106,12 @@
 
   height: auto;
 
-  /*border: 1px solid red;*/
-  /*border-radius: 200px;*/
+  // border: 1px solid red;
+  // border-radius: 200px;
 
   @media screen and (min-width: 1201px) {
     top: 130px;
-    /*left: 00px;*/
+    // left: 00px;
     left: 750px;
     right: 0;
     max-width: 300px;
@@ -133,7 +122,7 @@
     left: 500px;
 
     max-width: 275px;
-    /*max-width: 400px;*/
+    // max-width: 400px;
   }
   @media screen and (max-width: 1000px) {
     left: 400px;
@@ -143,7 +132,7 @@
   }
   @media screen and (max-width: 900px) {
     top: 50px;
-    /*left: 350px;*/
+    // left: 350px;
     left: 500px;
     right: 5px;
 
@@ -157,7 +146,6 @@
   }
   @media screen and (max-width: 500px) {
     top: 40px;
-
     max-width: 100px;
   }
   @media screen and (max-width: 450px) {

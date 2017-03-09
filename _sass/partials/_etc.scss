@@ -4,15 +4,14 @@
  *
  */
 
-/* Mobile*/
-@media screen and (max-width: 781px) {
-  h3,
-  h4 { letter-spacing: 0.01em; }
+// Mobile
+//@media screen and (max-width: 992px) {
+  // h3, h4 { letter-spacing: 0.01em; }
 
-  p { margin: 0 0 0.75em; }
-}
+  // p { margin: 0 0 0.75em; }//
+//}
 
-/* Desktop*/
+// Desktop
 @media screen and (min-width: 993px) {
   .hamburger { display: none; }
 }
@@ -24,8 +23,10 @@ main { display: inline-block; }
 hr.slender {
   border: 0;
   height: 1px;
-  margin-top: 1.4rem;
-  margin-bottom: 1.4rem;
+  margin: {
+    top: 1.4rem;
+    bottom: 1.4rem;
+  }
 
   background-image: -webkit-linear-gradient(left,transparent,rgba(0,0,0,0.75),transparent);
   background-image:         linear-gradient(left,transparent,rgba(0,0,0,0.75),transparent);
@@ -54,6 +55,4 @@ hr.slender {
 
 }
 
-#about-bod-text-first {
-  margin-top: emRhythm(6);
-}
+#about-bod-text-first { margin-top: emRhythm(6); }

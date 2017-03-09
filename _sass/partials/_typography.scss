@@ -7,7 +7,7 @@
 html {
   text-rendering: optimizeLegibility;
   -webkit-font-feature-settings: "liga", "kern";
-  font-feature-settings: "liga", "kern";
+          font-feature-settings: "liga", "kern";
 
   font-family: 'Open Sans', sans-serif;
 }
@@ -15,7 +15,7 @@ html {
 /* Body Text
 **************/
 p {
-  //font-size: 1.2rem;
+  // font-size: 1.2rem;
   font-size: 115%;
 }
 
@@ -24,7 +24,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
 
   margin-bottom: .2496em;
-  //font-size: 1.414em;
+  // font-size: 1.414em;
   line-height: 1.24802;
 }
 
@@ -46,12 +46,8 @@ h2 {
   margin-bottom: emRhythm(1, $ms-down1);
   font-weight: 700 !important;
 }
-h3 {
-  margin-bottom: emRhythm(1, $ms-down1);
-}
-h4 {
-  margin-bottom: emRhythm(2, $ms-down1);
-}
+h3 { margin-bottom: emRhythm(1, $ms-down1); }
+h4 { margin-bottom: emRhythm(2, $ms-down1); }
 
 .bod-text {
   margin: {
@@ -77,7 +73,5 @@ h4 {
 
   font-size: 100%;
 
-  #services-list ul {
-    margin-bottom: 0;
-  }
+  #services-list ul { margin-bottom: 0; }
 }

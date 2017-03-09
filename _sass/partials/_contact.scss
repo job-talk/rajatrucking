@@ -13,10 +13,10 @@ a {
 }
 
 #content {
-  /* Positioning*/
+  // Positioning
   margin-bottom: 1em;
 
-  /* Box-model*/
+  // Box-model
   @include flexbox-display-flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -25,30 +25,30 @@ a {
 
   width: 100%;
 
-  /* Typographic*/
+  // Typographic
   font-size: 1em;
 
-  /* Visual*/
-  /*border: 1px dotted orange;*/
+  // Visual
+  //border: 1px dotted orange;
 
   & #left,
   & #right {
-    /*border: 1px solid green;*/
+    //border: 1px solid green;
   }
 
   & #left {
     padding: 0 10px;
 
-    /*-webkit-box-flex: 2;*/
-    /*        -ms-flex: 2 0 0px;*/
-    /*            flex: 2 0 100px;*/
+    //-webkit-box-flex: 2;
+    //        -ms-flex: 2 0 0px;
+    //            flex: 2 0 100px;
     max-width: 60%;
     -webkit-box-flex: 2;
         -ms-flex: 2 0 60%;
             flex: 2 0 60%;
 
 
-    /*border: 1px solid red;*/
+    //border: 1px solid red;
 
     @media screen and (max-width: 900px) {
       min-width: 100%;
@@ -66,14 +66,14 @@ a {
       }
 
       & #goog-map-contain {
-        /*margin-top: auto;*/
+        //margin-top: auto;
         margin-bottom: .5em;
 
         @media screen and (max-width: 900px) {
           margin-bottom: 1em;
         }
 
-        /*border: 3px solid pink;*/
+        //border: 3px solid pink;
       }
 
       & #map-title {
@@ -88,7 +88,7 @@ a {
         }
         text-transform: uppercase;
 
-        /*border: 1px solid blue;*/
+        //border: 1px solid blue;
 
         @media screen and (max-width: 900px) {
           letter-spacing: 0.05em;
@@ -97,11 +97,11 @@ a {
             weight: 600;
           }
         }
-      } /* end of #map-title*/
+      } // end of #map-title
 
-    } /* end of #map*/
+    } // end of #map
 
-  } /* end of #left*/
+  } // end of #left
 
   & #right {
     padding: 0 10px;
@@ -142,8 +142,8 @@ a {
 
         min-height: 75px;
       }
-    } /* end of #form*/
-  } /* end of #right*/
+    } // end of #form
+  } // end of #right
 
   & p.other {
     margin-bottom: 5px;
@@ -169,9 +169,9 @@ a {
       }
     }
 
-  } /* end of p.other*/
+  } // end of p.other
 
-} /* end of #content*/
+} // end of #content
 
 #right-title {
   letter-spacing: 0.02em;
@@ -197,7 +197,7 @@ a {
 
   width: 100%;
 
-  /*color: #444;*/
+  //color: #444;
 }
 
 #contact-other {
@@ -216,6 +216,4 @@ a {
   }
 }
 
-#gotcha {
-  display: none;
-}
+#gotcha { display: none; }
