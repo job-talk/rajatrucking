@@ -25,6 +25,9 @@ body { height: 100%; }
 }
 // end of flex sticky footer
 
+.active {
+  color: #4495d4 !important;
+}
 
 footer {
   padding: .5rem 1rem;
@@ -70,6 +73,7 @@ footer {
         letter-spacing: .1rem;
 
         color: #b3b2b2;
+
       }
     }
 

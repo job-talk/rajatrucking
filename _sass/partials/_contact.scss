@@ -91,7 +91,6 @@ a {
         //border: 1px solid blue;
 
         @media screen and (max-width: 900px) {
-          letter-spacing: 0.05em;
           font: {
             size: 1.5em;
             weight: 600;
@@ -174,7 +173,6 @@ a {
 } // end of #content
 
 #right-title {
-  letter-spacing: 0.02em;
   font: {
     size: 1.3em;
     weight: 500;
@@ -182,7 +180,6 @@ a {
   text-transform: uppercase;
 
   @media screen and (max-width: 900px) {
-    letter-spacing: 0.05em;
     font: {
       size: 1.5em;
       weight: 600;
@@ -201,14 +198,12 @@ a {
 }
 
 #contact-other {
-  letter-spacing: 0.01em;
   text-transform: uppercase !important;
   font: {
     size: 1.2em;
     weight: 500;
   }
   @media screen and (max-width: 900px) {
-    letter-spacing: 0.03em;
     font: {
       size: 1.35em;
       weight: 600;
