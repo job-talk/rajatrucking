@@ -15,13 +15,30 @@
     height: 325px;
   }
 
-  background: #1d1f20; //url('https://i.imgur.com/R60qKwS.JPG');
+  background: #1d1f20;
   // background-size: cover;
 
   & .flickity-viewport {
     position: absolute;
     width: 100%;
   }
+}
+
+.carousel-cell {
+  width: 100%;
+  //max-width: 500px;
+  margin-right: 10px;
+
+  height: 350px;
+
+  @media screen and (max-width: 500px) {
+    height: 325px;
+  }
+  background-color: #DDD;
+  background-size: cover;
+
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .hero-carousel__cell {
@@ -74,27 +91,7 @@
 
   background: #85c1e9; // #efce36
 }
-.hero-carousel__cell--2 {
-  height: 100%;
 
-  background: #88cc88;
-  background: url($baseurl + '/assets/img/trucks/blue_2.JPG') no-repeat center center;
-  background-size: cover;
-}
-.hero-carousel__cell--3 {
-  height: 100%;
-
-  background: #ee9900;
-  background: url($baseurl + '/assets/img/trucks/white_1.JPG') no-repeat center center;
-  background-size: cover;
-}
-.hero-carousel__cell--4 {
-  height: 100%;
-
-  background: #ee55aa;
-  background: url($baseurl + '/assets/img/trucks/red_1.JPG') no-repeat center center;
-  background-size: cover;
-}
 
 .hero-illustration {
   position: absolute;
