@@ -5,8 +5,8 @@
  */
 
 
-/* Sticky flexbox footer
-***********************/
+// Sticky flexbox footer
+// ***********************
 
 html,
 body { height: 100%; }
@@ -99,9 +99,9 @@ footer {
     font-weight: 500;
 
     &-sub {
-      margin-left: .5em;
+      margin-left: .2em;
 
-      font-size: .5em !important;
+      font-size: .53em !important;
     }
   }
 

@@ -28,6 +28,24 @@ $global-init: false; // By default set to false, loaded with typesetted
 // -----------------
 // Sass file Imports
 // -----------------
+
+// ------------------
+// Skeleton Framework
+// ------------------
+@import "vendor/skeleton/partials/grid";
+@import "vendor/skeleton/partials/base-styles";
+// @import "vendor/skeleton/partials/typography";
+@import "vendor/skeleton/partials/links";
+@import "vendor/skeleton/partials/buttons";
+@import "vendor/skeleton/partials/forms";
+@import "vendor/skeleton/partials/lists";
+@import "vendor/skeleton/partials/code";
+// @import "vendor/skeleton/partials/tables";
+@import "vendor/skeleton/partials/spacing";
+@import "vendor/skeleton/partials/utilities";
+@import "vendor/skeleton/partials/clearing";
+// @import "vendor/skeleton/partials/media-queries";
+
 @import "vendor/typesettings";
 
 // Modules and Variables
@@ -43,7 +61,6 @@ $global-init: false; // By default set to false, loaded with typesetted
 @import "partials/etc";
 @import "partials/hero_carousel";
 @import "partials/contact";
-//@import "partials/flowtext";
 @import "partials/ripples";
 @import "partials/404";
 
