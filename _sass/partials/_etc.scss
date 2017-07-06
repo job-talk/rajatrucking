@@ -13,7 +13,7 @@
 
 // Desktop
 @media screen and (min-width: 993px) {
-  .hamburger { display: none; }
+  .hamburger, .hamburger-wrapper { display: none; }
 }
 
 main { display: inline-block; }

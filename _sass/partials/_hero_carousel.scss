@@ -83,84 +83,21 @@
     letter-spacing: -2px;
     line-height: 1.2;
 
-    text-shadow: 4px 3px 0 #85c1e9, 9px 8px 0 rgba(0,0,0,0.15);
+    //text-shadow: 4px 3px 0 #85c1e9, 9px 8px 0 rgba(0,0,0,0.15);
     color: #fff;
+
+    text-shadow: 4px 3px 0 #4a4a4a, 9px 8px 0 rgba(0,0,0,0.15);
 
     @media screen and (max-width: 768px) {
       margin: 1em 0;
-      letter-spacing: 1.5px;
-      text-shadow: 1px 3px 0 #85c1e9, 4px 4px 0 rgba(0,0,0,0.15)
+      letter-spacing: 1px;
+      text-shadow: 1px 3px 0 #4a4a4a, 4px 4px 0 rgba(0,0,0,0.15)
     }
-    @media screen and (max-width: 450px) { letter-spacing: 2px; }
+
     @media screen and (max-width: 375px) { font-size: 2.6rem; }
 
     @media screen and (min-width: 960px) { font-size: 7.8rem; }
     @media screen and (min-width: 768px) { font-size: 5.8rem; }
 
-  }
-}
-
-.hero-carousel__cell--1 {
-  height: 100%;
-
-  background: #85c1e9; // #efce36
-}
-
-
-.hero-illustration {
-  position: absolute;
-  margin: 0 auto;
-  right: 60px;
-
-  display: block;
-  max-width: 100%;
-
-  height: auto;
-
-  // border: 1px solid red;
-  // border-radius: 200px;
-
-  @media screen and (min-width: 1201px) {
-    top: 130px;
-    // left: 00px;
-    left: 750px;
-    right: 0;
-    max-width: 300px;
-  }
-  @media screen and (max-width: 1200px) {
-    top: 150px;
-    right: 0px;
-    left: 500px;
-
-    max-width: 275px;
-    // max-width: 400px;
-  }
-  @media screen and (max-width: 1000px) {
-    left: 400px;
-    top: 130px;
-
-    max-width: 250px;
-  }
-  @media screen and (max-width: 900px) {
-    top: 50px;
-    // left: 350px;
-    left: 500px;
-    right: 5px;
-
-    max-width: 200px;
-  }
-  @media screen and (max-width: 750px) {
-    top: 50px;
-    left: 400px;
-
-    max-width: 150px;
-  }
-  @media screen and (max-width: 500px) {
-    top: 40px;
-    max-width: 100px;
-  }
-  @media screen and (max-width: 450px) {
-    top: 130px;
-    max-width: 100px;
   }
 }
