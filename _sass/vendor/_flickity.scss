@@ -1,6 +1,6 @@
-// ! Flickity v2.0.8
-// http://flickity.metafizzy.co
-// ---------------------------------------------- //
+/*! Flickity v2.0.9
+http://flickity.metafizzy.co
+---------------------------------------------- */
 
 .flickity-enabled {
   position: relative;
@@ -20,7 +20,7 @@
   height: 100%;
 }
 
-// draggable //
+/* draggable */
 
 .flickity-enabled.is-draggable {
   -webkit-tap-highlight-color: transparent;
@@ -42,7 +42,7 @@
   cursor: grabbing;
 }
 
-// ---- previous/next buttons ---- //
+/* ---- previous/next buttons ---- */
 
 .flickity-prev-next-button {
   position: absolute;
@@ -54,7 +54,7 @@
   background: white;
   background: hsla(0, 0%, 100%, 0.75);
   cursor: pointer;
-  // vertically center //
+  /* vertically center */
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
@@ -72,7 +72,7 @@
 
 .flickity-prev-next-button.previous { left: 10px; }
 .flickity-prev-next-button.next { right: 10px; }
-// right to left //
+/* right to left */
 .flickity-rtl .flickity-prev-next-button.previous {
   left: auto;
   right: 10px;
@@ -99,7 +99,7 @@
   fill: #333;
 }
 
-// ---- page dots ---- //
+/* ---- page dots ---- */
 
 .flickity-page-dots {
   position: absolute;
