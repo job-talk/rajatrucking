@@ -26,6 +26,12 @@
           flex-direction: column;
 }
 
+@mixin flexbox-direction-row {
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
 @mixin flexbox-align-end {
   -ms-flex-item-align: end;
                 align-self: flex-end;

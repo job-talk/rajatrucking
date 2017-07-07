@@ -4,8 +4,16 @@ html {
   -webkit-font-feature-settings: "liga", "kern";
           font-feature-settings: "liga", "kern";
 
+  font-size: 85%;
+  line-height: 1.6;
 
-  //font-size: 1.25em;
+  @media (min-width: 521px) {
+    font-size: 100%;
+  }
+
+  @media (min-width: 1350px) {
+    font-size: 115%;
+  }
 }
 
 @include headings;
@@ -23,8 +31,34 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
+// h1 {
+//   font-size: 2.4414rem;
+//   line-height: 2.7rem;
+//   margin-bottom: 1.53rem;
+// }
+h2 {
+  font-size: 1.9531rem;
+  line-height: 2.7rem;
+  margin-bottom: 1.53rem;
+}
+h3 {
+  font-size: 1.5625rem;
+  line-height: 1.8rem;
+  margin-bottom: 1.53rem;
+}
+// h4 {
+//   font-size: 1.25rem;
+//   line-height: 1.8rem;
+//   margin-bottom: 1.53rem;
+// }
+// h5 {
+//   font-size: 1rem;
+//   line-height: 1.8rem;
+//   margin-bottom: 1.53rem;
+// }
+
 nav, footer {
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 section p {
@@ -43,33 +77,16 @@ section p {
   margin-bottom: 1.9125rem;
 }
 
-
-$responsive-small: (
-  base-font-size: 12px,
-  base-line-height: 1.4
-);
-
-$responsive-medium: (
-  base-font-size: 20px,
-  base-line-height: 1.6
-);
-
-$responsive-large: (
-  base-font-size: 2em,
-  base-line-height: 1.8
-);
-
-.responsive-body {
-  @include content($responsive-small);
-
-  @media (min-width: 521px) {
-    @include content($responsive-medium);
-  }
-
-  @media (min-width: 769px) {
-    @include content($responsive-large);
-  }
+.services p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 3.06rem;
 }
+
+input, textarea {
+  font-family: 'Open Sans', sans-serif;
+}
+
 
 
 #services-wrapper {
