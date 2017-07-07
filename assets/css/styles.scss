@@ -1,5 +1,4 @@
 ---
-# Front matter comment to ensure Jekyll properly reads file.
 ---
 @charset "UTF-8";
 
@@ -8,66 +7,62 @@
 // ------------
 $baseurl: "{{ site.baseurl }}";
 
-
-// -------------------------
-// Settings for Typesettings
-// -------------------------
-// $font-sans: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-// $font-serif: Georgia, 'Times New Roman', serif;
-// $font-mono: 'Lucida Console', Monaco, monospace;
-$text-color: #4c4c4c;
-$base-vertical-unit: 6px;
-$base-line-multi: 5;
-$base-font-size: 17px;
-$ms-ratio: 1.414;
-$paragraph-indent: false;
-$paragraph-justify: false;
-$load-typesetted: false;
-$global-init: false; // By default set to false, loaded with typesetted
-
 // -----------------
 // Sass file Imports
 // -----------------
 
-// ------------------
-// Skeleton Framework
-// ------------------
-@import "vendor/skeleton/partials/base-styles";
-@import "vendor/skeleton/partials/buttons";
-@import "vendor/skeleton/partials/clearing";
-@import "vendor/skeleton/partials/code";
-@import "vendor/skeleton/partials/forms";
-@import "vendor/skeleton/partials/grid";
-@import "vendor/skeleton/partials/links";
-@import "vendor/skeleton/partials/lists";
-// @import "vendor/skeleton/partials/media-queries";
-@import "vendor/skeleton/partials/spacing";
-// @import "vendor/skeleton/partials/tables";
-// @import "vendor/skeleton/partials/typography";
-@import "vendor/skeleton/partials/utilities";
+// Skeleton
 
-
-
-@import "vendor/typesettings";
-
-// Modules and Variables
-@import "modules/colours";
-@import "modules/mixins";
-
-
-// Partials
-@import "partials/typography";
-@import "partials/nav/nav";
-@import "partials/nav/mob_side-menu";
-@import "partials/footer";
-@import "partials/etc";
-@import "partials/hero_carousel";
-@import "partials/contact";
-@import "partials/ripples";
-@import "partials/404";
-
-// ...
+@import
+  'vendor/skeleton/partials/base-styles',
+  'vendor/skeleton/partials/buttons',
+  'vendor/skeleton/partials/clearing',
+  'vendor/skeleton/partials/code',
+  'vendor/skeleton/partials/forms',
+  'vendor/skeleton/partials/grid',
+  'vendor/skeleton/partials/links',
+  'vendor/skeleton/partials/lists',
+  //'vendor/skeleton/partials/media-queries',
+  'vendor/skeleton/partials/spacing',
+  'vendor/skeleton/partials/tables',
+  'vendor/skeleton/partials/typography',
+  'vendor/skeleton/partials/utilities'
+;
 
 // Third-party
-@import "vendor/slideout";
-@import "vendor/flickity";
+@import
+  'vendor/flickity',
+  'vendor/shevy',
+  'vendor/slideout'
+;
+
+// Globals
+@import
+  'globals/colours',
+  'globals/mixins',
+  'globals/newtype',
+  'globals/variables'
+;
+
+// Sections
+@import
+  'sections/footer',
+  'sections/header/desk-nav',
+  'sections/header/mob-sidemenu'
+;
+
+// Blocks
+@import
+  'blocks/hero'
+;
+
+// Partials
+@import
+  'partials/contact',
+  'partials/etc',
+  'partials/ripples',
+  'partials/404'
+;
+
+// Global Overrides
+@import 'globals/overrides';
