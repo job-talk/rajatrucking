@@ -31,6 +31,7 @@ $baseurl: "{{ site.baseurl }}";
 
 // Third-party
 @import
+  'vendor/fontello/fa',
   'vendor/flickity',
   'vendor/shevy',
   'vendor/slideout'
