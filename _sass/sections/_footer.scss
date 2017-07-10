@@ -45,7 +45,8 @@ footer {
 .foot {
   &-nav {
     margin-bottom: 0;
-
+    line-height: 1;
+    
     @include flexbox-display-inline-flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;

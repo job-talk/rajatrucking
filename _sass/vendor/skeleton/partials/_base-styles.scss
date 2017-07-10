@@ -1,4 +1,5 @@
-/* Base Styles */
+// Base Styles
+// ---------------- //
 
 html {
   font-size: 1em;
@@ -10,8 +11,8 @@ html {
 *,
 *::before,
 *::after {
-  //box-sizing: inherit;
-  box-sizing: border-box;
+  box-sizing: inherit;
+  //box-sizing: border-box;
 }
 
 body {
@@ -19,16 +20,15 @@ body {
   // line-height: 1.6rem;
   line-height: 1.76471;
   // font-style: normal;
-  //font-weight: 400;
-  //font-stretch: normal;
+  // font-weight: 400;
+  // font-stretch: normal;
   // font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  // font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+
 
   font: {
-    //size: 1rem;
+    // size: 1rem;
     weight: 400;
-    //stretch: normal;
-    //family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    // stretch: normal;
   }
 
   word-wrap: break-word;
