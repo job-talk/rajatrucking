@@ -28,27 +28,15 @@ a {
   // Typographic
   font-size: 1em;
 
-  // Visual
-  //border: 1px dotted orange;
-
-  & #left,
-  & #right {
-    //border: 1px solid green;
-  }
 
   & #left {
     padding: 0 10px;
 
-    //-webkit-box-flex: 2;
-    //        -ms-flex: 2 0 0px;
-    //            flex: 2 0 100px;
     max-width: 60%;
     -webkit-box-flex: 2;
         -ms-flex: 2 0 60%;
             flex: 2 0 60%;
 
-
-    //border: 1px solid red;
 
     @media screen and (max-width: 900px) {
       min-width: 100%;
@@ -66,14 +54,12 @@ a {
       }
 
       & #goog-map-contain {
-        //margin-top: auto;
         margin-bottom: .5em;
 
         @media screen and (max-width: 900px) {
           margin-bottom: 1em;
         }
 
-        //border: 3px solid pink;
       }
 
       & #map-title {
@@ -88,7 +74,6 @@ a {
         }
         text-transform: uppercase;
 
-        //border: 1px solid blue;
 
         @media screen and (max-width: 900px) {
           font: {

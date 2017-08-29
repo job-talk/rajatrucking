@@ -1,5 +1,5 @@
----
----
+//---
+//---
 @charset "UTF-8";
 
 // ------------
@@ -13,57 +13,48 @@ $baseurl: "{{ site.baseurl }}";
 
 // Skeleton
 
-@import
-  'vendor/skeleton/partials/base-styles',
-  'vendor/skeleton/partials/buttons',
-  'vendor/skeleton/partials/clearing',
-  'vendor/skeleton/partials/code',
-  'vendor/skeleton/partials/forms',
-  'vendor/skeleton/partials/grid',
-  'vendor/skeleton/partials/links',
-  'vendor/skeleton/partials/lists',
-  //'vendor/skeleton/partials/media-queries',
-  'vendor/skeleton/partials/spacing',
-  'vendor/skeleton/partials/tables',
-  'vendor/skeleton/partials/typography',
-  'vendor/skeleton/partials/utilities'
-;
+@import  '_sass/vendor/skeleton/partials/_base-styles';
+@import  '_sass/vendor/skeleton/partials/_buttons';
+@import  '_sass/vendor/skeleton/partials/_clearing';
+@import  '_sass/vendor/skeleton/partials/_code';
+@import  '_sass/vendor/skeleton/partials/_forms';
+@import  '_sass/vendor/skeleton/partials/_grid';
+@import  '_sass/vendor/skeleton/partials/_links';
+@import  '_sass/vendor/skeleton/partials/_lists';
+@import  '_sass/vendor/skeleton/partials/_spacing';
+@import  '_sass/vendor/skeleton/partials/_tables';
+@import  '_sass/vendor/skeleton/partials/_typography';
+@import  '_sass/vendor/skeleton/partials/_utilities';
 
 // Third-party
-@import
-  'vendor/fontello/fa',
-  'vendor/flickity',
-  'vendor/shevy',
-  'vendor/slideout'
-;
+
+@import  '_sass/vendor/fontello/fa';
+@import  '_sass/vendor/flickity';
+@import  '_sass/vendor/shevy';
+@import  '_sass/vendor/slideout';
 
 // Globals
-@import
-  'globals/colours',
-  'globals/mixins',
-  'globals/newtype',
-  'globals/variables'
-;
+
+@import  '_sass/globals/colours';
+@import  '_sass/globals/mixins';
+@import  '_sass/globals/newtype';
+@import  '_sass/globals/variables';
 
 // Sections
-@import
-  'sections/footer',
-  'sections/header/desk-nav',
-  'sections/header/mob-sidemenu'
-;
+
+@import  '_sass/sections/footer';
+@import  '_sass/sections/header/desk-nav';
+@import  '_sass/sections/header/mob-sidemenu';
 
 // Blocks
-@import
-  'blocks/hero'
-;
+@import  '_sass/blocks/hero';
 
 // Partials
-@import
-  'partials/contact',
-  'partials/etc',
-  'partials/ripples',
-  'partials/404'
+@import  '_sass/partials/contact';
+@import  '_sass/partials/etc';
+@import  '_sass/partials/ripples';
+@import  '_sass/partials/404';
 ;
 
 // Global Overrides
-@import 'globals/overrides';
+@import '_sass/globals/overrides';
