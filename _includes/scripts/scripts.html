@@ -1,4 +1,5 @@
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js"></script>
+  <script src="{{ site.baseurl }}/assets/scripts/main.js"></script>
+
 
   <script>
     var slideout = new Slideout({
@@ -9,7 +10,6 @@
       'side'      : 'right',
     });
 
-    /* Toggle button */
     document.querySelector('.toggle-button').addEventListener('click', function() {
       slideout.toggle();
     });

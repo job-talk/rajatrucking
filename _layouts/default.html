@@ -4,22 +4,20 @@ layout: compress
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
-{% include head/head.html %}
+{% include head/head-common.html %}
 
 <body class="{{ page.nav-class }}">
 
-  <!--[if lte IE 9]>
-      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-  <![endif]-->
-  
+  {% include components/outdated-browser.html %}
+
   <div class="page">
 
-    {% include nav/nav_mob.html %}
+    {% include components/nav/nav-mobile.html %}
 
     <main class="content panel" id="panel">
 
       <header>
-        {% include nav/nav_desk.html %}
+        {% include components/nav/nav-desktop.html %}
       </header>
 
       <div class="page_wrapper mob-margin">
@@ -35,7 +33,7 @@ layout: compress
     </main>
 
     <footer>
-      {% include footer.html %}
+      {% include components/footer.html %}
     </footer>
 
   </div>
