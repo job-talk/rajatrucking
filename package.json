@@ -1,0 +1,40 @@
+{
+  "name": "rajatrucking",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/job-talk/rajatrucking.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/job-talk/rajatrucking/issues"
+  },
+  "homepage": "https://github.com/job-talk/rajatrucking#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "child_process": "^1.0.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-imagemin": "^3.3.0",
+    "gulp-purifycss": "^0.2.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.1",
+    "gulp-uglify": "^3.0.0",
+    "imagemin-jpeg-recompress": "^5.1.0",
+    "imagemin-pngquant": "^5.0.1"
+  },
+  "dependencies": {
+    "critical": "^0.9.1",
+    "flickity": "^2.0.10",
+    "flickity-bg-lazyload": "^1.0.0",
+    "slideout": "^1.0.1"
+  }
+}

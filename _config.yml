@@ -25,10 +25,13 @@ exclude:
   - Gemfile.lock
   - .gitignore
   - README.md
+  - gulpfile.js
+  - package.json
+  - package-lock.json
+  - ignores
+  - node_modules
+  - gulp
 
-sass:
-  sass_dir: _sass
-  style: compressed
 
 defaults:
   - scope:
