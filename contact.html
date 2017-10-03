@@ -5,78 +5,80 @@ active: contact
 ---
 
 <div id="content">
-    <div id="left">
-      <div id="map">
-        <section>
-          <p id="map-title">Where To Find Us</p>
 
-          <div id="goog-map-contain">
-            <div id="map-respon" data-slideout-ignore>
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1495.720815365184!2d-97.41268056557756!3d32.94847764132854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864ddddf417337e3%3A0x37e86da4d25b5afa!2sRaja+Trucking+LLC.!5e0!3m2!1sen!2sus!4v1488475777247" width="600" height="338" frameborder="0" frameborder="1" allowfullscreen></iframe>
-            </div>
-          </div>
-
-          <script>
-            var adr = '2555' + ' ' + 'Bluemound' + ' ' + 'Rd.' + ' ' + 'West' + '<br />' + ' ' + 'Haslet,' + ' ' + '<abbr title="Texas">TX</abbr>' + ' ' + '76052' + ' ' +'USA';
-
-            var goog_adr = 'https://' + 'www.' + 'goo.gl/maps/' + 'xK4ZKLB1ge52';
-            document.write('<div itemscope itemtype="http://schema.org/LocalBusiness">'
-            + '<p class="other">'
-            + '<span itemprop="streetAddress">'
-            + '<i class="fa-location  fa-fw ic-contact" aria-hidden="true" aria-label="Buiness street address"></i>'
-            + '<a href="' + goog_adr+ '">' + adr + '</a>' + '</span>' + '</p>' + '</div>');
-          </script>
-        </section>
-      </div>
-
-    </div>
-
-  <div id="right">
-      <form id="contact-form" action="https://formspree.io/" method="POST">
-        <section>
-          <p id="right-title">Get in Contact</p>
-
-          <input class="con-text" id="name" name="name" type="text" placeholder="Name"/>
-          <input class="con-text" id="_replyto" name="_replyto" type="email" placeholder="Email" />
-          <input class="con-text" id="subject" name="subject" type="text" placeholder="Subject" />
-          <textarea id="messages" name="message" type="textarea" placeholder="Message" rows="4"></textarea>
-          <input class="button-primary ripple" value="Send" type="submit">
-
-          <input name="_subject" type="hidden" value="Website contact form" />
-          <input id="gotcha" name="_gotcha" type="text" />
-          <input name="_format" type="hidden" value="plain" />
-        </section>
-      </form>
+  <div id="left">
+    <div id="map">
       <section>
-        <p id="contact-other">Other Way</p>
+        <p id="map-title">Where To Find Us</p>
+
+        <div id="goog-map-contain">
+          <div id="map-respon" data-slideout-ignore>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1495.720815365184!2d-97.41268056557756!3d32.94847764132854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864ddddf417337e3%3A0x37e86da4d25b5afa!2sRaja+Trucking+LLC.!5e0!3m2!1sen!2sus!4v1488475777247" width="600" height="338" frameborder="0" frameborder="1" allowfullscreen></iframe>
+          </div>
+        </div>
 
         <script>
-          var eml = 'rajatruckingllc' + '@' + 'sbc' + 'global' + '.net';
+          var adr = '2555' + ' ' + 'Bluemound' + ' ' + 'Rd.' + ' ' + 'West' + '<br />' + ' ' + 'Haslet,' + ' ' + '<abbr title="Texas">TX</abbr>' + ' ' + '76052' + ' ' +'USA';
 
-          document.write(' <div itemscope itemtype="http://schema.org/LocalBusiness"> '
-           + '<p class="other">'
-           + '<i class="fa-mail-alt fa-fw ic-contact" aria-hidden="true" aria-label="Business email"></i>'
-           + '<span itemprop="email">'
-           + '<a href="mai' + 'lto:' + eml +'">' + eml + '</a>'
-           + '</span>' + '</p>' + '</div>');
-        </script>
-
-
-        <script>
-          var pho = '+1' + ' ' + '(817)' + ' ' + '237-' + '42' + '1' + '3';
-
-          var pho_mat = '+1' + '817' + '237' + '42' + '1' + '3';
-
-          document.write(' <div itemscope itemtype="http://schema.org/LocalBusiness"> '
-           + '<p class="other">'
-           + '<i class="fa-phone fa-fw ic-contact" aria-hidden="true" aria-label="Phone number"></i>'
-           /* + '<i>Phone #:</i>'*/ + '<span itemprop="telephone">'
-           + '<a href="' + 'tel:' + pho_mat + '">' + pho + '</a>'
-           + '</span>' + '</p>' +'</div>');
+          var goog_adr = 'https://' + 'www.' + 'goo.gl/maps/' + 'xK4ZKLB1ge52';
+          document.write('<div itemscope itemtype="http://schema.org/LocalBusiness">'
+          + '<p class="other">'
+          + '<span itemprop="streetAddress">'
+          + '<i class="fa-location  fa-fw ic-contact" aria-hidden="true" aria-label="Buiness street address"></i>'
+          + '<a href="' + goog_adr+ '">' + adr + '</a>' + '</span>' + '</p>' + '</div>');
         </script>
       </section>
-
+    </div>
   </div>
+
+
+  <div id="right">
+    <form id="contact-form" action="https://formspree.io/" method="POST">
+      <section>
+        <p id="right-title">Get in Contact</p>
+
+        <input class="con-text" id="name" name="name" type="text" placeholder="Name" required />
+        <input class="con-text" id="_replyto" name="_replyto" type="email" placeholder="Email" required />
+        <input class="con-text" id="subject" name="subject" type="text" placeholder="Subject" required />
+        <textarea id="messages" name="message" type="textarea" placeholder="Message" rows="4" required></textarea>
+        <input class="button-primary ripple" value="Send" type="submit">
+
+        <input name="_subject" type="hidden" value="Website contact form" />
+        <input id="gotcha" name="_gotcha" type="text" />
+        <input name="_format" type="hidden" value="plain" />
+      </section>
+    </form>
+
+    <section>
+      <p id="contact-other">Other Way</p>
+
+      <script>
+        var eml = 'rajatruckingllc' + '@' + 'sbc' + 'global' + '.net';
+
+        document.write(' <div itemscope itemtype="http://schema.org/LocalBusiness"> '
+          + '<p class="other">'
+          + '<i class="fa-mail-alt fa-fw ic-contact" aria-hidden="true" aria-label="Business email"></i>'
+          + '<span itemprop="email">'
+          + '<a href="mai' + 'lto:' + eml +'">' + eml + '</a>'
+          + '</span>' + '</p>' + '</div>');
+      </script>
+
+
+      <script>
+        var pho = '+1' + ' ' + '(817)' + ' ' + '237-' + '42' + '1' + '3';
+
+        var pho_mat = '+1' + '817' + '237' + '42' + '1' + '3';
+
+        document.write(' <div itemscope itemtype="http://schema.org/LocalBusiness"> '
+          + '<p class="other">'
+          + '<i class="fa-phone fa-fw ic-contact" aria-hidden="true" aria-label="Phone number"></i>'
+          + '<span itemprop="telephone">'
+          + '<a href="' + 'tel:' + pho_mat + '">' + pho + '</a>'
+          + '</span>' + '</p>' +'</div>');
+      </script>
+    </section>
+  </div>
+
 </div>
 
 <script>

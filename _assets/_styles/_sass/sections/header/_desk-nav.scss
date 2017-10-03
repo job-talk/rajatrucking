@@ -12,7 +12,6 @@ nav {
   width: 100%;
   min-height: 64px;
 
-  //padding: 0 0.5rem;
   padding: 0 20px;
 
   @media screen and (max-width: 350px) {
@@ -45,9 +44,6 @@ nav {
     }
 
     & a {
-      //display: block;
-
-      //padding: 0 15px;
 
       font: {
         size: 1.6em;
@@ -58,8 +54,7 @@ nav {
 
       color: $nav-desk-links;
 
-      -webkit-transition: background-color .3s;
-              transition: background-color .3s;
+      transition: background-color .3s;
       cursor: pointer;
 
 
@@ -87,27 +82,20 @@ nav {
 
     @media only screen and (max-width: 992px ) {
       left: 50%;
-      //left: calc(50% - 16px/2);
-
-      -webkit-transform: translateX(-50%);
-              transform: translateX(-50%);
+      transform: translateX(-50%);
     }
 
     @media only screen and (max-width: 350px) {
       left: 0%;
-      -webkit-transform: translateX(0%);
-              transform: translateX(0%);
+      transform: translateX(0%);
 
     }
 
     &.left {
       @media only screen and (min-width: 992px) {
         left: 0.5rem;
-
         padding: 0;
-
-        -webkit-transform: none;
-                transform: none;
+        transform: none;
       }
     }
   }
@@ -116,26 +104,6 @@ nav {
 nav .brand-logo img {
   height: 64px;
 }
-
-// #brand-logo-wrapper {
-//   width: 100%;
-// }
-
-//  .brand-logo {
-//    height: 72px;
-//    width: 100%;
-
-//    background: url($baseurl + '/assets/img/word_logo_black_40_white.svg');
-//    background-repeat: no-repeat;
-//    background-size: contain;
-
-//    &:hover {
-//      background: url($baseurl + '/assets/img/word_logo_blue_40_white.svg');
-//      background-repeat: no-repeat;
-//      background-size: contain;
-
-//    }
-//  }
 
 .nav-wrapper {
   position: relative;

@@ -17,12 +17,8 @@ a {
   margin-bottom: 1em;
 
   // Box-model
-  @include flexbox-display-flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
-
+  display: flex;
+  flex-flow: row wrap;
   width: 100%;
 
   // Typographic
@@ -179,7 +175,6 @@ a {
 
   width: 100%;
 
-  //color: #444;
 }
 
 #contact-other {

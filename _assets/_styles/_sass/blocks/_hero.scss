@@ -7,9 +7,6 @@
 
 .hero_carousel {
   margin-bottom: 30px;
-
-  // min-width: 100%;
-  // min-height: 100%;
   height: 350px;
 
   @media screen and (max-width: 500px) {
@@ -24,7 +21,6 @@
 
 
   background: #1d1f20;
-  // background-size: cover;
 
   & .flickity-viewport {
     position: absolute;
@@ -34,7 +30,6 @@
 
 .carousel-cell {
   width: 100%;
-  //max-width: 500px;
   margin-right: 10px;
 
   height: 350px;
@@ -79,14 +74,12 @@
 
   & h1 {
     font: {
-      // size: 6em;
       size: 3.2rem;
       weight: normal;
     }
     letter-spacing: -2px;
     line-height: 1.2;
 
-    //text-shadow: 4px 3px 0 #85c1e9, 9px 8px 0 rgba(0,0,0,0.15);
     color: #fff;
 
     text-shadow: 4px 3px 0 #4a4a4a, 9px 8px 0 rgba(0,0,0,0.15);
@@ -97,12 +90,9 @@
       text-shadow: 1px 3px 0 #4a4a4a, 4px 4px 0 rgba(0,0,0,0.15)
     }
 
-    //@media screen and (max-width: 375px) { font-size: 2.6rem; }
     @media screen and (max-width: 375px) { font-size: 2.2rem; }
 
-    //@media screen and (min-width: 960px) { font-size: 7.8rem; }
     @media screen and (min-width: 960px) { font-size: 5.8rem; }
-    //@media screen and (min-width: 768px) { font-size: 5.8rem; }
 
   }
 }

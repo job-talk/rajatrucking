@@ -1,24 +1,18 @@
-/*
- *
- * 'Other' rules
- *
- */
+// *
+// * 'Other' rules
+// *
+
 // Desktop
 @media screen and (min-width: 993px) {
-  .hamburger, .hamburger-wrapper { display: none; }
+  .hamburger, .hamburger-wrapper {
+    display: none;
+  }
 }
 
-main { display: inline-block; }
+main {
+  display: inline-block;
+}
 
-.content { text-align: left; }
-
-hr.slender {
-  border: 0;
-  height: 1px;
-  margin: {
-    top: 1.4rem;
-    bottom: 1.4rem;
-  }
-
-  background-image:         linear-gradient(left,transparent,rgba(0,0,0,0.75),transparent);
+.content {
+  text-align: left;
 }

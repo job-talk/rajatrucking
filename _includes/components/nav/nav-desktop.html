@@ -1,10 +1,8 @@
 <nav>
   <div class="nav-wrapper">
-    <!--<div id="brand-logo-wrapper">-->
       <a href="{{ site.baseurl }}/" class="brand-logo">
         <img src="{{ site.baseurl }}/assets/img/word_logo_black_40_white_llc.svg" alt="Raja Trucking logo" />
       </a>
-    <!--</div>-->
       <div class="hamburger-wrapper">
         <div class="hamburger toggle-button">
           <span class="line"></span>
@@ -27,21 +25,21 @@
 
       {% if page.active == "services" %}
         <li>
-          <a class="a-highlight active" href="{{ site.baseurl }}/services">Services</a>
+          <a class="a-highlight active" href="{{ site.baseurl }}/services/">Services</a>
         </li>
       {% else %}
         <li>
-          <a class="a-highlight" href="{{ site.baseurl }}/services">Services</a>
+          <a class="a-highlight" href="{{ site.baseurl }}/services/">Services</a>
         </li>
       {% endif %}
 
       {% if page.active == "contact" %}
         <li>
-          <a class="a-highlight active" href="{{ site.baseurl }}/contact">Contact Us</a>
+          <a class="a-highlight active" href="{{ site.baseurl }}/contact/">Contact Us</a>
         </li>
       {% else %}
         <li>
-          <a class="a-highlight" href="{{ site.baseurl }}/contact">Contact Us</a>
+          <a class="a-highlight" href="{{ site.baseurl }}/contact/">Contact Us</a>
         </li>
       {% endif %}
 
