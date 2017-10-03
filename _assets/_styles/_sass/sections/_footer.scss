@@ -1,12 +1,10 @@
-/*
- *
- * Footer
- *
- */
+// *
+// * Footer
+// *
 
 
 // Sticky flexbox footer
-// ***********************
+// *********************
 
 html,
 body { height: 100%; }
@@ -14,14 +12,12 @@ body { height: 100%; }
 .page {
   min-height: 100vh;
   width: 100%;
-  @include flexbox-display-flex;
-  @include flexbox-direction-column;
+  display: flex;
+  flex-direction: column;
 }
 
 .content {
-  -webkit-box-flex: 1;
-          -ms-flex: 1;
-              flex: 1;
+  flex: 1;
 }
 // end of flex sticky footer
 
@@ -30,15 +26,10 @@ body { height: 100%; }
 }
 
 footer {
-  //padding: .5rem 1rem;
   padding: 8px 20px;
-  // margin-top: 1em;
-
   width: 100%;
 
   background-color: $footer-bg;
-  background-image: -webkit-linear-gradient(305deg, $footer-bg);
-  background-image: linear-gradient(145deg, $footer-bg);
   @include foot-box-shadow;
 }
 
@@ -46,15 +37,10 @@ footer {
   &-nav {
     margin-bottom: 0;
     line-height: 1;
-    
-    @include flexbox-display-inline-flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+
+    display: inline-flex;
+    flex-flow: row wrap;
+    align-items: center;
     width: 100%;
 
     list-style-type: none;
@@ -65,8 +51,7 @@ footer {
       & a {
         text: {
           decoration: none;
-          -webkit-transform: uppercase;
-                  transform: uppercase;
+          transform: uppercase;
         }
         font: {
           size: .6em;
@@ -83,8 +68,7 @@ footer {
       margin-right: 1em;
 
       display: inline-block;
-      -ms-flex-item-align: end;
-          align-self: flex-end;
+      align-self: flex-end;
 
       @media screen and (max-width: 250px) {
         margin-right: .5em;
@@ -102,24 +86,15 @@ footer {
   &-copyr {
     margin-right: 1.5em;
 
-    -ms-flex-item-align: start;
-        align-self: flex-start;
+    align-self: flex-start;
 
     font-weight: 500;
-
-    //&-sub {
-    //  margin-left: .1em;
-
-    //  font-size: .53em !important;
-    //}
   }
 
   &-float-right { text-align: right; }
 
   &-invisible {
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
+    flex: 1;
 
     visibility: hidden;
   }

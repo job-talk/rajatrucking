@@ -39,7 +39,7 @@ $baseurl: "{{ site.baseurl }}";
 
 @import  '_sass/globals/colours';
 @import  '_sass/globals/mixins';
-@import  '_sass/globals/newtype';
+@import  '_sass/globals/typography';
 @import  '_sass/globals/variables';
 
 // Sections
@@ -56,7 +56,6 @@ $baseurl: "{{ site.baseurl }}";
 @import  '_sass/partials/etc';
 @import  '_sass/partials/ripples';
 @import  '_sass/partials/404';
-;
 
 // Global Overrides
 @import '_sass/globals/overrides';
