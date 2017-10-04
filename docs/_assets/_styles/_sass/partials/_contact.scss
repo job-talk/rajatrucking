@@ -1,44 +1,34 @@
-/*
- *
- * Contact Page
- *
- */
+// *
+// * Contact Page
+// *
 
 ul { list-style: none; }
 
 a {
   text-decoration: none;
-
   color: #fff;
 }
 
 #content {
-  // Positioning
   margin-bottom: 1em;
 
-  // Box-model
   display: flex;
   flex-flow: row wrap;
   width: 100%;
 
-  // Typographic
   font-size: 1em;
-
 
   & #left {
     padding: 0 10px;
 
     max-width: 60%;
     -webkit-box-flex: 2;
-        -ms-flex: 2 0 60%;
-            flex: 2 0 60%;
-
+    flex: 2 0 60%;
 
     @media screen and (max-width: 900px) {
       min-width: 100%;
       -webkit-box-flex: 2;
-          -ms-flex: 2 0 100%;
-              flex: 2 0 100%;
+      flex: 2 0 100%;
 
       margin-bottom: 3em;
     }
@@ -94,8 +84,11 @@ a {
 
     & form {
       margin-bottom: 1em;
-
       border-bottom: solid thin #8e9699;
+
+      & input, textarea {
+        border-radius: 0;
+      }
 
       & input:last-of-type,
       & textarea:last-of-type {
@@ -119,9 +112,9 @@ a {
       & input[type="textarea"],
       & textarea[type="textarea"] {
         vertical-align: text-top;
-
         min-height: 75px;
       }
+
     } // end of #form
   } // end of #right
 

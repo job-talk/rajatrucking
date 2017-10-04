@@ -10,8 +10,8 @@ url: https://rajatrucking.net
 permalink: pretty
 
 # Structure configuration
-source: ./
-destination: ./_site
+source: docs/
+destination: _site/
 
 # Build settings
 markdown: kramdown

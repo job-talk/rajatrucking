@@ -6,7 +6,7 @@ const imageminPngQuant       = require ('imagemin-pngquant');
 
 
 gulp.task('images', function() {
-  gulp.src('_assets/_images/**/*.{jpg,JPG,jpeg,JPEG,png,PNG,svg,SVG,gif,GIF}')
+  gulp.src('docs/_assets/_images/**/*.{jpg,JPG,jpeg,JPEG,png,PNG,svg,SVG,gif,GIF}')
     .pipe(imagemin([
       imagemin.gifsicle(),
       imageminJpegRecompress({
@@ -21,5 +21,5 @@ gulp.task('images', function() {
       verbose: true
     }))
 
-    .pipe(gulp.dest('assets/img'));
+    .pipe(gulp.dest('docs/assets/img'));
 });

@@ -8,13 +8,13 @@ const gulp = require('gulp');
 gulp.task('watch', function () {
   gulp.watch(
     [
-      '_assets/_styles/_sass/**/*.scss',
-      '_assets/_styles/**/*.scss'
+      'docs/_assets/_styles/_sass/**/*.scss',
+      'docs/_assets/_styles/**/*.scss'
     ], ['sass']);
 
   gulp.watch(
     [
-      '_assets/_scripts/**/*.js'
+      'docs/_assets/_scripts/**/*.js'
     ], ['scripts']);
 
   gulp.watch(

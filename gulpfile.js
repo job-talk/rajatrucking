@@ -23,4 +23,4 @@ require('./gulp/tasks/purifycss');
  */
 gulp.task('default', ['browser-sync', 'watch']);
 gulp.task('build', ['scripts-prod', 'sass-prod', 'purify', 'jekyll-prod']);
-gulp.task('critical', ['critical-home', 'critical-services', 'critical-contact', 'critical-404']);
+// gulp.task('critical', ['critical-home', 'critical-services', 'critical-contact', 'critical-404']);

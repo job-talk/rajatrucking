@@ -16,7 +16,7 @@ gulp.task('scripts', function() {
     .pipe(concat('main.js'))
     .pipe(gulp.dest('_site/assets/scripts'))
     .pipe(browserSync.reload({ stream: true }))
-    .pipe(gulp.dest('assets/scripts/'));
+    .pipe(gulp.dest('docs/assets/scripts/'));
 });
 
 
@@ -33,5 +33,5 @@ gulp.task('scripts', function() {
     .pipe(concat('main.js'))
     .pipe(uglify())
     .pipe(gulp.dest('_site/assets/scripts/'))
-    .pipe(gulp.dest('assets/scripts/'));;
+    .pipe(gulp.dest('docs/assets/scripts/'));;
 });
