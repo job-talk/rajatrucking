@@ -1,5 +1,4 @@
-//---
-//---
+
 @charset "UTF-8";
 
 // ------------
@@ -11,51 +10,5 @@ $baseurl: "{{ site.baseurl }}";
 // Sass file Imports
 // -----------------
 
-// ! Skeleton Framework | 1.0.8 | MIT | Feb 22nd, 2016
-// https://github.com/skeleton-framework/skeleton-framework
-
-@import  '_sass/vendor/skeleton/partials/_base-styles';
-@import  '_sass/vendor/skeleton/partials/_buttons';
-@import  '_sass/vendor/skeleton/partials/_clearing';
-@import  '_sass/vendor/skeleton/partials/_code';
-@import  '_sass/vendor/skeleton/partials/_forms';
-@import  '_sass/vendor/skeleton/partials/_grid';
-@import  '_sass/vendor/skeleton/partials/_links';
-@import  '_sass/vendor/skeleton/partials/_lists';
-@import  '_sass/vendor/skeleton/partials/_spacing';
-@import  '_sass/vendor/skeleton/partials/_tables';
-@import  '_sass/vendor/skeleton/partials/_typography';
-@import  '_sass/vendor/skeleton/partials/_utilities';
-
-// Third-party
-
-@import  '_sass/vendor/fontello/fa';
-@import  '_sass/vendor/flickity';
-@import  '_sass/vendor/shevy';
-@import  '_sass/vendor/slideout';
-
-
-// Globals
-
-@import  '_sass/globals/colours';
-@import  '_sass/globals/mixins';
-@import  '_sass/globals/typography';
-@import  '_sass/globals/variables';
-
 // Sections
-
-@import  '_sass/sections/footer';
-@import  '_sass/sections/header/desk-nav';
-@import  '_sass/sections/header/mob-sidemenu';
-
-// Blocks
-@import  '_sass/blocks/hero';
-
-// Partials
-@import  '_sass/partials/contact';
-@import  '_sass/partials/etc';
-@import  '_sass/partials/ripples';
-@import  '_sass/partials/404';
-
-// Global Overrides
-@import '_sass/globals/overrides';
+@import '_sass/sections/feature';
