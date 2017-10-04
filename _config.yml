@@ -3,10 +3,10 @@ title: Raja Trucking, LLC
 description:
   An uprising freight transportation company that provides services for freight brokers and various companies to locations throughout the 48 states.
 timezone: America/Dallas
+url: https://rajatrucking.net
 
 # URLs
 baseurl:
-url: https://rajatrucking.net
 permalink: pretty
 
 # Structure configuration
@@ -37,6 +37,6 @@ defaults:
   - scope:
       path: ""
     values:
-      image: /assets/img/trucks/blue_2.JPG
+      image: docs/assets/img/trucks/blue_2.JPG
       height: 1072
       width: 2048

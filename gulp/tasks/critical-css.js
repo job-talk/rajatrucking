@@ -1,43 +1,42 @@
 var gulp     = require('gulp');
 var gutil    = require('gulp-util');
-var critical = require('critical').stream;
+var critical = require('critical');
 
 
 /*
  * Critical CSS for home/index
  */
-// gulp.task('critical-home', ['jekyll-dev'], function(cb) {
-//   critical.generate({
-//     base: '_site/',
-//     html: 'index.html',
-//     src: 'index.html',
-//     css: ['./assets/styles/main.css'],
-//     dest: '_includes/critical-css/home-critical.css',
-//     minify: true,
-//     width: 320,
-//     height: 480,
-//     ignore: ['font-face']
-//   }, function (err, output) {
-//       console.log(err);
-//       console.log(output);
-//   });
-// });
-
-gulp.task('critical', function() {
-  return gulp.src(['./_site/**/*.html'])
-    .pipe(critical({
-      base: './_site',
-      inline: false,
-      minify: true,
-      width: 320,
-      height: 480,
-      css: ['assets/styles/main.css']
-    }))
-    .on('error', function(err) {
-       gutil.log(gutil.colors.red(err.message));
-    })
-    .pipe(gulp.dest('./_includes/critical/'));
+gulp.task('critical-home', ['jekyll-dev'], function(cb) {
+  critical.generate({
+    base: 'docs/',
+    src: 'index.html',
+    css: ['docs/assets/styles/main.css'],
+    dest: '_includes/critical-css/home-critical.css',
+    minify: true,
+    width: 320,
+    height: 480,
+    ignore: ['font-face']
+  }, function (err, output) {
+      console.log(err);
+      console.log(output);
+  });
 });
+
+// gulp.task('critical', function() {
+//   return gulp.src(['/docs/**/*.html'])
+//     .pipe(critical({
+//       base: 'docs/',
+//       inline: false,
+//       minify: true,
+//       width: 320,
+//       height: 480,
+//       css: ['assets/styles/main.css']
+//     }))
+//     .on('error', function(err) {
+//        gutil.log(gutil.colors.red(err.message));
+//     })
+//     .pipe(gulp.dest('./_includes/critical/'));
+// });
 
 /*
  * Critical CSS for services

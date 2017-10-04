@@ -9,7 +9,7 @@ const browserSync = require('browser-sync');
 /*
  * Compile files from _scss into both _site/assets (live injecting) & site (for future jekyll builds)
  */
-const mainScss    = '_assets/_styles/main.scss';
+const mainScss    = 'docs/_assets/_styles/main.scss';
 
 var sassOptions = {
   errLogToConsole: true,
