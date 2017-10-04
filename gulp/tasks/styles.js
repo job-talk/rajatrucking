@@ -9,7 +9,7 @@ const browserSync = require('browser-sync');
 /*
  * Compile files from _scss into both _site/assets (live injecting) & site (for future jekyll builds)
  */
-const mainScss    = '_assets/_styles/main.scss';
+const mainScss    = 'docs/_assets/_styles/main.scss';
 
 var sassOptions = {
   errLogToConsole: true,
@@ -28,7 +28,7 @@ gulp.task('sass', function() {
    .pipe(sourcemaps.write())
    .pipe(gulp.dest('_site/assets/styles/'))
    .pipe(browserSync.reload({ stream: true }))
-   .pipe(gulp.dest('assets/styles/'));
+   .pipe(gulp.dest('docs/assets/styles/'));
 });
 
 
@@ -48,5 +48,5 @@ gulp.task('sass-prod', function () {
     .pipe(prefix(autoPrefixerOptions, { cascade: true }))
     .pipe(cssnano())
     .pipe(gulp.dest('_site/assets/styles/'))
-    .pipe(gulp.dest('assets/styles/'));
+    .pipe(gulp.dest('docs/assets/styles/'));
 });

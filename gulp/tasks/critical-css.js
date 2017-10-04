@@ -1,5 +1,6 @@
-const gulp     = require('gulp');
-const critical = require('critical');
+var gulp     = require('gulp');
+var gutil    = require('gulp-util');
+var critical = require('critical');
 
 
 /*
@@ -7,27 +8,44 @@ const critical = require('critical');
  */
 gulp.task('critical-home', ['jekyll-dev'], function(cb) {
   critical.generate({
-    //inline: true,
-    base: './',
+    base: 'docs/',
     src: 'index.html',
-    css: ['assets/styles/main.css'],
+    css: ['docs/assets/styles/main.css'],
     dest: '_includes/critical-css/home-critical.css',
     minify: true,
     width: 320,
     height: 480,
     ignore: ['font-face']
+  }, function (err, output) {
+      console.log(err);
+      console.log(output);
   });
 });
 
+// gulp.task('critical', function() {
+//   return gulp.src(['/docs/**/*.html'])
+//     .pipe(critical({
+//       base: 'docs/',
+//       inline: false,
+//       minify: true,
+//       width: 320,
+//       height: 480,
+//       css: ['assets/styles/main.css']
+//     }))
+//     .on('error', function(err) {
+//        gutil.log(gutil.colors.red(err.message));
+//     })
+//     .pipe(gulp.dest('./_includes/critical/'));
+// });
 
 /*
- * Critical CSS for chanting index
+ * Critical CSS for services
  */
 gulp.task('critical-services', ['jekyll-dev'], function(cb) {
   critical.generate({
     //inline: true,
     base: '_site/',
-    src: 'services.html',
+    src: 'services/index.html',
     css: ['assets/styles/main.css'],
     dest: '_includes/critical-css/services-critical.css',
     minify: true,
@@ -37,23 +55,6 @@ gulp.task('critical-services', ['jekyll-dev'], function(cb) {
   });
 });
 
-
-/*
- * Critical CSS for chanting index
- */
-gulp.task('critical-contact', ['jekyll-dev'], function(cb) {
-  critical.generate({
-    //inline: true,
-    base: '',
-    src: 'services.html',
-    css: ['assets/styles/main.css'],
-    dest: '_includes/critical-css/services-critical.css',
-    minify: true,
-    width: 320,
-    height: 480,
-    ignore: ['font-face']
-  });
-});
 
 
 /*
@@ -62,7 +63,7 @@ gulp.task('critical-contact', ['jekyll-dev'], function(cb) {
 gulp.task('critical-404', ['jekyll-dev'], function(cb) {
   critical.generate({
     //inline: true,
-    base: '../../',
+    base: '_site/',
     src: '404.html',
     css: ['assets/styles/main.css'],
     dest: '_includes/critical-css/404-critical.css',

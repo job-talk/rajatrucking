@@ -8,21 +8,22 @@ const gulp = require('gulp');
 gulp.task('watch', function () {
   gulp.watch(
     [
-      '_assets/_styles/_sass/**/*.scss',
-      '_assets/_styles/**/*.scss'
+      'docs/_assets/_styles/_sass/**/*.scss',
+      'docs/_assets/_styles/**/*.scss'
     ], ['sass']);
 
   gulp.watch(
     [
-      '_assets/_scripts/**/*.js'
+      'docs/_assets/_scripts/**/*.js'
     ], ['scripts']);
 
   gulp.watch(
     [
-      '**/*.txt',
-      '**/*.html',
-      '_layouts/**/*.html',
-      '_includes/**/*.html',
-      'assets/img/**/*.{jpg,JPG,jpeg,JPEG,png,PNG,svg,SVG,gif,GIF,webp,WEBP,tif,TIF}'
+      'docs/**/*.txt',
+      'docs/**/*.html',
+      'docs/_layouts/**/*.html',
+      'docs/_includes/**/*.html',
+      'docs/assets/img/**/*.{jpg,JPG,jpeg,JPEG,png,PNG,svg,SVG,gif,GIF,webp,WEBP,tif,TIF}',
+      'docs/_assets/images/**/*.{jpg,JPG,jpeg,JPEG,png,PNG,svg,SVG,gif,GIF,webp,WEBP,tif,TIF}'
     ], ['jekyll-rebuild']);
 });
