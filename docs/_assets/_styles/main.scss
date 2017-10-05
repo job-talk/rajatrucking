@@ -10,5 +10,17 @@ $baseurl: "{{ site.baseurl }}";
 // Sass file Imports
 // -----------------
 
+// Vendor
+@import '_sass/vendor/bulma/bulma';
+
+
+// Globals
+@import '_sass/globals/variables';
+
+@import '_sass/globals/global';
+
+
 // Sections
 @import '_sass/sections/feature';
+@import '_sass/sections/nav';
+@import '_sass/sections/services';

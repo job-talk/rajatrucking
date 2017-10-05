@@ -11,7 +11,7 @@ gulp.task('scripts', function() {
   return gulp.src([
     './node_modules/flickity/dist/flickity.pkgd.js',
     './node_modules/flickity-bg-lazyload/bg-lazyload.js',
-    'docs/_assets/_scripts/navbar.js'
+    'docs/_assets/_scripts/**/*.js'
   ])
     .pipe(concat('main.js'))
     .pipe(gulp.dest('_site/assets/scripts'))
@@ -26,9 +26,9 @@ gulp.task('scripts', function() {
  */
  gulp.task('scripts-prod', function() {
    return gulp.src([
-     // './node_modules/slideout/dist/slideout.min.js',
-     './node_modules/flickity/dist/flickity.pkgd.min.js',
-     './node_modules/flickity-bg-lazyload/bg-lazyload.js'
+     './node_modules/flickity/dist/flickity.pkgd.js',
+     './node_modules/flickity-bg-lazyload/bg-lazyload.js',
+     'docs/_assets/_scripts/**/*.js'
    ])
     .pipe(concat('main.js'))
     .pipe(uglify())

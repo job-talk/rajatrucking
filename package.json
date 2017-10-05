@@ -34,6 +34,7 @@
     "imagemin-pngquant": "^5.0.1"
   },
   "dependencies": {
+    "bulma": "^0.5.3",
     "flickity": "^2.0.10",
     "flickity-bg-lazyload": "^1.0.0",
     "slideout": "^1.0.1"
