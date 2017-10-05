@@ -1,3 +1,22 @@
 .services {
-  background-color: $warning;
+  // background-color: $primary;
+}
+
+.service-icon-container {
+  display: block;
+  width: 150px;
+  height: 150px;
+
+  margin-left: auto;
+  margin-right: auto;
+  padding: 13.5%;
+
+
+  background: $primary;
+  // border: 1px solid black;
+  border-radius: 50%;
+
+  &:hover {
+    background: $info;
+  }
 }
