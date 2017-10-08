@@ -1,16 +1,22 @@
 .services {
-  // background-color: $primary;
+  background-color: $background;
 }
 
 .service-icon-container {
-  display: block;
-  width: 150px;
-  height: 150px;
+  // display: block;
+  display: inline-block;
+  position: relative;
+  width: 120px;
+  height: 120px;
 
-  margin-left: auto;
-  margin-right: auto;
-  padding: 13.5%;
+  // margin-left: auto;
+  // margin-right: auto;
+  // padding: 13.5%;
 
+  @media screen and (min-width: $tablet) {
+    width: 150px;
+    height: 150px;
+  }
 
   background: $primary;
   // border: 1px solid black;
@@ -18,5 +24,13 @@
 
   &:hover {
     background: $info;
+  }
+
+  & i {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
