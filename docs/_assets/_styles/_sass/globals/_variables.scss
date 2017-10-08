@@ -1,27 +1,20 @@
 // Global Body
-$background: #f7f7f7;
+// $background: #f7f7f7;
 $background-accent: #5d737e;
 
-$text: #4c4c4c;
-
-// $link: #1eaedb;
-$link: #64b6ac;
-// $link-hover: #0fa0ce;
-$link-hover: #c0fdfb;
-$link-hover--underline: $link;
+// $text: #4c4c4c;
 
 
 .is-size-5-5 {
   font-size: 1.15rem;
 }
 
-// $truck-blue: #4a5e7f;
+// 2. Setup your own variables
+$background: #FFFFFF;
+$text: #00171F;
 
 
-// $background: #f7f7f7;
-// $text: #4c4c4c;
-//
-// $accent: #5d737e;
-//
-// $link: #64b6ac;
-// $link-a: #c0fdfb;
+
+$link: #007EA7;
+$link-hover: #00A8E8;
+$link-hover--underline: $link;

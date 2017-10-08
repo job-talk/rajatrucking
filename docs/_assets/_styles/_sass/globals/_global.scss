@@ -9,14 +9,17 @@ a {
   color: $link;
 }
 
-.link-highlight {
-  position: relative;
-  transition: all .2s ease-in-out;
 
-  &:hover {
-    color: $link-hover;
-    border-bottom: 2pt solid $link-hover--underline;
-    text-decoration: none;
+@media screen and (min-width: $tablet) {
+  .link-highlight {
+    position: relative;
     transition: all .2s ease-in-out;
+
+    &:hover {
+      color: $link-hover;
+      border-bottom: 2pt solid $link-hover--underline;
+      text-decoration: none;
+      transition: all .2s ease-in-out;
+    }
   }
 }
