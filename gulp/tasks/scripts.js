@@ -9,8 +9,8 @@ const browserSync = require('browser-sync');
 
 gulp.task('scripts', function() {
   return gulp.src([
-    './node_modules/flickity/dist/flickity.pkgd.js',
-    './node_modules/flickity-bg-lazyload/bg-lazyload.js',
+    // './node_modules/flickity/dist/flickity.pkgd.js',
+    // './node_modules/flickity-bg-lazyload/bg-lazyload.js',
     'docs/_assets/_scripts/**/*.js'
   ])
     .pipe(concat('main.js'))
