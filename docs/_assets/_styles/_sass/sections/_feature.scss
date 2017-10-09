@@ -1,6 +1,20 @@
 .has-bg-img {
-  background: url('../../assets/img/trucks/blue_2_radial_grad_75.jpg') center center;
   background-size: cover;
+  background: url('../../assets/img/trucks/blue_grad/blue-grad-mobile.jpg') center center;
+
+
+  @media screen and (min-width: $tablet) {
+    background: url('../../assets/img/trucks/blue_grad/blue-grad-tablet.jpg') center center;
+  }
+
+  @media screen and (min-width: $desktop) {
+    background: url('../../assets/img/trucks/blue_grad/blue-grad-desktop.jpg') center center;
+  }
+
+  @media screen and (min-width: $fullhd) {
+    background: url('../../assets/img/trucks/blue_grad/blue-grad-fullhd.jpg') center center;
+  }
+
 }
 
 

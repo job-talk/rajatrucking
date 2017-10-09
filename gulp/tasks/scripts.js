@@ -26,8 +26,8 @@ gulp.task('scripts', function() {
  */
  gulp.task('scripts-prod', function() {
    return gulp.src([
-     './node_modules/flickity/dist/flickity.pkgd.js',
-     './node_modules/flickity-bg-lazyload/bg-lazyload.js',
+     // './node_modules/flickity/dist/flickity.pkgd.js',
+     // './node_modules/flickity-bg-lazyload/bg-lazyload.js',
      'docs/_assets/_scripts/**/*.js'
    ])
     .pipe(concat('main.js'))
