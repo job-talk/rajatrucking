@@ -2,7 +2,6 @@ const gulp        = require('gulp');
 const sass        = require('gulp-sass');
 const sourcemaps  = require('gulp-sourcemaps');
 const prefix      = require('gulp-autoprefixer');
-const cssnano     = require('gulp-cssnano');
 const browserSync = require('browser-sync');
 
 
@@ -22,7 +21,7 @@ var autoPrefixerOptions = {
 
 gulp.task('sass', function() {
   return gulp.src([mainScss])
-    .pipe(sourcemaps.init())
+   .pipe(sourcemaps.init())
    .pipe(sass(sassOptions).on('error', sass.logError))
    .pipe(prefix(autoPrefixerOptions, { cascade: true }))
    .pipe(sourcemaps.write())
@@ -39,14 +38,13 @@ gulp.task('sass', function() {
 
 var sassProdOptions = {
   errLogToConsole: true,
-  outputStyle: 'compact'
+  outputStyle: 'compressed'
 };
 
 gulp.task('sass-prod', function () {
   return gulp.src(mainScss)
     .pipe(sass(sassProdOptions).on('error', sass.logError))
     .pipe(prefix(autoPrefixerOptions, { cascade: true }))
-    .pipe(cssnano())
     .pipe(gulp.dest('_site/assets/styles/'))
     .pipe(gulp.dest('docs/assets/styles/'));
 });
