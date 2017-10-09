@@ -1,20 +1,18 @@
-// Global Body
-// $background: #f7f7f7;
-$background-accent: #5d737e;
-
-// $text: #4c4c4c;
-
-
 .is-size-5-5 {
   font-size: 1.15rem;
 }
 
 // 2. Setup your own variables
 $background: #FFFFFF;
+$background-accent: #5d737e;
 $text: #00171F;
-
-
 
 $link: #007EA7;
 $link-hover: #00A8E8;
 $link-hover--underline: $link;
+
+$family-sans-serif: 'Open Sans', sans-serif;
+$family-primary: 'Lora', serif;
+
+$headings-text: $family-sans-serif;
+$body-text: $family-primary;
