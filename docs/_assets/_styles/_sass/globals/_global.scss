@@ -13,3 +13,11 @@ a {
 h1, h2, h3, h4, h5, h6, .navbar-item, .button {
   font-family: $headings-text;
 }
+
+.title {
+  color: $text-title !important;
+}
+
+.content .subtitle, .box .subtitle, .label, .navbar-item {
+  color: $text-subtitle !important;
+}

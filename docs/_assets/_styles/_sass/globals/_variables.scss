@@ -2,14 +2,24 @@
   font-size: 1.15rem;
 }
 
+$blue: #3581B8;
+$warning: #FF6978;
+
 // 2. Setup your own variables
 $background: #FFFFFF;
-$background-accent: #5d737e;
-$text: #00171F;
+$background-accent: #E8E8E8;
 
-$link: #007EA7;
-$link-hover: #00A8E8;
-$link-hover--underline: $link;
+$text: #00171F;
+$text-subtitle: #00151D;
+$text-title: #00131A;
+
+// $link: #007EA7;
+$link: $blue;
+$link-hover: #93E1D8;
+$link-hover-dark: #86CDC5;
+$link-hover--underline: $link-hover-dark;
+
+
 
 $family-sans-serif: 'Open Sans', sans-serif;
 $family-primary: 'Lora', serif;
