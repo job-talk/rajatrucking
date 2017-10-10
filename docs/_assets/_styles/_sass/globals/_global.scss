@@ -21,3 +21,9 @@ h1, h2, h3, h4, h5, h6, .navbar-item, .button {
 .content .subtitle, .box .subtitle, .label, .navbar-item {
   color: $text-subtitle !important;
 }
+
+
+.is-primary, .service-icon-container {
+  background-color: $warning !important;
+  color: #fff;
+}
