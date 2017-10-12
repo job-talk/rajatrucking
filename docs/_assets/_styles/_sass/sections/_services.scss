@@ -2,43 +2,14 @@
   background-color: $background;
 }
 
-.service-icon-container {
-  // display: block;
-  display: inline-block;
-  position: relative;
-  width: 120px;
-  height: 120px;
+.hero-services {
+  background-color: $warning !important;
+  background: linear-gradient(to bottom, #ff6978 0%, #ff919c 100%);
 
-  @media screen and (min-width: $tablet) {
-    width: 150px;
-    height: 150px;
-  }
-
-  background: $primary;
-  // border: 1px solid black;
-  border-radius: 50%;
-
-  &:hover {
-    background: $info;
-  }
-
-  & i {
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  & a i {
+    color: $background;
   }
 }
-
-.service-item {
-  margin-bottom: 2.5em;
-
-  @media screen and (min-width: $tablet) {
-    margin-bottom: 0;
-  }
-}
-
 
 .service-hero {
   margin-bottom: 20%;

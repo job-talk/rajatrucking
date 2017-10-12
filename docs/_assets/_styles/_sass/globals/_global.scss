@@ -23,11 +23,22 @@ h1, h2, h3, h4, h5, h6, .navbar-item, .button, .service-hero .title, .label {
 
 
 .is-primary, .service-icon-container {
-  background-color: $warning !important;
   color: #fff;
+  background-color: $warning !important;
+  // background: linear-gradient(to bottom, #ff6978 0%, #ff919c 100%);
 }
 
 
 ::selection {
   background-color: $link-hover;
+}
+
+.main {
+  &-wrapper {
+    margin-bottom: 0 !important;
+  }
+
+  &-column {
+    padding-bottom: 0 !important;
+  }
 }
