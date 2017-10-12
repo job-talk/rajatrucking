@@ -26,5 +26,11 @@
 
   &-scroll-up {
     border-radius: 50%;
+    display: inline-block;
+
+    & i {
+      left: 50%;
+      top: 50%;
+    }
   }
 }

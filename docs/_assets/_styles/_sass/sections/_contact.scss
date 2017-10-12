@@ -28,3 +28,8 @@
 .thanks .blackbox {
   margin-bottom: 10%;
 }
+
+
+.input:active, .textarea:active {
+  border-color: $link-hover;
+}
