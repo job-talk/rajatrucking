@@ -9,7 +9,7 @@ a {
   color: $link;
 }
 
-h1, h2, h3, h4, h5, h6, .navbar-item, .button {
+h1, h2, h3, h4, h5, h6, .navbar-item, .button, .service-hero .title {
   font-family: $headings-text;
 }
 
@@ -25,4 +25,9 @@ h1, h2, h3, h4, h5, h6, .navbar-item, .button {
 .is-primary, .service-icon-container {
   background-color: $warning !important;
   color: #fff;
+}
+
+
+::selection {
+  background-color: $link-hover;
 }

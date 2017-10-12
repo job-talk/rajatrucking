@@ -10,4 +10,8 @@
       transition: all .2s ease-in-out;
     }
   }
+
+  .link-highlight::selection {
+    color: #fff;
+  }
 }
