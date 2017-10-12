@@ -27,23 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-// Close menu when open using ESC key
-// document.onkeydown = function(evt) {
-//   evt = evt || window.event;
-//   const hamburger = document.querySelector('.navbar-burger');
-//
-//   if (evt.keyCode == 27) {
-//
-//     var target = hamburger.dataset.target;
-//     var $target = document.getElementById(target);
-//
-//     if ($target.classList.contains('is-active') {
-//       $target.classList.toggle('is-active');
-//     }
-//   }
-// };
-
-//Close menu when open using ESC key
+// Close menu when open using ESC key, toggle X
 document.onkeydown = function(evt) {
   evt = evt || window.event;
 
@@ -54,13 +38,14 @@ document.onkeydown = function(evt) {
     burger.forEach(function($el) {
       if (evt.keyCode == 27) {
 
-        var target = burger.dataset.target;
+        var target = $el.dataset.target;
         var $target = document.getElementById(target);
 
         if ($el.classList.contains('is-active') && $target.classList.contains('is-active')) {
           $el.classList.toggle('is-active');
           $target.classList.toggle('is-active');
         }
+
       }
     });
 
