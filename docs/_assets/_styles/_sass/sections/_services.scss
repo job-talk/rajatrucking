@@ -4,7 +4,7 @@
 
 .hero-services {
   background-color: $warning !important;
-  background: linear-gradient(to bottom, #ff6978 0%, #ff919c 100%);
+  background: linear-gradient(to bottom, $blue 0%, $warning 100%);
 
   & a i {
     color: $background;
