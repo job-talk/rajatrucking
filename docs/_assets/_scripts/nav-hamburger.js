@@ -20,7 +20,49 @@ document.addEventListener('DOMContentLoaded', function() {
         $target.classList.toggle('is-active');
 
       });
+
     });
   }
 
 });
+
+
+// Close menu when open using ESC key
+// document.onkeydown = function(evt) {
+//   evt = evt || window.event;
+//   const hamburger = document.querySelector('.navbar-burger');
+//
+//   if (evt.keyCode == 27) {
+//
+//     var target = hamburger.dataset.target;
+//     var $target = document.getElementById(target);
+//
+//     if ($target.classList.contains('is-active') {
+//       $target.classList.toggle('is-active');
+//     }
+//   }
+// };
+
+//Close menu when open using ESC key
+document.onkeydown = function(evt) {
+  evt = evt || window.event;
+
+  var burger = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+  if (burger.length > 0) {
+
+    burger.forEach(function($el) {
+      if (evt.keyCode == 27) {
+
+        var target = burger.dataset.target;
+        var $target = document.getElementById(target);
+
+        if ($el.classList.contains('is-active') && $target.classList.contains('is-active')) {
+          $el.classList.toggle('is-active');
+          $target.classList.toggle('is-active');
+        }
+      }
+    });
+
+  }
+};
