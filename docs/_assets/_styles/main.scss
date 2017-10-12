@@ -26,7 +26,7 @@ $baseurl: "{{ site.baseurl }}";
 @import '_sass/sections/intro';
 @import '_sass/sections/services';
 @import '_sass/sections/contact';
+@import '_sass/sections/footer';
 
 // Partials
 @import '_sass/partials/link-highlight';
-@import '_sass/partials/float-scroll-top';

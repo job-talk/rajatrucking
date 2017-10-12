@@ -1,0 +1,25 @@
+.footer {
+
+
+  & #about {
+
+  }
+
+  & #copyright {
+
+  }
+
+  & .menu-list {
+
+    & li {
+
+    }
+
+  }
+
+  .is-pulled-right-desktop {
+    @media screen and (min-width: $desktop) {
+      float: right !important;
+    }
+  }
+}
