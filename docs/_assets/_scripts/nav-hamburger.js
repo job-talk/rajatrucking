@@ -51,3 +51,30 @@ document.onkeydown = function(evt) {
 
   }
 };
+
+
+// // Close menu with click outside of menu
+//
+// var navbarMenu = document.querySelector('.navbar-menu');
+//
+// document.addEventListener('click', function(event) {
+//   if (event.target !== navbarMenu) {
+//     navbarMenu.classList.remove('is-active');
+//   }
+// });
+
+
+var navMenuItems = document.querySelectorAll('.navbar-menu .navbar-item');
+
+for (i = 0; i < navMenuItems.length; i++) {
+  navMenuItems[i].addEventListener('click', function() {
+
+    if (this.parentNode.classList.contains('is-active')) {
+      this.parentNode.classList.remove('is-active'); // hide menu
+
+      var hamburgerIcon = document.querySelector('.navbar-burger'); // get hamburger
+      hamburgerIcon.classList.remove('is-active'); // change x to hamburger
+    }
+
+  });
+}

@@ -1,5 +1,3 @@
-
-
 .blackbox {
   background: #00171F;
   display: inline-block;
@@ -12,4 +10,8 @@
     padding-left: 1em;
     padding-right: 1em;
   }
+}
+
+nav .button:active, nav .button.is-active {
+  border-color: $link-hover;
 }
