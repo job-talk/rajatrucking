@@ -1,8 +1,9 @@
-// Navbar hamburger
-document.addEventListener('DOMContentLoaded', function() {
+// Get elements
+var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
 
-  // Get all 'navbar-burger' elements
-  var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+// Add navbar hamburger functionality and 'X' animation
+document.addEventListener('DOMContentLoaded', function() {
 
   // Check if there are any navbar burgers
   if ($navbarBurgers.length > 0) {
@@ -31,11 +32,9 @@ document.addEventListener('DOMContentLoaded', function() {
 document.onkeydown = function(evt) {
   evt = evt || window.event;
 
-  var burger = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+  if ($navbarBurgers.length > 0) {
 
-  if (burger.length > 0) {
-
-    burger.forEach(function($el) {
+    $navbarBurgers.forEach(function($el) {
       if (evt.keyCode == 27) {
 
         var target = $el.dataset.target;
@@ -53,7 +52,7 @@ document.onkeydown = function(evt) {
 };
 
 
-// // Close menu with click outside of menu
+// Close menu with click outside of menu
 //
 // var navbarMenu = document.querySelector('.navbar-menu');
 //
@@ -63,17 +62,16 @@ document.onkeydown = function(evt) {
 //   }
 // });
 
-
+// Close menu when clicking a list item
 var navMenuItems = document.querySelectorAll('.navbar-menu .navbar-item');
-
 for (i = 0; i < navMenuItems.length; i++) {
   navMenuItems[i].addEventListener('click', function() {
 
     if (this.parentNode.classList.contains('is-active')) {
       this.parentNode.classList.remove('is-active'); // hide menu
 
-      var hamburgerIcon = document.querySelector('.navbar-burger'); // get hamburger
-      hamburgerIcon.classList.remove('is-active'); // change x to hamburger
+      var hamburger = document.querySelector('.navbar-burger'); // get hamburger
+      hamburger.classList.remove('is-active'); // change x to hamburger
     }
 
   });
