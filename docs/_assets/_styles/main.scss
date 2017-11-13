@@ -11,12 +11,11 @@ $baseurl: "{{ site.baseurl }}";
 // -----------------
 
 // Vendor
-@import '_sass/vendor/bulma/bulma';
+@import './node_modules/bulma/bulma';
 
 
 // Globals
 @import '_sass/globals/variables';
-
 @import '_sass/globals/global';
 
 

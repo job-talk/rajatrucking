@@ -10,6 +10,7 @@ const sourcemaps  = require('gulp-sourcemaps');
 
 gulp.task('scripts', function() {
   return gulp.src([
+    './node_modules/click-outside-js/click-outside.min.js',
     './node_modules/smooth-scroll/dist/js/smooth-scroll.polyfills.min.js',
     'docs/_assets/_scripts/**/*.js'
   ])
@@ -26,10 +27,12 @@ gulp.task('scripts', function() {
 /**
  * Compile files from _js into both _site/js (for live injecting) and site (for future jekyll builds)
  */
- gulp.task('scripts-prod', function() {
-   return gulp.src([
-     'docs/_assets/_scripts/**/*.js'
-   ])
+gulp.task('scripts-prod', function() {
+  return gulp.src([
+    './node_modules/desandro-classie/classie.js',
+    './node_modules/smooth-scroll/dist/js/smooth-scroll.polyfills.min.js',
+    'docs/_assets/_scripts/**/*.js'
+  ])
     .pipe(concat('main.js'))
     .pipe(uglify())
     .pipe(gulp.dest('_site/assets/scripts/'))

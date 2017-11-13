@@ -1,8 +1,13 @@
 // Get elements
-var navbarBurger = document.querySelectorAll('.navbar-burger');
-var navbarMenu   = document.querySelectorAll('.navbar-menu');
-var navMenuItems = document.querySelectorAll('.navbar-menu .navbar-item');
+var navbar       = document.querySelector('.navbar'),
+    navbarBurger = document.querySelectorAll('.navbar-burger'),
+    navbarMenu   = document.querySelector('.navbar-menu'),
+    navMenuItems = document.querySelectorAll('.navbar-menu .navbar-item');
 
+// var navbar = document.getElementsByClassName('navbar'),
+//     navbarBurger = document.getElementsByClassName('navbar-burger'),
+//     navbarMenu = document.getElementsByClassName('navbar-menu'),
+//     navMenuItems = document.querySelectorAll('.navbar-menu .navbar-item');
 
 // Declare functions
 function toggleMenu() {
@@ -38,25 +43,33 @@ function closeMenuOnLinkClick() {
   });
 }
 
-//Close menu with click outside of menu
-function closeMenuonOutsideClick() {
-  for (i = 0; i < navbarMenu.length; i++) {
-    navbarMenu[i].addEventListener('touchstart', function(event) {
-      if (event.target.closest('.navbar')) {
-        // navbarMenu.classList.remove('is-active');
-        // navbarBurger.classList.remove('is-active');
-        // do nothing
-        console.log('click outside');
-      } else {
-        navbarMenu.classList.remove('is-active');
-        navbarBurger.classList.remove('is-active');
-        // closeMenuClick();
-      }
+// //Close menu with click outside of menu
+// function closeMenuonOutsideClick() {
+//   for (i = 0; i < navbarMenu.length; i++) {
+//     navbarMenu[i].addEventListener('touchstart', function(event) {
+//       if (event.target.closest('.navbar')) {
+//         // navbarMenu.classList.remove('is-active');
+//         // navbarBurger.classList.remove('is-active');
+//         // do nothing
+//         console.log('click outside');
+//       } else {
+//         navbarMenu.classList.remove('is-active');
+//         navbarBurger.classList.remove('is-active');
+//         // closeMenuClick();
+//       }
+//
+//     });
+//   }
+// }
+document.addEventListener('click', function(event) {
+  var isClickInside = navbar.contains(event.target);
 
-    });
+  if (!isClickInside) {
+    console.log("outside!");
+    // navbarMenu.classList.remove('is-active');
+    // navbarBurger.classList.remove('is-active');
   }
-}
-
+});
 
 // Close menu when clicking a list item
 for (i = 0; i < navMenuItems.length; i++) {
