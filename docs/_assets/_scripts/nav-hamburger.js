@@ -1,66 +1,84 @@
 // Get elements
-var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+var navbarBurger = document.querySelectorAll('.navbar-burger');
+var navbarMenu   = document.querySelectorAll('.navbar-menu');
 
 
-// Add navbar hamburger functionality and 'X' animation
-document.addEventListener('DOMContentLoaded', function() {
 
+// Declare functions
+function toggleMenu() {
   // Check if there are any navbar burgers
-  if ($navbarBurgers.length > 0) {
+  if(navbarBurger.length > 0) {
 
     // Add a click event on each item
-    $navbarBurgers.forEach(function ($el) {
+    navbarBurger.forEach(function($el) {
       $el.addEventListener('click', function() {
 
-        // Get the target from the "data-target" attribute
-        var target = $el.dataset.target;
-        var $target = document.getElementById(target);
+        var target = $el.dataset.target; // data-target="navMenu"
+        var $target = document.getElementById(target); // id="navMenu"
 
-        // Toggle the class on both the "navbar-burger" and the "navbar-menu"
-        $el.classList.toggle('is-active');
-        $target.classList.toggle('is-active');
-
+        $el.classList.toggle('is-active'); // toggle nav icon
+        $target.classList.toggle('is-active'); // toggle nav menu
       });
 
     });
-  }
 
-});
+  }
+}
+
+function isMenuOpen() {
+  if (navbarMenu.classList.contains('is-active') && navbarBurger.classList.contains('is-active')) {
+    console.log('Menu is active/open');
+    return true;
+  }
+  else {
+    console.log('Menu is closed');
+    return false;
+  }
+}
+
 
 
 // Close menu when open using ESC key, toggle X
 document.onkeydown = function(evt) {
   evt = evt || window.event;
 
-  if ($navbarBurgers.length > 0) {
+  // if ($navbarBurgers.length > 0) {
+  //
+  //   $navbarBurgers.forEach(function($el) {
+  //     if (evt.keyCode == 27) {
+  //
+  //       var target = $el.dataset.target;
+  //       var $target = document.getElementById(target);
+  //
+  //       if ($el.classList.contains('is-active') && $target.classList.contains('is-active')) {
+  //         $el.classList.toggle('is-active');
+  //         $target.classList.toggle('is-active');
+  //       }
+  //
+  //     }
+  //   });
+  //
+  // }
 
-    $navbarBurgers.forEach(function($el) {
-      if (evt.keyCode == 27) {
-
-        var target = $el.dataset.target;
-        var $target = document.getElementById(target);
-
-        if ($el.classList.contains('is-active') && $target.classList.contains('is-active')) {
-          $el.classList.toggle('is-active');
-          $target.classList.toggle('is-active');
-        }
-
-      }
-    });
-
-  }
+  // if ((evt.keyCode == 27) && (isMenuOpen() == true)) {
+  //   toggleMenu();
+  // }
 };
 
 
-// Close menu with click outside of menu
-//
-// var navbarMenu = document.querySelector('.navbar-menu');
-//
-// document.addEventListener('click', function(event) {
-//   if (event.target !== navbarMenu) {
-//     navbarMenu.classList.remove('is-active');
-//   }
-// });
+//Close menu with click outside of menu
+for (i = 0; i < navbarMenu.length; i++) {
+  navbarMenu[i].addEventListener('click', function(event) {
+    if (event.target.closest('.navbar')) {
+      // navbarMenu.classList.remove('is-active');
+      // do nothing
+      console.log('click');
+    } else {
+      closeMenuClick();
+    }
+
+  });
+}
 
 // Close menu when clicking a list item
 var navMenuItems = document.querySelectorAll('.navbar-menu .navbar-item');
@@ -76,3 +94,10 @@ for (i = 0; i < navMenuItems.length; i++) {
 
   });
 }
+
+
+// Event listeners
+// Add navbar hamburger functionality and 'X' animation
+document.addEventListener('DOMContentLoaded', function() {
+  toggleMenu();
+});
