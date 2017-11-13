@@ -3,15 +3,12 @@ var navbar       = document.querySelector('.navbar'),
     navbarBurger = document.querySelectorAll('.navbar-burger'),
     navbarMenu   = document.querySelector('.navbar-menu'),
     navMenuItems = document.querySelectorAll('.navbar-menu .navbar-item');
+var hamburger = document.querySelector('.navbar-burger'); // get hamburger
 
-// var navbar = document.getElementsByClassName('navbar'),
-//     navbarBurger = document.getElementsByClassName('navbar-burger'),
-//     navbarMenu = document.getElementsByClassName('navbar-menu'),
-//     navMenuItems = document.querySelectorAll('.navbar-menu .navbar-item');
 
 // Declare functions
 function toggleMenu() {
-  // Check if there are any navbar burgers
+//  Check if there are any navbar burgers
   if(navbarBurger.length > 0) {
 
     // Add a click event on each item
@@ -36,7 +33,6 @@ function closeMenuOnLinkClick() {
     if (this.parentNode.classList.contains('is-active')) {
       this.parentNode.classList.remove('is-active'); // hide menu
 
-      var hamburger = document.querySelector('.navbar-burger'); // get hamburger
       hamburger.classList.remove('is-active'); // change x to hamburger
     }
 
@@ -65,9 +61,9 @@ document.addEventListener('click', function(event) {
   var isClickInside = navbar.contains(event.target);
 
   if (!isClickInside) {
-    console.log("outside!");
-    // navbarMenu.classList.remove('is-active');
-    // navbarBurger.classList.remove('is-active');
+    // console.log("outside!");
+    hamburger.classList.remove('is-active');
+    navbarMenu.classList.remove('is-active');
   }
 });
 
