@@ -8,8 +8,7 @@ var hamburger = document.querySelector('.navbar-burger'); // get hamburger
 
 // Declare functions
 function toggleMenu() {
-//  Check if there are any navbar burgers
-  if(navbarBurger.length > 0) {
+  if(navbarBurger.length > 0) { //  Check if there are any navbar burgers
 
     // Add a click event on each item
     navbarBurger.forEach(function($el) {
@@ -39,25 +38,8 @@ function closeMenuOnLinkClick() {
   });
 }
 
-// //Close menu with click outside of menu
-// function closeMenuonOutsideClick() {
-//   for (i = 0; i < navbarMenu.length; i++) {
-//     navbarMenu[i].addEventListener('touchstart', function(event) {
-//       if (event.target.closest('.navbar')) {
-//         // navbarMenu.classList.remove('is-active');
-//         // navbarBurger.classList.remove('is-active');
-//         // do nothing
-//         console.log('click outside');
-//       } else {
-//         navbarMenu.classList.remove('is-active');
-//         navbarBurger.classList.remove('is-active');
-//         // closeMenuClick();
-//       }
-//
-//     });
-//   }
-// }
-document.addEventListener('click', function(event) {
+//Close menu with click outside of menu
+document.addEventListener('touchstart', function(event) {
   var isClickInside = navbar.contains(event.target);
 
   if (!isClickInside) {
@@ -66,6 +48,7 @@ document.addEventListener('click', function(event) {
     navbarMenu.classList.remove('is-active');
   }
 });
+
 
 // Close menu when clicking a list item
 for (i = 0; i < navMenuItems.length; i++) {
