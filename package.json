@@ -1,7 +1,7 @@
 {
   "name": "rajatrucking",
   "version": "1.0.0",
-  "description": "",
+  "description": "An uprising freight transportation company that provides services for freight brokers and various companies to locations throughout the 48 states.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -35,9 +35,6 @@
   },
   "dependencies": {
     "bulma": "^0.5.3",
-    "flickity": "^2.0.10",
-    "flickity-bg-lazyload": "^1.0.0",
-    "slideout": "^1.0.1",
     "smooth-scroll": "^12.1.5"
   }
 }
