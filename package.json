@@ -35,6 +35,7 @@
   },
   "dependencies": {
     "bulma": "^0.5.3",
+    "html-form-send-email-via-google-script-without-server": "^2.0.0",
     "smooth-scroll": "^12.1.5"
   }
 }

@@ -10,7 +10,7 @@
 
 
         <div class="box">
-          <form id="contact-form" action="" method="post">
+          <form id="contact-form gform" method="POST" action="https://script.google.com/macros/s/AKfycbxcQ4kHKn0CTkQBdEThRm7qo547mwH4yod4yX-znMFT6jIraM0/exec">
 
             <div class="field">
               <label class="label">Name</label>
@@ -25,7 +25,7 @@
             <div class="field">
               <label class="label">Email</label>
               <div class="control has-icons-left">
-                <input class="input" type="email" name="_replyto" placeholder="Your email" required />
+                <input id="email" class="input" type="email" name="email" value="" placeholder="Your email" required />
                 <span class="icon is-small is-left">
                   <i class="fa fa-envelope" aria-hidden="true"></i>
                 </span>
@@ -35,7 +35,7 @@
             <div class="field">
               <label class="label">Subject</label>
               <div class="control has-icons-left">
-                <input id="subject"  class="input" type="text" name="_subject" required />
+                <input id="subject"  class="input" type="text" name="subject" required />
                 <span class="icon is-small is-left">
                   <i class="fa fa-book" aria-hidden="true"></i>
                 </span>
@@ -45,7 +45,7 @@
             <div class="field">
               <label class="label">Message</label>
               <div class="control">
-                <textarea id="messages" class="textarea" name="message" placeholder="Your message" required></textarea>
+                <textarea id="message" class="textarea" name="message" placeholder="Your message" required></textarea>
               </div>
             </div>
 
@@ -56,10 +56,9 @@
               </div>
             </div>
 
-            <!-- <input type="hidden" name="_subject"  value="Website contact form" /> -->
-            <input id="gotcha" type="text" name="_gotcha"  />
-            <!-- <input type="hidden" name="_format" value="plain" /> -->
-            <input type="hidden" name="_next" value="{{ site.baseurl }}/thanks/" />
+            <div id="thankyou_message">
+              <h2><em>Thanks</em> for contacting us! We will get back to you soon!</h2>
+            </div>
           </form>
 
           <hr />
