@@ -33,6 +33,6 @@ gulp.task('jekyll-rebuild', ['jekyll-dev'], function () {
 gulp.task('jekyll-prod', ['purify'], function(done) {
   browserSync.notify(messages.jekyllProd);
 
-  return cp.spawn('bundle', ['exec', 'jekyll', 'build'], {stdio: 'inherit'})
+  return cp.spawn('bundle', ['exec', 'jekyll', 'build', '--config=docs/_config.yml'], {stdio: 'inherit'})
    .on('close', done);
 });

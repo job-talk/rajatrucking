@@ -1,0 +1,17 @@
+.blackbox {
+  background: #00171F;
+  display: inline-block;
+  box-shadow: 4px 4px 2px #777777;
+  color: #FAFAFA;
+  padding-left: .5em;
+  padding-right: .5em;
+
+  @media screen and (min-width: $tablet){
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+}
+
+nav .button:active, nav .button.is-active {
+  border-color: $link-hover;
+}

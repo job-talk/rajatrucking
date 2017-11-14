@@ -1,0 +1,29 @@
+.services {
+  background-color: $background;
+}
+
+.hero-services {
+  background-color: $warning !important;
+  background: linear-gradient(to bottom, $blue 0%, $warning 100%);
+
+  & a i {
+    color: $background;
+  }
+}
+
+.service-hero {
+  margin-bottom: 20%;
+  cursor: default;
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 0;
+  }
+
+  & p {
+    margin-top: 1em;
+  }
+
+  & p:nth-child(3), &:nth-child(5) {
+    // margin-top: 0;
+  }
+}

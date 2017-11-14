@@ -9,7 +9,9 @@ gulp.task('watch', function () {
   gulp.watch(
     [
       'docs/_assets/_styles/_sass/**/*.scss',
-      'docs/_assets/_styles/**/*.scss'
+      'docs/_assets/_styles/**/*.scss',
+      'docs/_assets/_styles/_sass/**/*.sass',
+      'docs/_assets/_styles/**/*.sass'
     ], ['sass']);
 
   gulp.watch(

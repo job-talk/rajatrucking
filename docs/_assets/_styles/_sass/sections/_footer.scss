@@ -1,101 +1,36 @@
-// *
-// * Footer
-// *
+.footer {
+  // background-color: $background;
+  background-color: whitesmoke;
 
+  & #about {
 
-// Sticky flexbox footer
-// *********************
+  }
 
-html,
-body { height: 100%; }
+  & #copyright {
 
-.page {
-  min-height: 100vh;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
+  }
 
-.content {
-  flex: 1;
-}
-// end of flex sticky footer
+  & .menu-list {
 
-.active {
-  color: #4495d4 !important;
-}
+    & li {
 
-footer {
-  padding: 8px 20px;
-  width: 100%;
-
-  background-color: $footer-bg;
-  @include foot-box-shadow;
-}
-
-.foot {
-  &-nav {
-    margin-bottom: 0;
-    line-height: 1;
-
-    display: inline-flex;
-    flex-flow: row wrap;
-    align-items: center;
-    width: 100%;
-
-    list-style-type: none;
-
-    &-item {
-      margin-bottom: 0;
-
-      & a {
-        text: {
-          decoration: none;
-          transform: uppercase;
-        }
-        font: {
-          size: .6em;
-          weight: 400;
-        }
-        letter-spacing: .1rem;
-
-        color: #b3b2b2;
-
-      }
     }
 
-    &-right {
-      margin-right: 1em;
+  }
 
-      display: inline-block;
-      align-self: flex-end;
-
-      @media screen and (max-width: 250px) {
-        margin-right: .5em;
-      }
-
-      &:nth-last-child(1) {
-        margin-right: 0em;
-      }
-      &-last {
-        margin-right: 0em;
-      }
+  .is-pulled-right-desktop {
+    @media screen and (min-width: $desktop) {
+      float: right !important;
     }
   }
 
-  &-copyr {
-    margin-right: 1.5em;
+  &-scroll-up {
+    border-radius: 50%;
+    display: inline-block;
 
-    align-self: flex-start;
-
-    font-weight: 500;
-  }
-
-  &-float-right { text-align: right; }
-
-  &-invisible {
-    flex: 1;
-
-    visibility: hidden;
+    & i {
+      left: 50%;
+      top: 50%;
+    }
   }
 }

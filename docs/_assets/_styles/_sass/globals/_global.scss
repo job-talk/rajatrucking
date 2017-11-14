@@ -1,0 +1,34 @@
+
+body {
+  background-color: $background;
+  color: $text;
+  font-family: $body-text;
+}
+
+a {
+  color: $link;
+}
+
+h1, h2, h3, h4, h5, h6, .navbar-item, .button, .service-hero .title, .label {
+  font-family: $headings-text;
+}
+
+.title {
+  color: $text-title !important;
+}
+
+.content .subtitle, .box .subtitle, .label, .navbar-item {
+  color: $text-subtitle !important;
+}
+
+
+.button.is-primary {
+  color: #fff;
+  background-color: $warning !important;
+  font-weight: 600;
+}
+
+
+::selection {
+  background-color: $link-hover;
+}

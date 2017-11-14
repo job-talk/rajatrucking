@@ -1,0 +1,34 @@
+.contact {
+  background-color: $background;
+
+  &-icon {
+    margin-right: .5em;
+  }
+}
+
+#map {
+
+  & iframe {
+    width: 100%;
+  }
+}
+
+
+#gotcha {
+  display: none;
+}
+
+
+.thanks-menu > .menu-list > li > a {
+  display: inline-block;
+}
+
+
+.thanks .blackbox {
+  margin-bottom: 10%;
+}
+
+
+.input:active, .textarea:active {
+  border-color: $link-hover;
+}

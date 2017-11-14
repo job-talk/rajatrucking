@@ -3,3 +3,5 @@ _site
 .jekyll-metadata
 node_modules
 ignores*
+./docs/assets/scripts/main.js
+./docs/assets/styles/main.css
