@@ -36,5 +36,5 @@ gulp.task('scripts-prod', function() {
     .pipe(concat('main.js'))
     .pipe(uglify())
     .pipe(gulp.dest('_site/assets/scripts/'))
-    .pipe(gulp.dest('docs/assets/scripts/'));;
+    .pipe(gulp.dest('docs/assets/scripts/'));
 });
