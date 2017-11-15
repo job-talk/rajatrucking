@@ -7,3 +7,5 @@ Building:
 
  - To build:
    - run `npm install`
+   - run 'gulp' to serve up a local server with livereloading & JS/Sass compiling
+   - run 'gulp build' to build for production 
