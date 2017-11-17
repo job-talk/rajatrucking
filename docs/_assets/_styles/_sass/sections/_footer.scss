@@ -13,7 +13,9 @@
   & .menu-list {
 
     & li {
-
+	  & a {
+	    display: inline-block;			
+	  }
     }
 
   }
