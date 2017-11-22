@@ -12,7 +12,8 @@ gulp.task('critical', ['jekyll-prod'], function(cb) {
     src: 'index.html',
     css: 'docs/assets/styles/main.css',
     dest: '_includes/critical-css/critical.css',
-    minify: false,
+    minify: true,
+    extract: true,
     width: 320,
     height: 480,
     ignore: ['font-face']
