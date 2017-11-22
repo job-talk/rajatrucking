@@ -10,9 +10,9 @@ gulp.task('critical', ['jekyll-prod'], function(cb) {
     inline: false,
     base: 'docs/',
     src: 'index.html',
-    css: ['docs/assets/styles/main.css'],
+    css: 'docs/assets/styles/main.css',
     dest: '_includes/critical-css/critical.css',
-    minify: true,
+    minify: false,
     width: 320,
     height: 480,
     ignore: ['font-face']
