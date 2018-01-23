@@ -3,6 +3,7 @@ const concat      = require('gulp-concat');
 const uglify      = require('gulp-uglify');
 const browserSync = require('browser-sync');
 const sourcemaps  = require('gulp-sourcemaps');
+const gutil       = require('gulp-util');
 
 /*
  * Comple files from scripts into both _site/assets/ (live injeciting) & site (for future jekyll builds)

@@ -30,7 +30,7 @@ gulp.task('jekyll-rebuild', ['jekyll-dev'], function () {
 /*
  * Build the site in production mode
  */
-gulp.task('jekyll-prod', ['purify'], function(done) {
+gulp.task('jekyll-prod', ['purify', 'critical'], function(done) {
   browserSync.notify(messages.jekyllProd);
 
   return cp.spawn('bundle', ['exec', 'jekyll', 'build', '--config=docs/_config.yml'], {stdio: 'inherit'})
