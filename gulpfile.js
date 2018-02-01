@@ -22,4 +22,4 @@ require('./gulp/tasks/purifycss');
  *
  */
 gulp.task('default', ['browser-sync', 'watch']);
-gulp.task('build', ['scripts-prod', 'sass-prod', 'purify', 'critical', 'jekyll-prod']);
+gulp.task('build', ['scripts-prod', 'sass-prod', 'purify', 'jekyll-prod']);
