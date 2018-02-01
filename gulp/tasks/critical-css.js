@@ -5,7 +5,7 @@ var critical = require('critical');
 /*
  * Gather the critical CSS for fast DOM paint
  */
-gulp.task('critical', ['scripts-prod', 'sass-prod', 'purify'], function(cb) {
+gulp.task('critical', ['scripts-prod', 'sass-prod'], function(cb) {
   critical.generate({
     inline: false,
     base: 'docs/',
