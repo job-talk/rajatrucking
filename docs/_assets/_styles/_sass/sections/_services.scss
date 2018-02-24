@@ -6,7 +6,7 @@
   background-color: $warning !important;
   background: linear-gradient(to bottom, $blue 0%, $warning 100%);
 
-  & a i {
+  & a svg {
     color: $background;
   }
 }
