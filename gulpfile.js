@@ -1,7 +1,7 @@
 'use strict';
 
 const gulp = require('gulp');
-
+const debug       = require('gulp-debug');
 
 require('./gulp/tasks/styles');
 require('./gulp/tasks/scripts');
@@ -23,4 +23,3 @@ require('./gulp/tasks/purifycss');
  */
 gulp.task('default', ['browser-sync', 'watch']);
 gulp.task('build', ['scripts-prod', 'sass-prod', 'purify', 'jekyll-prod']);
-// gulp.task('critical', ['critical-home', 'critical-services', 'critical-contact', 'critical-404']);
