@@ -14,7 +14,7 @@
 
     & li {
 	  & a {
-	    display: inline-block;			
+	    display: inline-block;
 	  }
     }
 
@@ -28,9 +28,9 @@
 
   &-scroll-up {
     border-radius: 50%;
-    display: inline-block;
+    padding: 12%;
 
-    & i {
+    & svg {
       left: 50%;
       top: 50%;
     }
