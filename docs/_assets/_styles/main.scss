@@ -12,6 +12,7 @@ $baseurl: "{{ site.baseurl }}";
 
 // Vendor
 @import './node_modules/bulma/bulma';
+@import '_sass/vendor/fontawesome/fa-svg-with-js';
 
 
 // Globals
